@@ -1,0 +1,45 @@
+---
+import DataLayout from '../../layouts/DataLayout.astro';
+import { getChemicalGroups } from '../../lib/chemicals';
+
+const groups = getChemicalGroups();
+const byFamily = new Map<string, typeof groups>();
+for (const g of groups) {
+  if (!byFamily.has(g.family)) byFamily.set(g.family, [] as any);
+  (byFamily.get(g.family) as any).push(g);
+}
+
+const title = 'Chemical Compatibility Index';
+const description = `Real material compatibility data for ${groups.length} chemicals across PVC, PP, PVDF, PFA, PTFE, and 316 stainless steel, by concentration and temperature.`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'DataCatalog',
+  name: 'LibertyCES Chemical Compatibility Data Catalog',
+  description,
+  creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)', url: 'https://www.libertyces.com' },
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://data.libertyces.com/datasets/chemical-compatibility.csv' },
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/chemical-compatibility.json' },
+  ],
+};
+---
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/chemicals/">
+  <h1>Chemical Compatibility Index</h1>
+  <div class="tldr"><strong>Direct answer:</strong> {groups.length} real chemicals, {groups.reduce((n, g) => n + g.rows.length, 0)} published material-compatibility ratings across 6 materials (PVC, PP, PVDF, PFA, PTFE, 316 stainless steel), sourced from real published vendor data.</div>
+
+  {Array.from(byFamily.entries()).sort((a, b) => a[0].localeCompare(b[0])).map(([family, items]: any) => (
+    <div>
+      <h2>{family} ({items.length})</h2>
+      <ul>
+        {items.map((g: any) => <li><a href={`/chemicals/${g.slug}/`}>{g.media}</a></li>)}
+      </ul>
+    </div>
+  ))}
+
+  <p>
+    <a href="/datasets/chemical-compatibility.csv">Download full dataset (CSV) &rarr;</a><br />
+    <a href="/datasets/chemical-compatibility.json">Download full dataset (JSON) &rarr;</a><br />
+    <a href="https://www.libertyces.com/guides/chemical-compatibility-chart">Full LibertyCES Chemical Compatibility Chart &rarr;</a>
+  </p>
+</DataLayout>

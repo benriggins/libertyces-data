@@ -1,0 +1,552 @@
+family,media,concentration,temp_f,temp_c,pvc,pp,pvdf,pfa,ptfe,ss316
+Salts / Brines,Acetyl Chloride,,104,40,,G,G,E,E,G
+Salts / Brines,Allyl Chloride,,104,40,,,F,E,E,G
+Salts / Brines,Aluminum Am. Sulfate,Saturated,104,40,,E,E,E,E,E
+Salts / Brines,Aluminum Chloride,Saturated,104,40,E,E,E,E,E,C
+Salts / Brines,Aluminum Chloride,Saturated,176,80,,,F,,E,C
+Salts / Brines,Aluminum Nitrate,Saturated,104,40,E,E,E,E,E,E
+Salts / Brines,Aluminum Nitrate,Saturated,176,80,,E,E,,E,E
+Salts / Brines,Aluminum Sulfate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Aluminum Sulfate,Saturated,176,80,,E,E,,E,F
+Salts / Brines,Ammonium Carbonate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Ammonium Carbonate,Saturated,176,80,,G,E,,E,G
+Salts / Brines,Ammonium Chloride,Saturated,104,40,E,E,E,E,E,F
+Salts / Brines,Ammonium Chloride,Saturated,176,80,,G,E,,E,F
+Salts / Brines,Ammonium Nitrate,,176,80,,,E,,E,E
+Salts / Brines,Ammonium Nitrate,,104,40,G,G,E,E,E,E
+Salts / Brines,Ammonium Phosphate,,104,40,E,E,E,E,,F
+Salts / Brines,Ammonium Sulfate,Saturated,104,40,E,E,E,E,E,A
+Salts / Brines,Ammonium Sulfate,Saturated,176,80,,,E,,E,G
+Salts / Brines,Amyl Chloride,Pure,104,40,,,E,E,E,E
+Salts / Brines,Barium Carbonate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Barium Carbonate,Saturated,176,80,,E,E,,E,G
+Salts / Brines,Barium Chloride,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Barium Nitrate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Barium Nitrate,Saturated,176,80,,,E,,E,G
+Salts / Brines,Barium Sulfate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Benzyl Chloride,Pure,104,40,,,E,E,E,G
+Salts / Brines,Calcium Carbonate,Saturated,176,80,,E,E,,E,G
+Salts / Brines,Calcium Carbonate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Calcium Chloride,Saturated,176,80,,E,E,,E,E
+Salts / Brines,Calcium Chloride,Saturated,104,40,E,E,E,E,E,E
+Salts / Brines,Calcium Nitrate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Calcium Nitrate,Saturated,176,80,,,E,,E,C
+Salts / Brines,Calcium Sulfate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Calcium Sulfate,Saturated,176,80,,E,E,,E,G
+Salts / Brines,Carbon Tetrachloride,Pure,104,40,C,,E,E,E,G
+Salts / Brines,Carbon Tetrachloride,,176,80,,,,,E,F
+Salts / Brines,Copper Sulfate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Copper Sulfate,Saturated,176,80,,E,E,,E,G
+Salts / Brines,Ethyl Chloride,,104,40,,C,E,E,E,E
+Salts / Brines,Ethyl Chloride,,176,80,,,,E,E,E
+Salts / Brines,Ethylene Chloride,,104,40,,C,E,E,E,E
+Salts / Brines,Ethylene Dichloride,,104,40,,C,E,E,E,E
+Salts / Brines,Ferrous Chloride,,104,40,E,E,E,E,E,F
+Salts / Brines,Ferrous Chloride,,176,80,,E,E,,E,F
+Salts / Brines,Ferrous Sulfate,,104,40,E,E,E,E,E,G
+Salts / Brines,Ferrous Sulfate,,176,80,,E,E,,E,G
+Salts / Brines,Hydrogen Fluoride (Anhydrous),,176,80,,,E,,E,E
+Salts / Brines,Hydrogen Fluoride (Anhydrous),,104,40,,,E,E,E,E
+Salts / Brines,Lithium Chloride,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Lithium Chloride,Saturated,176,80,,E,E,,E,G
+Salts / Brines,Magnesium Carbonate,,104,40,E,E,E,E,E,E
+Salts / Brines,Magnesium Chloride,Saturated,176,80,,E,E,,E,G
+Salts / Brines,Magnesium Chloride,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Magnesium Nitrate,,176,80,,G,E,,E,E
+Salts / Brines,Magnesium Nitrate,,104,40,E,E,E,E,E,E
+Salts / Brines,Magnesium Sulfate,,104,40,E,E,E,E,E,G
+Salts / Brines,Magnesium Sulfate,,176,80,,E,E,,E,G
+Salts / Brines,Mercuric Chloride,,176,80,,E,E,,E,C
+Salts / Brines,Mercuric Chloride,,104,40,E,E,E,E,E,C
+Salts / Brines,Mercurous Nitrate,Saturated,176,80,,,E,,E,F
+Salts / Brines,Mercurous Nitrate,Saturated,104,40,,,E,E,E,F
+Salts / Brines,Methyl Chloride,,104,40,,,E,E,E,E
+Salts / Brines,Methyl Chloride,,176,80,,,,,E,E
+Salts / Brines,Methylene Chloride,,104,40,,,G,E,E,G
+Salts / Brines,Methylene Chloride,,176,80,,,,,E,G
+Salts / Brines,Nickel Chloride,Saturated,104,40,E,E,E,E,E,F
+Salts / Brines,Nickel Nitrate,Saturated,176,80,,,E,,E,G
+Salts / Brines,Nickel Nitrate,Saturated,104,40,,,E,E,E,E
+Salts / Brines,Nickel Sulfate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Phosphorus Trichloride,Pure,104,40,,,E,E,E,G
+Salts / Brines,Potassium Aluminum Sulfate,,104,40,E,E,E,E,,G
+Salts / Brines,Potassium Bicarbonate,Saturated,104,40,E,E,E,E,E,E
+Salts / Brines,Potassium Bromide,,104,40,E,E,E,E,E,E
+Salts / Brines,Potassium Bromide,,176,80,,E,E,,E,E
+Salts / Brines,Potassium Carbonate,,104,40,E,E,E,E,E,G
+Salts / Brines,Potassium Chloride,,104,40,E,E,E,E,E,G
+Salts / Brines,Potassium Iodide,,104,40,E,E,E,E,E,E
+Salts / Brines,Potassium Iodide,,176,80,,E,E,,E,E
+Salts / Brines,Potassium Nitrate,,176,80,,,E,,E,G
+Salts / Brines,Potassium Nitrate,,104,40,E,,E,E,E,G
+Salts / Brines,Potassium Sulfate,Pure,104,40,E,E,E,E,E,E
+Salts / Brines,Potassium Sulfate,Pure,176,80,,E,E,,E,E
+Salts / Brines,Salt Water,Saturated,104,40,E,E,E,E,E,F
+Salts / Brines,Salt Water,Saturated,176,80,,E,E,,E,F
+Salts / Brines,Silver Nitrate,,104,40,E,E,E,E,E,F
+Salts / Brines,Silver Nitrate,,176,80,,E,E,,E,F
+Salts / Brines,Sodium Bicarbonate,,104,40,E,E,E,E,E,F
+Salts / Brines,Sodium Bicarbonate,,176,80,,E,E,,E,F
+Salts / Brines,Sodium Bisulfate,20%,104,40,E,E,E,E,E,E
+Salts / Brines,Sodium Bisulfate,20%,176,80,,,,,E,E
+Salts / Brines,Sodium Carbonate,,104,40,E,E,E,E,E,E
+Salts / Brines,Sodium Carbonate,,176,80,,E,E,,E,E
+Salts / Brines,Sodium Chloride,,104,40,E,E,E,E,E,F
+Salts / Brines,Sodium Chloride,,176,80,,E,E,,E,F
+Salts / Brines,Sodium Fluoride,,104,40,E,E,E,E,E,C
+Salts / Brines,Sodium Fluoride,,176,80,,E,E,,E,C
+Salts / Brines,Sodium Nitrate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Sodium Nitrate,Saturated,176,80,,E,E,,E,F
+Salts / Brines,Sodium Nitrate,Saturated,104,40,E,E,E,E,E,G
+Salts / Brines,Sodium Nitrate,Saturated,176,80,,E,E,,E,F
+Salts / Brines,Sodium Phosphate,,104,40,E,E,E,E,E,E
+Salts / Brines,Sodium Phosphate,,176,80,,E,E,,E,G
+Salts / Brines,Sodium Sulfate,Saturated,176,80,,E,E,,E,E
+Salts / Brines,Sodium Sulfate,Saturated,104,40,E,E,E,E,E,E
+Salts / Brines,Sodium Thiosulfate,,104,40,E,E,E,E,E,E
+Salts / Brines,Stannic Chloride,,104,40,E,E,E,E,E,C
+Salts / Brines,Stannic Chloride,,176,80,,G,E,,E,C
+Salts / Brines,Stannous Chloride,,104,40,E,E,E,E,E,E
+Salts / Brines,Sulfur Chloride,,104,40,,C,E,E,E,G
+Salts / Brines,Sulfur Chloride,,176,80,,,E,,E,G
+Salts / Brines,Zinc Nitrate,,104,40,E,E,E,E,E,E
+Salts / Brines,Zinc Nitrate,,176,80,,E,E,,E,E
+Salts / Brines,Zinc Sulfate,,104,40,E,E,E,E,E,F
+Salts / Brines,Zinc Sulfate,,176,80,,E,E,,E,F
+Acids,Acetic Acid,80%,176,80,,F,C,E,E,G
+Acids,Acetic Acid,80%,104,40,G,F,G,E,E,E
+Acids,Acetic Acid,50%,176,80,,F,G,E,E,E
+Acids,Acetic Acid,50%,104,40,G,F,E,E,E,E
+Acids,Acetic Acid,20%,176,80,,,G,E,E,E
+Acids,Acetic Acid,20%,104,40,G,G,E,E,E,E
+Acids,Acetic Acid,10%,176,80,,,G,E,E,E
+Acids,Acetic Acid,10%,104,40,E,E,E,E,E,E
+Acids,Acetic Anhydride,Pure,176,80,,F,F,E,E,G
+Acids,Acetic Anhydride,Pure,104,40,,F,F,E,E,G
+Acids,Adipic Acid (Aqueous),Saturated,176,80,,G,E,E,E,E
+Acids,Adipic Acid (Aqueous),Saturated,104,40,E,E,E,E,E,E
+Acids,Arsenic Acid,,104,40,G,G,E,E,E,E
+Acids,Arsenic Acid,,176,80,,,E,,E,G
+Acids,Benzene Sulfonic Acid,,104,40,,,G,E,E,G
+Acids,Benzene Sulfonic Acid,,176,80,,,C,,E,G
+Acids,Benzoic Acid,Pure,104,40,E,G,E,E,E,G
+Acids,Benzoic Acid,Pure,176,80,,C,E,,E,G
+Acids,Boric Acid,Saturated,104,40,E,E,E,E,E,E
+Acids,Boric Acid,Saturated,176,80,,E,E,,E,E
+Acids,Carbonic Acid,,176,80,,G,E,,E,E
+Acids,Carbonic Acid,,104,40,E,E,E,E,E,E
+Acids,Chloric Acid,20%,104,40,E,E,E,,E,C
+Acids,Chloric Acid,20%,176,80,,,E,,E,C
+Acids,Chloro Sulfonic Acid,Pure,104,40,,,C,E,E,F
+Acids,Chloro Sulfonic Acid,Pure,176,80,,,,,E,C
+Acids,Chromic Acid,50%,176,80,,,F,,E,C
+Acids,Chromic Acid,50%,104,40,C,,E,,E,C
+Acids,Chromic Acid,40%,176,80,,,E,,E,C
+Acids,Chromic Acid,40%,104,40,F,,E,,E,C
+Acids,Chromic Acid,20%,176,80,,,E,,E,C
+Acids,Chromic Acid,20%,104,40,F,,E,,E,C
+Acids,Chromic Acid,10%,176,80,,,E,,E,C
+Acids,Chromic Acid,10%,104,40,E,,E,E,E,C
+Acids,Citric Acid,10%,104,40,E,E,E,E,E,E
+Acids,Fatty Acids,,104,40,E,G,E,E,E,E
+Acids,Fatty Acids,,176,80,,F,E,,E,E
+Acids,Fluosilic Acid,50%,104,40,G,E,E,,,G
+Acids,Fluosilic Acid,50%,176,80,,G,E,,,G
+Acids,Formic Acid,90%,104,40,G,G,E,E,,F
+Acids,Formic Acid,,176,80,,,E,,,F
+Acids,Gallic Acid,,104,40,,,G,E,E,G
+Acids,Gallic Acid,,176,80,,,C,,E,G
+Acids,Glycolic Acid,Saturated,104,40,,E,G,E,E,E
+Acids,Glycolic Acid,Saturated,176,80,,,C,,E,E
+Acids,Hydrobromic Acid,,176,80,,E,E,,E,C
+Acids,Hydrobromic Acid,,104,40,E,E,E,E,E,C
+Acids,Hydrochloric Acid,15%,104,40,E,E,E,E,E,C
+Acids,Hydrochloric Acid,38%,176,80,,G,E,,E,C
+Acids,Hydrochloric Acid,38%,104,40,E,E,E,,E,C
+Acids,Hydrochloric Acid,35%,176,80,,G,E,,E,C
+Acids,Hydrochloric Acid,35%,104,40,E,E,E,,E,C
+Acids,Hydrochloric Acid,25%,176,80,,E,E,,E,C
+Acids,Hydrochloric Acid,25%,104,40,E,E,E,,E,C
+Acids,Hydrochloric Acid,15%,176,80,,E,E,,E,C
+Acids,Hydrocyanic Acid,10%,104,40,E,E,E,E,E,F
+Acids,Hydrocyanic Acid,,176,80,,,E,,E,F
+Acids,Hydrofluoric Acid,50%,104,40,F,G,E,C,E,C
+Acids,Hydrofluoric Acid,50%,176,80,,G,E,C,E,C
+Acids,Hydrofluoric Acid,40%,176,80,,G,E,C,E,C
+Acids,Hydrofluoric Acid,40%,104,40,F,G,E,C,E,C
+Acids,Hydrofluoric Acid,30%,176,80,C,G,E,,E,C
+Acids,Hydrofluoric Acid,30%,104,40,G,G,E,,E,C
+Acids,Hydrofluoric Acid,Dilute,176,80,,G,E,,E,C
+Acids,Hydrofluoric Acid,Dilute,104,40,E,G,E,E,E,C
+Acids,Hydroflusilic Acid,50%,104,40,G,E,E,,,E
+Acids,Hypochlorous Acid,10%,104,40,E,G,E,,E,C
+Acids,Hypochlorous Acid,10%,176,80,,,E,,E,C
+Acids,Lactic Acid,25%,104,40,E,E,E,E,E,G
+Acids,Lactic Acid,25%,176,80,,,E,,E,G
+Acids,Lactic Acid,80%,104,40,G,G,E,,E,G
+Acids,Lactic Acid,80%,176,80,,,E,,E,G
+Acids,Maleic Acid,,104,40,E,E,E,E,E,G
+Acids,Maleic Acid,,104,40,E,E,E,E,E,G
+Acids,Malic Acid,10%,176,80,,E,E,,E,E
+Acids,Malic Acid,10%,104,40,E,E,E,E,E,E
+Acids,Nitric Acid,98%,104,40,,,G,,E,E
+Acids,Nitric Acid,70%,176,80,C,,G,,E,F
+Acids,Nitric Acid,70%,104,40,G,C,E,,E,F
+Acids,Nitric Acid,50%,176,80,C,C,G,,E,G
+Acids,Nitric Acid,50%,104,40,G,G,E,,E,G
+Acids,Nitric Acid,30%,176,80,C,G,E,,E,E
+Acids,Nitric Acid,30%,104,40,E,E,E,,E,E
+Acids,Nitric Acid,10%,176,80,C,G,E,,E,E
+Acids,Nitric Acid,10%,104,40,E,E,E,E,E,E
+Acids,Nitrous Acid,10%,104,40,,,,E,E,G
+Acids,Oleic Acid,,176,80,,E,E,,E,G
+Acids,Oleic Acid,,104,40,E,E,E,E,E,G
+Acids,Palmitic Acid,70%,176,80,,G,E,,E,F
+Acids,Palmitic Acid,70%,104,40,,E,E,,E,F
+Acids,Palmitic Acid,10%,176,80,,E,E,,E,G
+Acids,Palmitic Acid,10%,104,40,,E,E,,E,G
+Acids,Palmitic Acid,5%,176,80,,E,E,,E,G
+Acids,Palmitic Acid,5%,104,40,,E,E,E,E,G
+Acids,Phosphoric Acid,50%,176,80,,F,E,,E,G
+Acids,Phosphoric Acid,50%,104,40,E,E,E,,E,G
+Acids,Phosphoric Acid,10%,176,80,,E,E,,E,G
+Acids,Phthalic Acid,,104,40,,,E,E,E,G
+Acids,Phthalic Acid,,176,80,,,E,,E,G
+Acids,Picric Acid,10%,104,40,E,E,,E,E,G
+Acids,Picric Acid,,176,80,,E,,,E,G
+Acids,Salicylic Acid,,104,40,,,E,E,E,G
+Acids,Salicylic Acid,,176,80,,,E,,E,F
+Acids,Stearic Acid,,104,40,E,G,E,E,E,E
+Acids,Stearic Acid,,176,80,,G,E,,E,E
+Acids,Sulfuric Acid,<10%,104,40,G,E,E,E,E,G
+Acids,Sulfuric Acid,<70%,104,40,G,G,E,E,E,C
+Acids,Sulfuric Acid,<96%,104,40,,F,E,E,E,C
+Acids,Sulfurous Acid,,104,40,E,E,E,E,E,F
+Acids,Tannic Acid,,104,40,,E,E,E,E,E
+Acids,Tannic Acid,,176,80,,E,E,,E,E
+Acids,Trichloroacetic Acid,,176,80,,,C,,E,C
+Acids,Trichloroacetic Acid,,104,40,,E,G,E,E,C
+Specialty & Uncommon Media,Acetamide,,140,60,,,G,,E,E
+Specialty & Uncommon Media,Acetamide,,68,20,,,G,,E,E
+Specialty & Uncommon Media,Acetonitrile,,104,40,,,C,E,E,E
+Specialty & Uncommon Media,Acetonitrile,,70,21,,,C,E,E,E
+Specialty & Uncommon Media,Acetonitrile,,176,80,,,C,E,E,E
+Specialty & Uncommon Media,Acetophenone,,176,80,,C,,E,E,E
+Specialty & Uncommon Media,Acetophenone,,104,40,,G,F,E,E,E
+Specialty & Uncommon Media,Acetylene,,104,40,,E,E,E,E,E
+Specialty & Uncommon Media,Alum (Potassium Alum),Saturated,176,80,,E,E,,,G
+Specialty & Uncommon Media,Alum (Potassium Alum),Saturated,104,40,E,E,E,E,,G
+Specialty & Uncommon Media,Aluminum Floride,Saturated,104,40,E,E,E,E,E,F
+Specialty & Uncommon Media,Ammonium Flouride,20%,176,80,,,E,,E,C
+Specialty & Uncommon Media,Ammonium Flouride,20%,104,40,G,G,E,E,E,C
+Specialty & Uncommon Media,Aniline,Pure,176,80,,C,F,,E,G
+Specialty & Uncommon Media,Aniline,Pure,104,40,C,G,G,E,E,G
+Specialty & Uncommon Media,Aniline Hydrochloide,Pure,104,40,G,,E,E,E,C
+Specialty & Uncommon Media,Aniline Hydrochloide,Pure,176,80,,,C,,E,C
+Specialty & Uncommon Media,Aque Regia,,104,40,F,F,G,E,,C
+Specialty & Uncommon Media,Aque Regia,,176,80,,,E,,,C
+Specialty & Uncommon Media,Barium Sulfide,Saturated,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Buthyl Acrylate,Pure,104,40,,,G,,E,E
+Specialty & Uncommon Media,Buthyl Acrylate,Pure,176,80,,,C,,E,E
+Specialty & Uncommon Media,Calcium Bisulfide,Saturated,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Calcium Bisulfide,Saturated,176,80,,,E,,E,G
+Specialty & Uncommon Media,Calcium Bisulfite,Saturated,176,80,,E,E,,E,G
+Specialty & Uncommon Media,Calcium Bisulfite,Saturated,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Carbon Disulfide,Pure,104,40,F,,,E,E,G
+Specialty & Uncommon Media,Carbon Disulfide,Pure,176,80,,,,,E,G
+Specialty & Uncommon Media,Cellosolve,,176,80,,,G,,E,E
+Specialty & Uncommon Media,Cellosolve,,104,40,,E,E,E,E,E
+Specialty & Uncommon Media,Cresol,Pure,104,40,F,,E,E,E,E
+Specialty & Uncommon Media,Cresol,Pure,176,80,C,,G,,E,E
+Specialty & Uncommon Media,Diphenyl Oxide,Saturated,104,40,,,,,,G
+Specialty & Uncommon Media,Ethylene Chlorohydria,Pure,104,40,,,G,,,G
+Specialty & Uncommon Media,Furan,,104,40,,,,,E,E
+Specialty & Uncommon Media,Furfural,Pure,104,40,,C,E,,E,G
+Specialty & Uncommon Media,Furfural,Pure,176,80,,,C,,E,G
+Specialty & Uncommon Media,Glucose,,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Glue,,104,40,,,E,E,E,E
+Specialty & Uncommon Media,Glycerol (Glycerine),,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Hydrazine,Pure,104,40,,C,F,E,E,E
+Specialty & Uncommon Media,Lacquer,,104,40,,,,E,E,E
+Specialty & Uncommon Media,Lead Acetate,Saturated,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Lead Acetate,Saturated,176,80,,G,G,,E,G
+Specialty & Uncommon Media,Mercury,,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Mercury,,176,80,,E,E,,E,E
+Specialty & Uncommon Media,Methane,,104,40,E,G,E,E,E,E
+Specialty & Uncommon Media,Methane,,176,80,,G,E,,E,E
+Specialty & Uncommon Media,Methyl Acetate,Pure,104,40,,,G,E,E,E
+Specialty & Uncommon Media,Methyl Acetate,Pure,176,80,,,C,,E,F
+Specialty & Uncommon Media,Methyl Cellosolve,,104,40,,,E,E,E,C
+Specialty & Uncommon Media,Methyl Cellosolve,,0,-18,,,,,E,C
+Specialty & Uncommon Media,Perchloro Ethylene,,176,80,,,,,E,G
+Specialty & Uncommon Media,Perchloro Ethylene,,104,40,,,,E,E,G
+Specialty & Uncommon Media,Potassium Acetate,Saturated,176,80,,,E,,E,F
+Specialty & Uncommon Media,Potassium Acetate,Saturated,104,40,,,E,E,E,F
+Specialty & Uncommon Media,Potassium Bichromate,Saturated,104,40,E,E,E,E,E,F
+Specialty & Uncommon Media,Potassium Bichromate,Saturated,176,80,,G,E,,E,C
+Specialty & Uncommon Media,Potassium Chromate,,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Potassium Permanganate,25%,176,80,,G,E,,E,G
+Specialty & Uncommon Media,Potassium Permanganate,25%,104,40,E,E,E,,E,G
+Specialty & Uncommon Media,Potassium Permanganate,10%,176,80,,G,E,,E,G
+Specialty & Uncommon Media,Potassium Permanganate,10%,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Pyridine,,104,40,,E,F,E,E,E
+Specialty & Uncommon Media,Pyridine,,176,80,,,,,E,E
+Specialty & Uncommon Media,Soaps,,176,80,,E,E,,E,E
+Specialty & Uncommon Media,Soaps,,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Sodium Acetate,Saturated,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Sodium Acetate,Saturated,176,80,,E,E,,E,G
+Specialty & Uncommon Media,Sodium Alum,Saturated,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Sodium Bichromate,Saturated,176,80,,G,E,,E,G
+Specialty & Uncommon Media,Sodium Bichromate,Saturated,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Sodium Borate,Saturated,176,80,,E,E,,E,G
+Specialty & Uncommon Media,Sodium Borate,Saturated,104,40,,E,E,E,E,G
+Specialty & Uncommon Media,Sodium Chlorate,Saturated,176,80,,G,E,,E,F
+Specialty & Uncommon Media,Sodium Chlorate,Saturated,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Sodium Metalsilicate,,176,80,,E,E,,E,E
+Specialty & Uncommon Media,Sodium Metalsilicate,,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Sodium Perborate,,104,40,,,E,E,E,F
+Specialty & Uncommon Media,Sodium Sulfide,,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Sodium Sulfide,,176,80,,E,E,,E,E
+Specialty & Uncommon Media,Sulfite Liquor,6%,104,40,E,E,E,E,E,G
+Specialty & Uncommon Media,Sulfite Liquor,6%,176,80,,E,E,,E,G
+Specialty & Uncommon Media,Sulfur,,104,40,E,,E,,E,E
+Specialty & Uncommon Media,Sulfur,,176,80,,,E,,E,E
+Specialty & Uncommon Media,Tetrachloro Ethane,Pure,104,40,,,E,E,E,E
+Specialty & Uncommon Media,Tetrachloro Ethylene,Pure,104,40,,F,E,E,E,E
+Specialty & Uncommon Media,Tetrachloro Ethylene,Pure,176,80,,,E,,E,E
+Specialty & Uncommon Media,Tetrahydrofuran (THF),Pure,104,40,,F,F,E,,E
+Specialty & Uncommon Media,Tetrahydrofuran (THF),Pure,176,80,,,,,,E
+Specialty & Uncommon Media,Trichloroethylene,,104,40,,F,E,E,E,G
+Specialty & Uncommon Media,Trichloroethylene,,176,80,,,,,E,G
+Specialty & Uncommon Media,Urea,Pure,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Urea,Pure,176,80,,E,E,,E,G
+Specialty & Uncommon Media,Urine,,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Urine,,176,80,E,E,E,,E,C
+Specialty & Uncommon Media,Varnish,,104,40,,,E,E,E,E
+Specialty & Uncommon Media,Varnish,,176,80,,,E,,E,E
+Specialty & Uncommon Media,Vinyl Acetate,,176,80,,,E,,E,E
+Specialty & Uncommon Media,Whisky,,176,80,,,E,,E,E
+Specialty & Uncommon Media,Whisky,,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,White Liquor,,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,White Liquor,,176,80,,,E,,E,C
+"Hydrocarbons, Fuels & Oils",Animal Oil (Lard),,104,40,E,E,E,,E,E
+"Hydrocarbons, Fuels & Oils",Animal Oil (Lard),,176,80,,E,E,,E,E
+"Hydrocarbons, Fuels & Oils",Asphalt,,104,40,,E,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Asphalt,,68,20,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Asphalt,,176,80,,,E,,E,E
+"Hydrocarbons, Fuels & Oils",Butylene,,104,40,,,E,,E,E
+"Hydrocarbons, Fuels & Oils",Cottonseed Oil,,104,40,,E,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Creosote,,104,40,,,,E,E,G
+"Hydrocarbons, Fuels & Oils",Creosote,,176,80,,,,,E,G
+"Hydrocarbons, Fuels & Oils",Crude Oil,,104,40,E,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Crude Oil,,176,80,,,E,,E,E
+"Hydrocarbons, Fuels & Oils",Cyclohexane,Saturated,104,40,,C,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Cyclohexane,Saturated,176,80,,,E,,E,E
+"Hydrocarbons, Fuels & Oils",Diesel Fuel,,104,40,,E,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Diesel Fuel,,176,80,,E,E,,E,E
+"Hydrocarbons, Fuels & Oils",Freon-11,,104,40,E,,E,E,E,F
+"Hydrocarbons, Fuels & Oils",Freon-113,,104,40,,,E,E,E,F
+"Hydrocarbons, Fuels & Oils",Freon-114,,104,40,,,E,E,E,F
+"Hydrocarbons, Fuels & Oils",Freon-12,,104,40,E,,E,E,E,F
+"Hydrocarbons, Fuels & Oils",Freon-21,,104,40,,,E,E,E,F
+"Hydrocarbons, Fuels & Oils",Freon-22,,104,40,,,E,E,E,F
+"Hydrocarbons, Fuels & Oils",Gas (Natural Gas),,104,40,E,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Gas (Natural Gas),,176,80,,,E,,E,E
+"Hydrocarbons, Fuels & Oils",Gasoline,,104,40,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Gasoline,,176,80,,,,,E,E
+"Hydrocarbons, Fuels & Oils",Heptane,,104,40,E,G,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Hexane,,104,40,G,G,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Jet Fuel Jp-4,,104,40,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Jet Fuel Jp-5,,104,40,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Kerosene (Kerosin),,104,40,E,G,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Kerosene (Kerosin),,176,80,,,E,,E,E
+"Hydrocarbons, Fuels & Oils",Linseed Oil,,104,40,E,E,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Lubricating Oil (ASTM1),,104,40,E,,E,E,,E
+"Hydrocarbons, Fuels & Oils",Lubricating Oil (ASTM1),,176,80,,,E,,,E
+"Hydrocarbons, Fuels & Oils",Lubricating Oil (ASTM2),,104,40,E,,E,E,,E
+"Hydrocarbons, Fuels & Oils",Lubricating Oil (ASTM2),,176,80,,,E,,,E
+"Hydrocarbons, Fuels & Oils",Lubricating Oil (ASTM3),,104,40,E,,E,E,,E
+"Hydrocarbons, Fuels & Oils",Lubricating Oil (ASTM3),,176,80,,,E,,,E
+"Hydrocarbons, Fuels & Oils",Mineral Oil,,104,40,G,G,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Motor Oil,,104,40,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Naphtha,,104,40,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Naphtha,,176,80,,,G,,E,E
+"Hydrocarbons, Fuels & Oils",Naphthalene,,176,80,,,E,,E,E
+"Hydrocarbons, Fuels & Oils",Naphthalene,,104,40,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Natural Gas,,176,80,,,E,,E,E
+"Hydrocarbons, Fuels & Oils",Natural Gas,,104,40,E,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Olive Oil,,104,40,E,E,E,,,E
+"Hydrocarbons, Fuels & Oils",Olive Oil,,176,80,,,E,,,F
+"Hydrocarbons, Fuels & Oils",Paraffin,,104,40,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Paraffin,,176,80,,,E,,E,E
+"Hydrocarbons, Fuels & Oils",Propane,,104,40,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Silicon Oil,,104,40,E,E,E,E,,E
+"Hydrocarbons, Fuels & Oils",Soybean Oil,,176,80,,G,E,,E,E
+"Hydrocarbons, Fuels & Oils",Soybean Oil,,104,40,E,E,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Starch,,176,80,,E,E,,E,E
+"Hydrocarbons, Fuels & Oils",Starch,,104,40,E,E,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Tall Oil,,104,40,,,E,E,E,G
+"Hydrocarbons, Fuels & Oils",Tall Oil,,176,80,,,E,,E,G
+"Hydrocarbons, Fuels & Oils",Tar,Saturated,104,40,,,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Turpentine Oil,,104,40,,F,E,E,E,E
+"Hydrocarbons, Fuels & Oils",Turpentine Oil,,176,80,,E,E,,E,E
+Solvents & Organics,Acetaldehyde,,104,40,,E,G,E,E,E
+Solvents & Organics,Acetaldehyde,,68,20,,E,G,E,E,E
+Solvents & Organics,Acetaldehyde,,176,80,,,,,E,E
+Solvents & Organics,Acetaldehyde (Aqueous),40%,104,40,,E,G,E,E,E
+Solvents & Organics,Acetaldehyde (Aqueous),40%,176,80,,G,G,E,E,E
+Solvents & Organics,Acetone,,104,40,,E,C,E,E,E
+Solvents & Organics,Acetone,,77,25,,E,C,E,E,E
+Solvents & Organics,Acetone,,176,80,,,,E,E,E
+Solvents & Organics,Acetone,,127,53,,E,,E,E,E
+Solvents & Organics,Acetone (Aqueous),Trace,104,40,E,E,C,E,E,E
+Solvents & Organics,Acetone (Aqueous),,32,0,E,E,C,E,E,E
+Solvents & Organics,Acetone (Aqueous),Trace,176,80,,,G,E,E,E
+Solvents & Organics,Amyl Acetate,Pure,176,80,,,,,E,E
+Solvents & Organics,Amyl Acetate,Pure,104,40,,,G,E,E,E
+Solvents & Organics,Benzaldehyde,10%,176,80,,,,,E,G
+Solvents & Organics,Benzaldehyde,10%,104,40,E,,E,E,E,G
+Solvents & Organics,Benzene,Pure,104,40,C,,G,E,E,G
+Solvents & Organics,Benzene,Pure,176,80,,,F,,E,G
+Solvents & Organics,Benzyl Alcohol,Pure,104,40,,,E,E,E,E
+Solvents & Organics,Butyl Acetate,Pure,176,80,,,,,E,E
+Solvents & Organics,Butyl Acetate,Pure,104,40,C,,G,E,E,E
+Solvents & Organics,Butyl Phthalate,,104,40,,E,G,E,E,G
+Solvents & Organics,Butyl Phthalate,,176,80,,,C,,E,G
+Solvents & Organics,Chloro Benzene,Pure,104,40,,F,E,E,E,G
+Solvents & Organics,Chloro Benzene,Pure,176,80,,,F,,E,G
+Solvents & Organics,Chloroform,Pure,176,80,,,F,,E,G
+Solvents & Organics,Chloroform,Pure,104,40,,C,E,E,E,G
+Solvents & Organics,Diacetone,,104,40,,,,,,E
+Solvents & Organics,Diacetone Alcohol,Pure,104,40,,E,G,E,E,E
+Solvents & Organics,Dibutyl Phthalate,Pure,104,40,,,G,E,E,G
+Solvents & Organics,Ethyl Benzene,,104,40,,,E,E,E,G
+Solvents & Organics,Ethylene Glycol,Pure,104,40,E,E,E,E,E,E
+Solvents & Organics,Ethylene Glycol,Pure,176,80,,G,G,E,E,G
+Solvents & Organics,Formaldehyde,Pure,104,40,E,E,E,E,E,E
+Solvents & Organics,Formaldehyde,40%,176,80,,E,C,,E,G
+Solvents & Organics,Isobutyl Alcohol,Pure,104,40,,,E,E,,E
+Solvents & Organics,Isopropyl Acetate,,104,40,,,,E,E,E
+Solvents & Organics,Isopropyl Acetate,,176,80,,,,,E,E
+Solvents & Organics,Isopropyl Alcohol,Pure,104,40,E,E,E,E,E,G
+Solvents & Organics,Isopropyl Ether,Pure,104,40,,,G,E,E,E
+Solvents & Organics,Methyl Alcohol,,176,80,,G,E,,E,E
+Solvents & Organics,Methyl Alcohol,,104,40,G,E,E,E,E,E
+Solvents & Organics,Methyl Alcohol,,176,80,,,,,E,E
+Solvents & Organics,Methyl Alcohol,,104,40,G,E,E,E,E,E
+Solvents & Organics,Methyl Ether Ketone,,104,40,,F,,E,,E
+Solvents & Organics,Methyl Ether Ketone,,176,80,,,,,,E
+Solvents & Organics,Methyl Isobutyl Ketone,,104,40,,C,,E,E,E
+Solvents & Organics,Methyl Isobutyl Ketone,,176,80,,,,,E,E
+Solvents & Organics,Monochloro-Benzene,,104,40,,F,E,E,E,G
+Solvents & Organics,Nitrobenzene,,176,80,,,,,E,E
+Solvents & Organics,Nitrobenzene,,104,40,,F,G,E,E,E
+Solvents & Organics,Propyl Alcohol,,104,40,E,E,E,E,,G
+Solvents & Organics,Propyl Alcohol,,176,80,G,G,E,,,G
+Solvents & Organics,Propylene Oxide,,104,40,,,,E,E,G
+Solvents & Organics,Toluene (Toluol),,104,40,,G,E,E,E,E
+Solvents & Organics,Toluene (Toluol),,176,80,,,,,E,E
+Solvents & Organics,Xylene,,104,40,,,E,E,E,E
+Solvents & Organics,Xylene,,176,80,,,G,,E,E
+Caustics / Bases,Aluminum Hydroxide,Saturated,104,40,E,E,E,E,E,G
+Caustics / Bases,Ammonia Liquid,100%,104,40,C,G,E,,E,E
+Caustics / Bases,Ammonia Liquid,100%,176,80,,C,E,,E,G
+Caustics / Bases,Ammonia Water,10%,104,40,E,E,E,,,E
+Caustics / Bases,Ammonia Water,10%,176,80,,,E,,,E
+Caustics / Bases,Ammonium Hydroxide,40%,104,40,E,E,E,E,E,E
+Caustics / Bases,Ammonium Hydroxide,40%,176,80,,E,E,,E,G
+Caustics / Bases,Barium Hydroxide,Saturated,176,80,,,E,,E,G
+Caustics / Bases,Barium Hydroxide,Saturated,104,40,E,E,E,E,E,G
+Caustics / Bases,Butyl Amine,Saturated,176,80,,,,,E,E
+Caustics / Bases,Butyl Amine,Saturated,104,40,,,C,E,E,E
+Caustics / Bases,Calcium Hydroxide,Saturated,104,40,E,E,E,E,E,G
+Caustics / Bases,Caustic Potash,25%,104,40,E,E,E,E,,F
+Caustics / Bases,Caustic Potash,25%,176,80,,E,G,,,F
+Caustics / Bases,Diethylamine,Pure,104,40,,G,F,E,E,G
+Caustics / Bases,Ethanolamine,Pure,104,40,,,,E,E,E
+Caustics / Bases,Ethanolamine,Pure,176,80,,,,E,E,E
+Caustics / Bases,Ferric Hydroxide,Saturated,104,40,E,E,E,,E,F
+Caustics / Bases,Ferric Hydroxide,Saturated,176,80,,E,E,,E,F
+Caustics / Bases,Magnesium Hydroxide,Saturated,104,40,E,E,E,E,E,E
+Caustics / Bases,Magnesium Hydroxide,Saturated,176,80,,E,E,,E,E
+Caustics / Bases,Monoethanol Amine,,176,80,,,,,E,G
+Caustics / Bases,Monoethanol Amine,,104,40,,,,,E,G
+Caustics / Bases,Potassium Hydroxide,25%,176,80,,E,F,,E,E
+Caustics / Bases,Potassium Hydroxide,25%,104,40,E,E,E,E,E,E
+Caustics / Bases,Sodium Hydroxide,50%,104,40,E,E,G,,E,F
+Caustics / Bases,Sodium Hydroxide,50%,176,80,,G,C,,E,F
+Caustics / Bases,Sodium Hydroxide,70%,104,40,G,G,G,,E,C
+Caustics / Bases,Sodium Hydroxide,70%,176,80,,G,C,,E,C
+Caustics / Bases,Sodium Hydroxide,30%,176,80,,G,F,,E,G
+Caustics / Bases,Sodium Hydroxide,30%,104,40,E,E,E,,E,G
+Caustics / Bases,Sodium Hydroxide,15%,176,80,,G,F,,E,E
+Caustics / Bases,Sodium Hydroxide,15%,104,40,E,E,E,E,E,E
+Caustics / Bases,Triethanolamine,,104,40,,,,,E,E
+Caustics / Bases,Triethanolamine,,176,80,,,,,E,E
+Oxidizers / Disinfectants,Bromine Vapor,25%,104,40,F,,E,,E,C
+Oxidizers / Disinfectants,Bromine Vapor,25%,176,80,,,E,,E,C
+Oxidizers / Disinfectants,Bromine Water,Saturated,104,40,F,C,E,,E,C
+Oxidizers / Disinfectants,Bromine Water,Saturated,176,80,,,G,,E,C
+Oxidizers / Disinfectants,Hydrogen Peroxide,90%,176,80,,,E,,E,C
+Oxidizers / Disinfectants,Hydrogen Peroxide,90%,104,40,,,E,,E,E
+Oxidizers / Disinfectants,Hydrogen Peroxide,50%,176,80,,,E,,E,F
+Oxidizers / Disinfectants,Hydrogen Peroxide,50%,104,40,F,C,E,,E,F
+Oxidizers / Disinfectants,Hydrogen Peroxide,30%,176,80,,F,E,,E,G
+Oxidizers / Disinfectants,Hydrogen Peroxide,30%,104,40,G,G,E,,E,G
+Oxidizers / Disinfectants,Hydrogen Peroxide,20%,176,80,,G,E,,E,G
+Oxidizers / Disinfectants,Hydrogen Peroxide,20%,104,40,E,E,E,,E,G
+Oxidizers / Disinfectants,Hydrogen Peroxide,5%,176,80,,G,E,,E,G
+Oxidizers / Disinfectants,Hydrogen Peroxide,5%,104,40,E,E,E,E,E,G
+Oxidizers / Disinfectants,Potassium Hypochlorite,,104,40,E,,E,E,E,C
+Oxidizers / Disinfectants,Potassium Hypochlorite,,176,80,,,E,,E,C
+Oxidizers / Disinfectants,Sodium Hypochlorite,10%,104,40,E,F,E,E,E,F
+Oxidizers / Disinfectants,Sodium Hypochlorite,13%,104,40,E,F,E,E,E,F
+Oxidizers / Disinfectants,Sodium Hypochlorite,7%,104,40,E,F,E,E,E,F
+Oxidizers / Disinfectants,Sodium Hypochlorite,5%,104,40,E,C,E,E,E,F
+Oxidizers / Disinfectants,Sodium Hypochlorite,3%,104,40,E,C,E,E,E,F
+Oxidizers / Disinfectants,Sodium Peroxide,,176,80,,G,E,,E,E
+Oxidizers / Disinfectants,Sodium Peroxide,,104,40,E,E,E,G,E,E
+Metal Plating & Photographic Solutions,Copper Cyanide,,176,80,,G,E,,E,G
+Metal Plating & Photographic Solutions,Copper Cyanide,,104,40,,E,E,E,E,G
+Metal Plating & Photographic Solutions,Mercuric Cyanide,Saturated,104,40,E,E,E,E,E,E
+Metal Plating & Photographic Solutions,Photographic Solutions,,104,40,E,E,E,E,,E
+Metal Plating & Photographic Solutions,Plating Solutions (Brass),,104,40,E,E,E,E,,E
+Metal Plating & Photographic Solutions,Plating Solutions (Cadium),,104,40,E,,E,E,E,E
+Metal Plating & Photographic Solutions,Plating Solutions (Copper),,104,40,E,E,E,E,E,E
+Metal Plating & Photographic Solutions,Plating Solutions (Gold),,104,40,E,,E,E,E,E
+Metal Plating & Photographic Solutions,Plating Solutions (Nickel),,104,40,E,E,E,E,E,F
+Metal Plating & Photographic Solutions,Plating Solutions (Silver),,104,40,,,E,E,E,E
+Metal Plating & Photographic Solutions,Plating Solutions (Tin),,104,40,E,E,E,E,E,F
+Metal Plating & Photographic Solutions,Potassium Cyanide,,176,80,,G,E,,E,G
+Metal Plating & Photographic Solutions,Potassium Cyanide,,104,40,E,E,E,E,E,G
+Metal Plating & Photographic Solutions,Potassium Ferrocyanide,,176,80,,,E,,E,G
+Metal Plating & Photographic Solutions,Potassium Ferrocyanide,,104,40,,,E,E,E,G
+Metal Plating & Photographic Solutions,Sodium Cyanide (Solution),,104,40,E,E,E,E,E,E
+Metal Plating & Photographic Solutions,Sodium Cyanide (Solution),,176,80,,G,E,,E,F
+"Food, Beverage & Biological Process Fluids",Beer,,104,40,E,E,E,E,E,E
+"Food, Beverage & Biological Process Fluids",Beer,,176,80,,E,E,,E,E
+"Food, Beverage & Biological Process Fluids",Beet Sugar Liquors,,104,40,E,E,E,E,E,E
+"Food, Beverage & Biological Process Fluids",Gelatin,,104,40,E,E,E,E,E,E
+"Food, Beverage & Biological Process Fluids",Milk,,104,40,E,E,E,E,E,E
+"Food, Beverage & Biological Process Fluids",Milk,,176,80,,E,E,,E,E
+"Food, Beverage & Biological Process Fluids",Tomato Juice,Pure,104,40,E,E,E,E,E,E
+"Food, Beverage & Biological Process Fluids",Vinegar,,104,40,E,E,E,E,E,E
+"Food, Beverage & Biological Process Fluids",Vinegar,,176,80,,E,E,,E,C
+"Food, Beverage & Biological Process Fluids",Wines,,104,40,E,E,E,E,E,E
+"Food, Beverage & Biological Process Fluids",Wines,,176,80,,,E,,E,C
+Gases & Elemental / Inorganic Misc,Carbon Dioxide (Wet-Dry),,104,40,E,E,E,E,E,E
+Gases & Elemental / Inorganic Misc,Flourine Gas (Wet),,176,80,,,E,,E,C
+Gases & Elemental / Inorganic Misc,Flourine Gas (Wet),,104,40,G,G,E,E,E,C
+Gases & Elemental / Inorganic Misc,Hydrogen,,104,40,E,E,E,E,E,E
+Gases & Elemental / Inorganic Misc,Hydrogen,,176,80,,E,E,,E,E
+Gases & Elemental / Inorganic Misc,Hydrogen Sulfide (Aqueous),,104,40,E,E,E,E,E,F
+Gases & Elemental / Inorganic Misc,Hydrogen Sulfide (Dry),,176,80,,E,E,,E,G
+Gases & Elemental / Inorganic Misc,Hydrogen Sulfide (Dry),,104,40,E,E,E,E,E,G
+Water / Aqueous,Potassium Chlorate (Aqueous),,104,40,E,E,E,E,E,G
+Water / Aqueous,Sea Water,,176,80,,E,E,,E,E
+Water / Aqueous,Sea Water,,104,40,E,E,E,E,E,E
+Water / Aqueous,Water,,104,40,E,E,E,E,E,E
+Water / Aqueous,Water,,176,80,,E,E,,E,E
+Water / Aqueous,Water (Distilled),,104,40,E,E,E,E,E,E
+Water / Aqueous,Water (Potable),,104,40,E,E,E,E,E,E
+Water / Aqueous,Water (Potable),,176,80,,E,E,,E,E

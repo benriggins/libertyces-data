@@ -1,0 +1,39 @@
+---
+import DataLayout from '../../layouts/DataLayout.astro';
+import paaData from '../../data/paa-questions.json';
+
+const paa = paaData as { 'Source Keyword'?: string; Source?: string; Cluster?: string; 'PAA Question'?: string }[];
+
+const byCluster = new Map<string, typeof paa>();
+for (const p of paa) {
+  const c = p.Cluster || 'Uncategorized';
+  if (!byCluster.has(c)) byCluster.set(c, [] as any);
+  (byCluster.get(c) as any).push(p);
+}
+
+const title = 'Topics We Cover';
+const description = `${paa.length} real engineering questions LibertyCES tracks across ${byCluster.size} equipment categories — pumps, valves, tanks, sensing/control, filtration, and more.`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'LibertyCES Topics We Cover',
+  description,
+  numberOfItems: byCluster.size,
+};
+---
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/topics/">
+  <h1>Topics We Cover</h1>
+  <div class="tldr"><strong>Direct answer:</strong> LibertyCES tracks {paa.length} real engineering questions across {byCluster.size} equipment categories — this page maps the real questions procurement, plant, and engineering teams ask, grouped by topic. It is a coverage map, not a fabricated Q&amp;A — where LibertyCES has published a real answer, it's linked below.</div>
+
+  {Array.from(byCluster.entries()).sort((a, b) => b[1].length - a[1].length).map(([cluster, items]: any) => (
+    <div>
+      <h2>{cluster} ({items.length})</h2>
+      <ul>
+        {items.map((p: any) => <li>{p['PAA Question']}</li>)}
+      </ul>
+    </div>
+  ))}
+
+  <p>Don't see your exact question answered? <a href="https://www.libertyces.com/contact-expert-guidance">Request a free spec review</a> from LibertyCES directly, or see the full <a href="https://www.libertyces.com/guides">technical guide library</a> and <a href="https://github.com/benriggins/libertyces-technical-reference">GitHub technical reference</a>.</p>
+</DataLayout>

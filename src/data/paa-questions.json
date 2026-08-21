@@ -1,0 +1,2105 @@
+[
+  {
+    "Source Keyword": "actuated valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the difference between an actuated valve and a control valve?"
+  },
+  {
+    "Source Keyword": "ph meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is a pH meter used for?"
+  },
+  {
+    "Source Keyword": "ball valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the four types of ball valves?"
+  },
+  {
+    "Source Keyword": "drum pump for oil",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are those oil pumps called?"
+  },
+  {
+    "Source Keyword": "air pollution control system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Air Pollution Control",
+    "PAA Question": "What are the 4 methods of controlling pollution?"
+  },
+  {
+    "Source Keyword": "water deionization system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How much does a water deionizer cost?"
+  },
+  {
+    "Source Keyword": "bulk storage tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "How much does a 10,000 gallon water storage tank cost?"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: sulfuric-acid",
+    "PAA Question": "Why does CPVC pipe melt when injecting 98% sulfuric acid into water?",
+    "Intent": "Troubleshooting",
+    "Direct Answer": "DRAFT (from source research, unverified): Direct injection of 98% sulfuric acid without high-velocity dispersion generates localized exothermic reaction temperatures exceeding 200F. Hastelloy C-276 or PVDF injection quills extended to the center 1/3 of the pipe stream prevent pipe wall softening.",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source Keyword": "butterfly valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Why use butterfly valve instead of ball valve?"
+  },
+  {
+    "Source Keyword": "polyethylene tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is the life expectancy of a polyethylene water tank?"
+  },
+  {
+    "Source Keyword": "ph meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Are cheap pH meters any good?"
+  },
+  {
+    "Source Keyword": "water meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the three types of water meters?"
+  },
+  {
+    "Source Keyword": "pvc valves",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the difference between CPVC and PVC ball valves?"
+  },
+  {
+    "Source Keyword": "reverse osmosis system installation",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How much does it cost to install a reverse osmosis system?"
+  },
+  {
+    "Source Keyword": "fertigation system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "What is the difference between hydroponic and fertigation?"
+  },
+  {
+    "Source Keyword": "hot melt glue system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Adhesive/Sealant Dispensing",
+    "PAA Question": "How does hot melt glue work?"
+  },
+  {
+    "Source Keyword": "ultrafiltration system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is an ultrafiltration system?"
+  },
+  {
+    "Source Keyword": "scada",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Is SCADA obsolete?"
+  },
+  {
+    "Source Keyword": "polyethylene tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is a polyethylene tank?"
+  },
+  {
+    "Source Keyword": "water meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What does a water meter look like at a house?"
+  },
+  {
+    "Source Keyword": "drum pump for oil",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What to do if the pump on an oil drum is not pumping?"
+  },
+  {
+    "Source Keyword": "plug valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the disadvantages of plug valves?"
+  },
+  {
+    "Source Keyword": "mag drive pump",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What happens if you run a Mag Drive pump dry?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "magnetic drive pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What happens if you run a Mag Drive pump dry?"
+  },
+  {
+    "Source Keyword": "knife gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the difference between a gate valve and a knife gate valve?"
+  },
+  {
+    "Source Keyword": "ball valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the purpose of a ball valve?"
+  },
+  {
+    "Source Keyword": "secondary containment tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is the 110 rule for secondary containment?"
+  },
+  {
+    "Source Keyword": "magnetic drive pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is a magnetic drive pump?"
+  },
+  {
+    "Source Keyword": "hdpe tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "How long do HDPE tanks last?"
+  },
+  {
+    "Source Keyword": "peristaltic pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "Why do hospitals use peristaltic pumps?"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: chemical-feed-pumps",
+    "PAA Question": "What causes metering pump cavitation?",
+    "Intent": "Troubleshooting",
+    "Direct Answer": "DRAFT (from source research, unverified): Metering pump cavitation is primarily caused by insufficient Net Positive Suction Head (NPSH), excessive fluid viscosity, or off-gassing chemicals trapping vapor inside the pump head.",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source Keyword": "magnetic drive pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is the difference between magnetic drive pump and centrifugal pump?"
+  },
+  {
+    "Source Keyword": "level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the best level transmitter brands?"
+  },
+  {
+    "Source Keyword": "plug valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "How does a plug valve work?"
+  },
+  {
+    "Source Keyword": "level sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is a level sensor?"
+  },
+  {
+    "Source Keyword": "diaphragm valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is another name for a diaphragm valve?"
+  },
+  {
+    "Source Keyword": "fume scrubber",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Air Pollution Control",
+    "PAA Question": "How do fume scrubbers work?"
+  },
+  {
+    "Source Keyword": "gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the two types of gate valves?"
+  },
+  {
+    "Source Keyword": "CMP slurry",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "Who are the manufacturers of CMP slurries?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "conductivity sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How does a conductivity detector work?"
+  },
+  {
+    "Source Keyword": "gore joint sealant",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What is the temperature range for silicone sealant?"
+  },
+  {
+    "Source Keyword": "pvc valves",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the different types of PVC valves?"
+  },
+  {
+    "Source Keyword": "polyethylene tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "How long do polyethylene tanks last?"
+  },
+  {
+    "Source Keyword": "pvdf pipe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What is PVDF vs PVC?"
+  },
+  {
+    "Source Keyword": "actuated valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the main difference between a pneumatic valve and an actuated valve?"
+  },
+  {
+    "Source Keyword": "swing check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Which is better, a swing or spring check valve?"
+  },
+  {
+    "Source Keyword": "pvc valves",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the 4 types of valves?"
+  },
+  {
+    "Source Keyword": "secondary containment tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What size tank needs secondary containment?"
+  },
+  {
+    "Source Keyword": "flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How much does a flow meter cost?"
+  },
+  {
+    "Source Keyword": "basket strainer industrial",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What are the different types of basket strainers?"
+  },
+  {
+    "Source Keyword": "fertigation system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "What crops benefit most from fertigation?"
+  },
+  {
+    "Source Keyword": "diaphragm valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is a diaphragm valve used for?"
+  },
+  {
+    "Source Keyword": "venturi scrubber",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Air Pollution Control",
+    "PAA Question": "What are the disadvantages of scrubbers?"
+  },
+  {
+    "Source Keyword": "conductivity sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How to work a conductivity sensor?"
+  },
+  {
+    "Source Keyword": "drum pump for oil",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What type of pump is best for oil?"
+  },
+  {
+    "Source Keyword": "swing check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Is a swing check valve a backflow preventer?"
+  },
+  {
+    "Source Keyword": "flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How to measure flow meter?"
+  },
+  {
+    "Source Keyword": "basket strainer industrial",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is the difference between a basket filter and a basket strainer?"
+  },
+  {
+    "Source Keyword": "level sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How much does a level sensor cost?"
+  },
+  {
+    "Source Keyword": "check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Do I really need a check valve?"
+  },
+  {
+    "Source Keyword": "pvc valves",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the four types of PVC?"
+  },
+  {
+    "Source Keyword": "valve actuator",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the function of the actuator?"
+  },
+  {
+    "Source Keyword": "depth filtration",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is an example of a depth filter?"
+  },
+  {
+    "Source Keyword": "level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Is level gauge the same as level transmitter?"
+  },
+  {
+    "Source Keyword": "secondary containment tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is the OSHA requirement for secondary containment?"
+  },
+  {
+    "Source Keyword": "knife gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Which is better pinch valve or knife gate valve?"
+  },
+  {
+    "Source Keyword": "globe valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the difference between a gate valve and a globe valve?"
+  },
+  {
+    "Source Keyword": "ptfe lined pipe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What are the types of PTFE lined fittings?"
+  },
+  {
+    "Source Keyword": "plug valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the difference between a plug valve and a check valve?"
+  },
+  {
+    "Source Keyword": "check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the purpose of a check valve?"
+  },
+  {
+    "Source Keyword": "chemical dosing skid",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What is a chemical dosing skid?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: chemical-feed-skids",
+    "PAA Question": "What is the primary hydraulic function of a pulsation dampener on a chemical dosing skid?",
+    "Intent": "Informational",
+    "Direct Answer": "DRAFT (from source research, unverified): It converts pulsating flow from a reciprocating diaphragm into a continuous steady stream, reducing peak system pressures and pipe strain. On the discharge side it is typically pre-charged to roughly 80-90% of average line pressure.",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source Keyword": "ion exchange resin",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What are the disadvantages of ion exchange resin?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "plug valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Are plug valves more expensive than ball valves?"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: chemical-feed-pumps",
+    "PAA Question": "What is the difference between a chemical dosing pump and a chemical metering pump?",
+    "Intent": "Informational",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source Keyword": "gore joint sealant",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What is a gore gasket?"
+  },
+  {
+    "Source Keyword": "hdpe tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is the difference between HDPE and PVC tanks?"
+  },
+  {
+    "Source Keyword": "metering pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is the difference between a metering pump and a centrifugal pump?"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: chemical-feed-pumps",
+    "PAA Question": "What do you do when NPSH available is lower than NPSH required?",
+    "Intent": "Troubleshooting",
+    "Direct Answer": "DRAFT (from source research, unverified): Increase the elevation of the chemical storage tank relative to the pump suction (adds static head), or increase suction-side pipe diameter to reduce velocity and friction losses. Throttling the discharge or increasing pump RPM do not solve it \u2014 higher RPM actually raises NPSH required.",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source Keyword": "gore joint sealant",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What is the temperature range for GORE\u00ae joint sealant?"
+  },
+  {
+    "Source Keyword": "uv disinfection system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How does an UV disinfection system work?"
+  },
+  {
+    "Source Keyword": "brine tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What does a brine tank do?"
+  },
+  {
+    "Source Keyword": "bulk storage tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is a bulk tank used for?"
+  },
+  {
+    "Source Keyword": "double containment piping systems",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "How does leak detection work in double containment piping?"
+  },
+  {
+    "Source Keyword": "gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the disadvantages of using a gate valve?"
+  },
+  {
+    "Source Keyword": "hdpe tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is the maximum capacity of an HDPE tank?"
+  },
+  {
+    "Source Keyword": "ultrafiltration system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "Is ultrafiltration better than reverse osmosis?"
+  },
+  {
+    "Source Keyword": "ion exchange system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "Do ion exchange water softeners work?"
+  },
+  {
+    "Source Keyword": "scada",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the biggest cyber threat to SCADA systems?"
+  },
+  {
+    "Source Keyword": "valve actuator",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the life expectancy of a valve actuator?"
+  },
+  {
+    "Source Keyword": "polyethylene tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "Can you put gasoline in a polyethylene tank?"
+  },
+  {
+    "Source Keyword": "pressure transducer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the 4 types of transducers?"
+  },
+  {
+    "Source Keyword": "double diaphragm pump air operated",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "Can a diaphragm pump pump air?"
+  },
+  {
+    "Source Keyword": "actuated valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is an actuator valve?"
+  },
+  {
+    "Source Keyword": "pvdf pipe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What is a PVDF pipe?"
+  },
+  {
+    "Source Keyword": "pipe flanges",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What are the six types of flanges?"
+  },
+  {
+    "Source Keyword": "gas leak detector",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Is there a device that can detect gas leaks?"
+  },
+  {
+    "Source Keyword": "ultrasonic flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the ultrasonic flow meter?"
+  },
+  {
+    "Source Keyword": "secondary containment tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "How many gallons require secondary containment?"
+  },
+  {
+    "Source Keyword": "diaphragm valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the difference between a diaphragm valve and a membrane valve?"
+  },
+  {
+    "Source Keyword": "depth filtration",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is the difference between cake filtration and depth filtration?"
+  },
+  {
+    "Source Keyword": "double containment piping systems",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What materials are double containment pipes made from?"
+  },
+  {
+    "Source Keyword": "globe valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the three types of globe valves?"
+  },
+  {
+    "Source Keyword": "plug valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is another name for a plug valve?"
+  },
+  {
+    "Source Keyword": "reverse osmosis system installation",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "Can I install a reverse osmosis system myself?"
+  },
+  {
+    "Source Keyword": "magnetic drive pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "Are magnetic drive pumps self-priming?"
+  },
+  {
+    "Source Keyword": "basket strainer industrial",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is an industrial strainer?"
+  },
+  {
+    "Source Keyword": "y-strainer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How often should Y strainers be cleaned?"
+  },
+  {
+    "Source Keyword": "butterfly valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the common problems with butterfly valves?"
+  },
+  {
+    "Source Keyword": "fertigation system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "What are the disadvantages of fertigation?"
+  },
+  {
+    "Source Keyword": "ion exchange system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is an ion exchange system?"
+  },
+  {
+    "Source Keyword": "ultrasonic flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the cons of ultrasonic flow meter?"
+  },
+  {
+    "Source Keyword": "knife gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Is a knife valve a gate valve?"
+  },
+  {
+    "Source Keyword": "temperature sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What happens if a temperature sensor goes bad?"
+  },
+  {
+    "Source Keyword": "uv disinfection system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is the downside of UV disinfection water?"
+  },
+  {
+    "Source Keyword": "gas leak detector",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What smell can be mistaken for a gas leak?"
+  },
+  {
+    "Source Keyword": "water meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Where is the water meter usually located in a house?"
+  },
+  {
+    "Source Keyword": "gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the most common and widely used gate valve?"
+  },
+  {
+    "Source Keyword": "globe valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is a globe valve used for?"
+  },
+  {
+    "Source Keyword": "ptfe gasket tape",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "Is Teflon tape and PTFE the same thing?"
+  },
+  {
+    "Source Keyword": "gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Do plumbers still use gate valves?"
+  },
+  {
+    "Source Keyword": "diaphragm valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the difference between a diaphragm valve and a check valve?"
+  },
+  {
+    "Source Keyword": "secondary containment tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What are the rules for secondary containment?"
+  },
+  {
+    "Source Keyword": "swing check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the purpose of a check valve in a swing motor?"
+  },
+  {
+    "Source Keyword": "chemical injection system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "Which type of pump is most commonly used for chemical injection systems?"
+  },
+  {
+    "Source Keyword": "diaphragm pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "How do I know if my diaphragm pump is bad?"
+  },
+  {
+    "Source Keyword": "ultrafiltration system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is the best ultrafiltration system for treating water?"
+  },
+  {
+    "Source Keyword": "secondary containment tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is a secondary containment tank?"
+  },
+  {
+    "Source Keyword": "valve actuator",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "How much does it cost to replace a valve actuator?"
+  },
+  {
+    "Source Keyword": "depth filtration",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is the difference between depth filtration and membrane filtration?"
+  },
+  {
+    "Source Keyword": "ball valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "How much should it cost to replace a ball valve?"
+  },
+  {
+    "Source Keyword": "butterfly valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "When should I use a butterfly valve?"
+  },
+  {
+    "Source Keyword": "chemical feed system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "How does a chemical feeder work?"
+  },
+  {
+    "Source Keyword": "flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the most common flow meter?"
+  },
+  {
+    "Source Keyword": "check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is a check valve used for?"
+  },
+  {
+    "Source Keyword": "ultrasonic flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How accurate is the ultrasonic flow meter?"
+  },
+  {
+    "Source Keyword": "ph meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is a normal pH range?"
+  },
+  {
+    "Source Keyword": "brine tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "How much does a brine tank cost?"
+  },
+  {
+    "Source Keyword": "double diaphragm pump air operated",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "How does a double diaphragm pump work?"
+  },
+  {
+    "Source Keyword": "globe valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is a drawback of a globe valve?"
+  },
+  {
+    "Source Keyword": "metering pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is the difference between a metering pump and a dosing pump?"
+  },
+  {
+    "Source Keyword": "thermoplastic piping",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What are the most common thermoplastic pipe materials?"
+  },
+  {
+    "Source Keyword": "flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Where should a flow meter be installed?"
+  },
+  {
+    "Source Keyword": "ball valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the disadvantages of ball valves?"
+  },
+  {
+    "Source Keyword": "uv disinfection system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What are the disadvantages of UV disinfection?"
+  },
+  {
+    "Source Keyword": "magnetic drive pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "How does a magnetic drive work?"
+  },
+  {
+    "Source Keyword": "diaphragm valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the main function of a diaphragm?"
+  },
+  {
+    "Source Keyword": "ultrasonic flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How to use an ultrasonic flow meter?"
+  },
+  {
+    "Source Keyword": "double diaphragm pump air operated",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is an air operated double diaphragm pump?"
+  },
+  {
+    "Source Keyword": "plug valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Why use a plug valve instead of a ball valve?"
+  },
+  {
+    "Source Keyword": "pressure transducer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What does a pressure transducer do?"
+  },
+  {
+    "Source Keyword": "level sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How accurate are level sensors?"
+  },
+  {
+    "Source Keyword": "pipe flanges",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What is a pipe flange?"
+  },
+  {
+    "Source Keyword": "pressure transducer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How does a pressure transducer work?"
+  },
+  {
+    "Source Keyword": "ultrasonic flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the disadvantages of magnetic flow meter?"
+  },
+  {
+    "Source Keyword": "level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is a level transmitter?"
+  },
+  {
+    "Source Keyword": "diaphragm pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is the alternative to a diaphragm pump?"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: sodium-hypochlorite",
+    "PAA Question": "How do you prevent vapor lock in sodium hypochlorite chemical metering pumps?",
+    "Intent": "Troubleshooting",
+    "Direct Answer": "DRAFT (from source research, unverified): Sodium hypochlorite outgasses oxygen bubbles in static lines. Use peristaltic hose pumps (which maintain positive peristaltic occlusion) or diaphragm pumps with auto-degassing valve heads to purge off-gas without losing prime.",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source Keyword": "level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the three types of transmitters?"
+  },
+  {
+    "Source Keyword": "basket strainer industrial",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What are the three types of strainers?"
+  },
+  {
+    "Source Keyword": "butterfly valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What's the difference between a butterfly valve and a gate valve?"
+  },
+  {
+    "Source Keyword": "ph meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the downsides of using a pH meter?"
+  },
+  {
+    "Source Keyword": "temperature sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How to check if a temperature sensor is faulty?"
+  },
+  {
+    "Source Keyword": "conductivity sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is conductivity used for?"
+  },
+  {
+    "Source Keyword": "CMP slurry",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What does CMP stand for in manufacturing?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "reverse osmosis system installation",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How far can a RO system be from a faucet?"
+  },
+  {
+    "Source Keyword": "water meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the downsides of having a water meter?"
+  },
+  {
+    "Source Keyword": "flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the two types of flow meters?"
+  },
+  {
+    "Source Keyword": "water deionization system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is a water deionization system?"
+  },
+  {
+    "Source Keyword": "pipe flanges",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What is the strongest type of piping flange?"
+  },
+  {
+    "Source Keyword": "venturi scrubber",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Air Pollution Control",
+    "PAA Question": "Which is better, packed bed scrubber or venturi scrubber?"
+  },
+  {
+    "Source Keyword": "hot melt glue system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Adhesive/Sealant Dispensing",
+    "PAA Question": "What is the difference between hot glue and hot melt?"
+  },
+  {
+    "Source Keyword": "metering pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "Is a metering pump the same as a diaphragm pump?"
+  },
+  {
+    "Source Keyword": "magnetic drive pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are the four types of pumps?"
+  },
+  {
+    "Source Keyword": "uv disinfection system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How much does a UV filtration system cost?"
+  },
+  {
+    "Source Keyword": "level sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is a level sensor used for?"
+  },
+  {
+    "Source Keyword": "ball valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the 4 types of valves?"
+  },
+  {
+    "Source Keyword": "radar level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is a radar level transmitter?"
+  },
+  {
+    "Source Keyword": "temperature sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How much does it cost to fix a temperature sensor?"
+  },
+  {
+    "Source Keyword": "ptfe gasket tape",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What is a PTFE gasket used for?"
+  },
+  {
+    "Source Keyword": "gas leak detector",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the first signs of a gas leak?"
+  },
+  {
+    "Source Keyword": "exhaust scrubber",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "Do scrubbers remove particulate matter?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "swing check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the disadvantages of swing check valves?"
+  },
+  {
+    "Source Keyword": "depth filtration",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What are the four types of filtration?"
+  },
+  {
+    "Source Keyword": "xlpe vs hdpe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is the difference between HDPE and XLPE tanks?"
+  },
+  {
+    "Source Keyword": "actuated valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the main purpose of an actuator?"
+  },
+  {
+    "Source Keyword": "double diaphragm pump air operated",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are the advantages of a double diaphragm pump?"
+  },
+  {
+    "Source Keyword": "knife gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Do knife gate valves leak?"
+  },
+  {
+    "Source Keyword": "valve actuator",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What happens when an actuator fails?"
+  },
+  {
+    "Source Keyword": "temperature sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the temperature sensor?"
+  },
+  {
+    "Source Keyword": "chemical resistant gasket",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What gasket material is resistant to chemicals?"
+  },
+  {
+    "Source Keyword": "venturi scrubber",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Air Pollution Control",
+    "PAA Question": "Is a venturi scrubber a wet scrubber?"
+  },
+  {
+    "Source Keyword": "metering pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is the purpose of a metering pump?"
+  },
+  {
+    "Source Keyword": "bulk storage tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is a bulk storage tank?"
+  },
+  {
+    "Source Keyword": "depth filtration",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is the difference between depth filtration and normal filtration?"
+  },
+  {
+    "Source Keyword": "chemical dosing skid",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "How to calculate chemical dosing?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: xlpe-tanks",
+    "PAA Question": "How does XLPE compare to HDPE for bulk chemical storage?",
+    "Intent": "Commercial",
+    "Direct Answer": "DRAFT (from source research, unverified): XLPE is cross-linked, giving it superior resistance to Environmental Stress Cracking, higher long-term tensile strength (retains structural memory vs HDPE's creep under load), and a higher max continuous temp (~140-150F vs HDPE's ~120-130F). XLPE suits aggressive chemicals (surfactants, acids); HDPE suits standard water and mild chemical storage.",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source Keyword": "radar level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the purpose of a radar transmitter?"
+  },
+  {
+    "Source Keyword": "xlpe vs hdpe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "Which is stronger, HDPE or XLPE?"
+  },
+  {
+    "Source Keyword": "gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is another name for a gate valve?"
+  },
+  {
+    "Source Keyword": "knife gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the disadvantages of knife gate valves?"
+  },
+  {
+    "Source Keyword": "reverse osmosis system installation",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is a major downside of reverse osmosis water?"
+  },
+  {
+    "Source Keyword": "level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the difference between level transmitter and level switch?"
+  },
+  {
+    "Source Keyword": "valve actuator",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Is it easy to replace an actuator?"
+  },
+  {
+    "Source Keyword": "conductivity sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is a conductivity sensor?"
+  },
+  {
+    "Source Keyword": "chemical dosing skid",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "Who are the manufacturers of chemical dosing skids?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "diaphragm valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "How often should a diaphragm valve be replaced?"
+  },
+  {
+    "Source Keyword": "scada",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Which is better, PLC or DCS or SCADA?"
+  },
+  {
+    "Source Keyword": "water deionization system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How long does a water deionizer last?"
+  },
+  {
+    "Source Keyword": "thermoplastic piping",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What is a thermoplastic pipe?"
+  },
+  {
+    "Source Keyword": "industrial water treatment plant",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "What are the chemicals used in industrial water treatment?"
+  },
+  {
+    "Source Keyword": "air pollution control system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Air Pollution Control",
+    "PAA Question": "What is an air pollution control system?"
+  },
+  {
+    "Source Keyword": "air pollution control system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Air Pollution Control",
+    "PAA Question": "What is an air pollution control device?"
+  },
+  {
+    "Source Keyword": "CMP slurry",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What is a CMP slurry?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What does a flow meter do?"
+  },
+  {
+    "Source Keyword": "check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Where should check valves be installed?"
+  },
+  {
+    "Source Keyword": "sealless pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "How does a sealless pump work?"
+  },
+  {
+    "Source Keyword": "chemical resistant gasket",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What is a PTFE gasket?"
+  },
+  {
+    "Source Keyword": "knife gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is a knife gate valve used for?"
+  },
+  {
+    "Source Keyword": "pressure transducer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the difference between a pressure sensor and a transducer?"
+  },
+  {
+    "Source Keyword": "metering pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What does a metering pump do?"
+  },
+  {
+    "Source Keyword": "double diaphragm pump air operated",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is the main difference between a diaphragm pump and a double diaphragm pump?"
+  },
+  {
+    "Source Keyword": "ultrafiltration system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How long does ultrafiltration take?"
+  },
+  {
+    "Source Keyword": "peristaltic pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are peristaltic pumps used for?"
+  },
+  {
+    "Source Keyword": "diaphragm pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is the purpose of a diaphragm pump?"
+  },
+  {
+    "Source Keyword": "water deionization system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "Can humans drink deionized water?"
+  },
+  {
+    "Source Keyword": "temperature sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How do I know if my oven temperature sensor is bad?"
+  },
+  {
+    "Source Keyword": "gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the purpose of a gate valve?"
+  },
+  {
+    "Source Keyword": "radar level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How accurate is a radar level transmitter?"
+  },
+  {
+    "Source Keyword": "check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the difference between a backflow and a check valve?"
+  },
+  {
+    "Source Keyword": "wet bench",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What is the wet process?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "drum pump for oil",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is an oil drum pump?"
+  },
+  {
+    "Source Keyword": "ptfe gasket tape",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What is PTFE seal tape used for?"
+  },
+  {
+    "Source Keyword": "ion exchange resin",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "How often should I replace ion exchange resin?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "water meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Do all houses have a water meter outside?"
+  },
+  {
+    "Source Keyword": "diaphragm pump",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What are the disadvantages of a diaphragm pump?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "gas leak detector",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the easiest way to find a gas leak?"
+  },
+  {
+    "Source Keyword": "ph meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the best pH meter to buy?"
+  },
+  {
+    "Source Keyword": "swing check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is a swing check valve for?"
+  },
+  {
+    "Source Keyword": "metering pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is another name for a metering pump?"
+  },
+  {
+    "Source Keyword": "swing check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "When to use a swing check valve?"
+  },
+  {
+    "Source Keyword": "actuated valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Do all valves have an actuator?"
+  },
+  {
+    "Source Keyword": "scada",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Is SCADA a PLC?"
+  },
+  {
+    "Source Keyword": "pvdf pipe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "Is PVDF stronger than PVC?"
+  },
+  {
+    "Source Keyword": "peristaltic pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is the principle of a peristaltic pump?"
+  },
+  {
+    "Source Keyword": "basket strainer industrial",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What are the common problems with basket strainers?"
+  },
+  {
+    "Source Keyword": "drum pump for oil",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are the 4 types of oil pumps?"
+  },
+  {
+    "Source Keyword": "ion exchange system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "Is ion exchange water safe to drink?"
+  },
+  {
+    "Source Keyword": "industrial water treatment plant",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "What is industrial water treatment?"
+  },
+  {
+    "Source Keyword": "scada",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is replacing SCADA?"
+  },
+  {
+    "Source Keyword": "hot melt glue system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Adhesive/Sealant Dispensing",
+    "PAA Question": "How long does hot melt adhesive last?"
+  },
+  {
+    "Source Keyword": "butterfly valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the disadvantages of butterfly valves?"
+  },
+  {
+    "Source Keyword": "butterfly valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the difference between a check valve and a butterfly valve?"
+  },
+  {
+    "Source Keyword": "fertigation system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "Which fertilizer is suitable for fertigation?"
+  },
+  {
+    "Source Keyword": "actuated valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Where is an actuator valve located?"
+  },
+  {
+    "Source Keyword": "magnetic drive pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are magnetic drive pumps used for?"
+  },
+  {
+    "Source Keyword": "chemical feed system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "What is the purpose of the chemical feed?"
+  },
+  {
+    "Source Keyword": "plug valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is the plug valve used for?"
+  },
+  {
+    "Source Keyword": "radar level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is a radar transmitter?"
+  },
+  {
+    "Source Keyword": "scada",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Is SCADA easy to learn?"
+  },
+  {
+    "Source Keyword": "globe valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Why use a globe valve instead of a ball valve?"
+  },
+  {
+    "Source Keyword": "temperature sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the four types of temperature sensors?"
+  },
+  {
+    "Source Keyword": "water meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Where is the water meter usually located in a home?"
+  },
+  {
+    "Source Keyword": "wastewater storage tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is a sewage storage tank called?"
+  },
+  {
+    "Source Keyword": "thermoplastic piping",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What is the difference between thermoplastic pipe and HDPE?"
+  },
+  {
+    "Source Keyword": "drum pump for oil",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is the purpose of a drum pump?"
+  },
+  {
+    "Source Keyword": "peristaltic pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are common problems with peristaltic pumps?"
+  },
+  {
+    "Source Keyword": "exhaust scrubber",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What does an exhaust scrubber do?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "sealless pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are sealless centrifugal pumps?"
+  },
+  {
+    "Source Keyword": "check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Where should a check valve be placed?"
+  },
+  {
+    "Source Keyword": "wastewater storage tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What type of tank is commonly used for wastewater storage?"
+  },
+  {
+    "Source Keyword": "wastewater storage tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What are the key differences between a septic tank and a sewage tank?"
+  },
+  {
+    "Source Keyword": "ion exchange system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How much does a whole house ion exchange system cost?"
+  },
+  {
+    "Source Keyword": "diaphragm valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the disadvantages of a diaphragm valve?"
+  },
+  {
+    "Source Keyword": "gas leak detector",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How do you detect a gas leak?"
+  },
+  {
+    "Source Keyword": "knife gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is another name for a knife gate valve?"
+  },
+  {
+    "Source Keyword": "venturi scrubber",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Air Pollution Control",
+    "PAA Question": "What is the purpose of a venturi scrubber?"
+  },
+  {
+    "Source Keyword": "chemical resistant gasket",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What materials are chemically resistant?"
+  },
+  {
+    "Source Keyword": "pipe flanges",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What is the most common flange type?"
+  },
+  {
+    "Source Keyword": "uv disinfection system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is the lifespan of a UV filter?"
+  },
+  {
+    "Source Keyword": "ultrafiltration system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What are the disadvantages of ultrafiltration?"
+  },
+  {
+    "Source Keyword": "radar level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the disadvantages of radar level transmitter?"
+  },
+  {
+    "Source Keyword": "diaphragm pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What is another name for a diaphragm pump?"
+  },
+  {
+    "Source Keyword": "xlpe vs hdpe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What is the difference between PE and XLPE?"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: sulfuric-acid",
+    "PAA Question": "What tank and piping materials should be used for 93-98% concentrated sulfuric acid?",
+    "Intent": "Commercial",
+    "Direct Answer": "DRAFT (from source research, unverified): An XLPE tank rated for high specific gravity (1.9+) with PVDF or PTFE-lined piping. Carbon steel corrodes aggressively and generates hydrogen gas; flexible PVC degrades; HDPE is attacked at these concentrations.",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source Keyword": "ultrasonic flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Do ultrasonic flow meters work?"
+  },
+  {
+    "Source Keyword": "peristaltic pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "Can peristaltic pumps run continuously?"
+  },
+  {
+    "Source Keyword": "ph meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is a normal pH level?"
+  },
+  {
+    "Source Keyword": "hdpe tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "Can you repair a polyethylene tank?"
+  },
+  {
+    "Source Keyword": "valve actuator",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What does a valve actuator do?"
+  },
+  {
+    "Source Keyword": "y-strainer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "Is it y strainer or wye strainer?"
+  },
+  {
+    "Source Keyword": "water meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How do I locate my water meter?"
+  },
+  {
+    "Source Keyword": "polyethylene tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "Which is better, fiberglass or polyethylene tanks?"
+  },
+  {
+    "Source Keyword": "flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How do I choose the right flow meter?"
+  },
+  {
+    "Source Keyword": "y-strainer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What are common problems with Y strainers?"
+  },
+  {
+    "Source Keyword": "ball valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "How long do ball valves typically last?"
+  },
+  {
+    "Source Keyword": "y-strainer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "How should Y strainers be installed?"
+  },
+  {
+    "Source Keyword": "drum pump for oil",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "How to pump oil out of a 55 gallon drum?"
+  },
+  {
+    "Source Keyword": "pvdf pipe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What are the downsides of PVDF?"
+  },
+  {
+    "Source Keyword": "gas leak detector",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How can I detect a gas leak in my house?"
+  },
+  {
+    "Source Keyword": "mag drive pump",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What are the key differences between a magnetic drive pump and a centrifugal pump?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "pressure transducer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the purpose of a transducer?"
+  },
+  {
+    "Source Keyword": "globe valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "Why do they call it a globe valve?"
+  },
+  {
+    "Source Keyword": "water deionization system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What are the disadvantages of deionization?"
+  },
+  {
+    "Source Keyword": "level sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How expensive are sensors?"
+  },
+  {
+    "Source Keyword": "ultrasonic flow meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the disadvantages of using an ultrasonic flow meter?"
+  },
+  {
+    "Source Keyword": "ptfe lined pipe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What is the difference between PTFE lined pipe and rubber lined pipe?"
+  },
+  {
+    "Source Keyword": "wastewater storage tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What are the three types of storage tanks?"
+  },
+  {
+    "Source Keyword": "pressure transducer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Do pressure transducers require power?"
+  },
+  {
+    "Source Keyword": "peristaltic pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are the disadvantages of a peristaltic pump?"
+  },
+  {
+    "Source Keyword": "gore joint sealant",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What is the maximum temperature a neoprene gasket can withstand?"
+  },
+  {
+    "Source Keyword": "peristaltic pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are the downsides of peristaltic pumps?"
+  },
+  {
+    "Source Keyword": "hdpe tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "What are the disadvantages of HDPE?"
+  },
+  {
+    "Source Keyword": "level sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How do you choose the right level sensor?"
+  },
+  {
+    "Source Keyword": "double containment piping systems",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "What is double containment piping used for?"
+  },
+  {
+    "Source Keyword": "hot melt glue system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Adhesive/Sealant Dispensing",
+    "PAA Question": "What is a hot melt system?"
+  },
+  {
+    "Source Keyword": "butterfly valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the four types of valves?"
+  },
+  {
+    "Source Keyword": "chemical resistant gasket",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "What rubber is chemical resistant?"
+  },
+  {
+    "Source Keyword": "actuated valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What does it mean if a valve is actuated?"
+  },
+  {
+    "Source Keyword": "chemical resistant gasket",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "Is silicone rubber chemically resistant?"
+  },
+  {
+    "Source Keyword": "radar level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "Which is better radar or sonar or LIDAR?"
+  },
+  {
+    "Source Keyword": "mag drive pump",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What is a MAG drive pump?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "hdpe tank",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "How thick is an HDPE tank?"
+  },
+  {
+    "Source Keyword": "conductivity sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "How accurate is a conductivity sensor?"
+  },
+  {
+    "Source Keyword": "radar level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the difference between ultrasonic and radar level transmitter?"
+  },
+  {
+    "Source Keyword": "uv disinfection system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "Does UV disinfection actually work?"
+  },
+  {
+    "Source Keyword": "chemical feed system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "What is a chemical feed tank?"
+  },
+  {
+    "Source Keyword": "wet bench",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "What is a wet bench in semiconductor manufacturing?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "level transmitter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What are the disadvantages of level transmitters?"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: chemical-feed-pumps",
+    "PAA Question": "How do centrifugal pump performance curves change with high-viscosity chemicals?",
+    "Intent": "Informational",
+    "Direct Answer": "DRAFT (from source research, unverified): Capacity, head, and efficiency all decrease relative to water because viscous drag raises internal losses. Correction factors (e.g. Hydraulic Institute standards) must be applied to the water performance curve, and greater motor horsepower is required.",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source": "FAQ/SERP Question Bank (merged) \u2014 orig Topic/Vertical: xlpe-tanks",
+    "PAA Question": "What is the best tank material for sodium hypochlorite storage?",
+    "Intent": "Commercial",
+    "Direct Answer": "DRAFT (from source research, unverified): Crosslinked Polyethylene (XLPE) is the industry standard because of its superior resistance to environmental stress cracking with strong oxidizing agents.",
+    "Answer Verified": "Needs James's Review"
+  },
+  {
+    "Source Keyword": "diaphragm pump",
+    "Source": "DataForSEO SERP",
+    "PAA Question": "How do I know if my diaphragm pump is bad?",
+    "Date Added": "2026-08-20"
+  },
+  {
+    "Source Keyword": "pvdf pipe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Piping & Fittings",
+    "PAA Question": "Is PVDF expensive?"
+  },
+  {
+    "Source Keyword": "industrial water treatment plant",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "What are the two major types of water treatment plants?"
+  },
+  {
+    "Source Keyword": "gate valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What are the common problems with gate valves?"
+  },
+  {
+    "Source Keyword": "hot melt glue system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Adhesive/Sealant Dispensing",
+    "PAA Question": "What are the disadvantages of hot melt glue?"
+  },
+  {
+    "Source Keyword": "ph meter",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the most accurate pH meter?"
+  },
+  {
+    "Source Keyword": "conductivity sensor",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Sensing & Control",
+    "PAA Question": "What is the purpose of a conductivity test?"
+  },
+  {
+    "Source Keyword": "ball valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "How much would a plumber charge to replace a ball valve?"
+  },
+  {
+    "Source Keyword": "xlpe vs hdpe",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Storage & Containment",
+    "PAA Question": "Does HDPE have crosslinks?"
+  },
+  {
+    "Source Keyword": "chemical resistant gasket",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Gasket & Joint Sealant Tape",
+    "PAA Question": "Which gasket material is resistant to chlorine?"
+  },
+  {
+    "Source Keyword": "diaphragm pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "How much does a diaphragm pump cost?"
+  },
+  {
+    "Source Keyword": "diaphragm pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "What are the disadvantages of a diaphragm pump?"
+  },
+  {
+    "Source Keyword": "y-strainer",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Filtration & Separation",
+    "PAA Question": "What is a Y strainer used for?"
+  },
+  {
+    "Source Keyword": "ball valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "What is another name for a ball valve?"
+  },
+  {
+    "Source Keyword": "check valve",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Flow Control (Valves)",
+    "PAA Question": "How does a check valve work?"
+  },
+  {
+    "Source Keyword": "chemical injection system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "What is a chemical injection system?"
+  },
+  {
+    "Source Keyword": "diaphragm pump",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Fluid Transfer (Pumps)",
+    "PAA Question": "Can you backflow through a diaphragm pump?"
+  },
+  {
+    "Source Keyword": "chemical feed system",
+    "Source": "LibertyCES PAA Questions base (merged)",
+    "Cluster": "Vertical Markets & Compliance",
+    "PAA Question": "How does a chemical feed pump work?"
+  }
+]

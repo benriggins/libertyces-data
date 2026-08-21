@@ -1,0 +1,32 @@
+---
+import DataLayout from '../../layouts/DataLayout.astro';
+import { getRules } from '../../lib/rules';
+
+const rules = getRules();
+const title = 'Engineering Rules Index';
+const description = `${rules.length} real equipment-selection engineering rules — what to avoid, what to use instead, and why — derived from real field and case-study evidence.`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'DataCatalog',
+  name: 'LibertyCES Engineering Rules Data Catalog',
+  description,
+  creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)', url: 'https://www.libertyces.com' },
+  distribution: { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/engineering_rules.json' },
+};
+---
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/rules/">
+  <h1>Engineering Rules Index</h1>
+  <div class="tldr"><strong>Direct answer:</strong> {rules.length} real equipment-selection rules, each stating what to avoid, what to use instead, why, and the confidence level of the underlying evidence.</div>
+
+  <ul>
+    {rules.map((r) => (
+      <li>
+        <a href={`/rules/${r.id}/`}>{r.id.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}</a>
+        — {r.rationale}
+      </li>
+    ))}
+  </ul>
+
+  <p><a href="/datasets/engineering_rules.json">Download full ruleset (JSON) &rarr;</a></p>
+</DataLayout>

@@ -1,0 +1,66 @@
+---
+import DataLayout from '../../layouts/DataLayout.astro';
+import { getChemicalGroups, legend, MATERIALS, MATERIAL_NAMES, ratingLabel, type ChemGroup } from '../../lib/chemicals';
+
+export async function getStaticPaths() {
+  const groups = getChemicalGroups();
+  return groups.map((g) => ({ params: { slug: g.slug }, props: { group: g } }));
+}
+
+interface Props { group: ChemGroup }
+const { group } = Astro.props;
+
+const bestMaterials = MATERIALS.filter((m) => group.rows.some((r: any) => r[m] === 'E'));
+const worstMaterials = MATERIALS.filter((m) => group.rows.some((r: any) => r[m] === 'C'));
+
+const title = `${group.media} Material Compatibility`;
+const description = `Real material compatibility data for ${group.media} across PVC, PP, PVDF, PFA, PTFE, and 316 stainless steel — by concentration and temperature. ${group.rows.length} published rating${group.rows.length === 1 ? '' : 's'}.`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: `${group.media} Chemical Compatibility Dataset`,
+  description,
+  creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)', url: 'https://www.libertyces.com' },
+  keywords: [group.media, `${group.media} compatibility`, `${group.media} chemical resistance`, ...MATERIALS.map((m) => `${group.media} ${MATERIAL_NAMES[m]}`)],
+  variableMeasured: ['Chemical concentration', 'Temperature', 'Material compatibility rating'],
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://data.libertyces.com/datasets/chemical-compatibility.csv' },
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/chemical-compatibility.json' },
+  ],
+};
+---
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath={`/chemicals/${group.slug}/`}>
+  <h1>{group.media} — Material Compatibility</h1>
+  <div class="tldr">
+    <strong>Direct answer:</strong> {group.media} compatibility data spans {group.rows.length} real published rating{group.rows.length === 1 ? '' : 's'} across the concentration/temperature conditions tested.
+    {bestMaterials.length > 0 && <span> Materials rated Excellent in at least one tested condition: {bestMaterials.map((m) => MATERIAL_NAMES[m]).join(', ')}.</span>}
+    {worstMaterials.length > 0 && <span> Materials that show corrosion in at least one tested condition: {worstMaterials.map((m) => MATERIAL_NAMES[m]).join(', ')} — do not assume compatibility across all concentrations of this chemical.</span>}
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>Concentration</th><th>Temp (&deg;F)</th><th>Temp (&deg;C)</th>{MATERIALS.map((m) => <th>{MATERIAL_NAMES[m]}</th>)}</tr>
+    </thead>
+    <tbody>
+      {group.rows.map((r: any) => (
+        <tr>
+          <td>{r.concentration ?? '—'}</td>
+          <td>{r.temp_f ?? '—'}</td>
+          <td>{r.temp_c ?? '—'}</td>
+          {MATERIALS.map((m) => <td>{ratingLabel(r[m])}</td>)}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <p><strong>Legend:</strong> {Object.entries(legend).map(([k, v]) => `${k} = ${v}`).join(' · ')}</p>
+  <p style="font-size:12px;color:#666;">Source: Flowline chemical compatibility chart, real published vendor data, compiled by LibertyCES. Blank ratings mean no rating was published for that combination — treat as unknown, not safe. This data is a screening reference, not a final engineering approval; confirm with a manufacturer-specific data sheet before specifying equipment.</p>
+
+  <p>
+    <a href="https://www.libertyces.com/guides/chemical-compatibility-chart">Full LibertyCES Chemical Compatibility Chart (551 rows) &rarr;</a><br />
+    <a href="/chemicals/">All chemicals &rarr;</a><br />
+    <a href="/datasets/chemical-compatibility.csv">Download full dataset (CSV) &rarr;</a><br />
+    <a href="/datasets/chemical-compatibility.json">Download full dataset (JSON) &rarr;</a>
+  </p>
+</DataLayout>

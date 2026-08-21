@@ -1,0 +1,1336 @@
+{
+  "required_intake_fields": [
+    "chemical_or_media",
+    "concentration",
+    "temperature_normal_f",
+    "temperature_max_f",
+    "specific_gravity",
+    "application"
+  ],
+  "release_principle": "The product family is only the starting point. The correct equipment is the configuration that survives the actual chemistry, temperature, load, installation, and operating conditions. Do not release equipment solely from a general temperature limit, capacity table, or photograph.",
+  "release_principle_source": "Houston PolyTank catalog p37, 'Selection Boundaries & Final Review'",
+  "rules": [
+    {
+      "id": "abrasive-slurry-no-centrifugal",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "abrasive slurry",
+        "abrasive",
+        "mining slurry"
+      ],
+      "avoid": {
+        "category": "Pump",
+        "subtype_keywords": [
+          "centrifugal"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Graco",
+        "product_line": "QUANTM",
+        "category": "Pump"
+      },
+      "rationale": "Centrifugal pumps fail via seal degradation in abrasive slurry service; electric diaphragm pumps remove that failure mode.",
+      "source": "data/case-studies/mining-slurry-pump.md"
+    },
+    {
+      "id": "crystallizing-slurry-no-valves-seals",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "lime slurry",
+        "calcium hydroxide",
+        "ca(oh)2",
+        "crystallizing slurry"
+      ],
+      "avoid": {
+        "category": "Pump",
+        "subtype_keywords": [
+          "multi-roller",
+          "valved",
+          "sealed"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Graco",
+        "product_line": "SoloTech",
+        "category": "Pump"
+      },
+      "rationale": "Crystallizing/hardening slurry is a chemistry/mechanics mismatch, not an undersized-pump problem. Single-roller peristaltic hose pumps have no valves, seals, or glands in the fluid path for the chemical to crystallize in.",
+      "source": "data/case-studies/solotech-lime-slurry.md"
+    },
+    {
+      "id": "hcl-vapor-no-metal",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "hydrochloric acid",
+        "hcl",
+        "hcl vapor",
+        "hcl fume"
+      ],
+      "avoid": {
+        "category": "Ductwork",
+        "subtype_keywords": [
+          "metal",
+          "steel"
+        ]
+      },
+      "recommend": {
+        "material": "polypropylene",
+        "category": "Ductwork or Scrubber"
+      },
+      "rationale": "Metal corrodes in HCL vapor service; polypropylene resists corrosion in acid-vapor environments.",
+      "cross_vendor_confirmation": "Poly Processing's Hydrochloric Acid storage guidance independently confirms the corrosion/fuming risk from the tank-system side: HCl fumes deteriorate equipment and can be fatal to employees, tank entry must be avoided, and the tank's venting system must be exact. Their Fume-Tight Manway Cover (already captured in vendor-sources/poly-processing-fittings-accessories.md) is explicitly required for HCl applications. Real warranty tiering: XLPE with the OR-1000 antioxidant system carries a 5-year warranty for HCl service vs. 3 years for plain XLPE - a concrete signal that standard material alone is insufficient for this chemistry and an upgraded barrier system is expected. Third independent confirmation from Houston PolyTank: their PP ductwork (rated 180F for chemical service) is explicitly marketed for chemical fume extraction and laboratory hood exhaust, alongside industrial exhaust, hazardous particulate conveyance, and tank venting systems - a plastics manufacturer independently reaching the same polypropylene-for-acid-vapor conclusion as the original case study, from ductwork rather than pump/scrubber equipment. See vendor-sources/houston-polytank-website.md.",
+      "source": "data/case-studies/hcl-fume-scrubber.md, vendor-sources/poly-processing-chemical-storage.md, vendor-sources/poly-processing-fittings-accessories.md, vendor-sources/houston-polytank-website.md"
+    },
+    {
+      "id": "vapor-heavy-radar-not-ultrasonic",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "vapor",
+        "foam",
+        "dust",
+        "off-gassing",
+        "chemical vapor"
+      ],
+      "avoid": {
+        "category": "Instrumentation",
+        "subtype_keywords": [
+          "ultrasonic level"
+        ]
+      },
+      "recommend": {
+        "category": "Instrumentation",
+        "subtype_keywords": [
+          "radar level",
+          "80 ghz"
+        ]
+      },
+      "rationale": "Ultrasonic (sound-based) level sensing attenuates and fails in dense vapor/foam/dust; radar (electromagnetic) does not share that failure mode.",
+      "source": "data/case-studies/radar-level-fertilizer.md"
+    },
+    {
+      "id": "acid-caustic-dosing-needs-closed-loop",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "sulfuric acid",
+        "potassium hydroxide",
+        "koh",
+        "caustic dosing",
+        "acid dosing",
+        "batch flow ph"
+      ],
+      "avoid": {
+        "category": "Controls",
+        "subtype_keywords": [
+          "manual batch dosing"
+        ]
+      },
+      "recommend": {
+        "category": "Pump",
+        "manufacturer": "Graco",
+        "product_line": "QUANTM",
+        "requires": [
+          "inline pH sensor",
+          "closed-loop PLC"
+        ]
+      },
+      "rationale": "Variable batch flow with delayed manual dosing causes chemical overuse (18-25% documented) and permit-compliance risk; electric diaphragm dosing pump + inline pH + closed-loop PLC removes the lag-driven overshoot.",
+      "cross_vendor_confirmation": "Dosatron's D14T (high-temperature dosing pump for CIP/COP sanitation) page independently describes the identical failure mode from a completely different industry angle: hot-water sanitation programs that still mix caustic/acid chemistry by hand produce a concentration that depends on who poured it, and the sanitizer titrates below spec by mid-shift without anyone noticing - temperature correct, contact time correct, mechanical action correct, but concentration silently drifts. Dosatron's fix is the same category of solution (inline automated injection instead of manual mixing), just for hot sanitation chemistry (caustic CIP 1-2% NaOH at 160-180F, acid CIP 0.5-1.5% phosphoric/nitric at 140-160F) rather than wastewater pH. See vendor-sources/dosatron.md.",
+      "source": "data/case-studies/cheese-plant-wastewater-ph.md, vendor-sources/dosatron.md"
+    },
+    {
+      "id": "acidic-discharge-near-regulatory-floor",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "low ph discharge",
+        "acidic wastewater",
+        "ph below 5",
+        "pretreatment"
+      ],
+      "avoid": {
+        "subtype_keywords": [
+          "manual sampling",
+          "single-stage manual treatment"
+        ]
+      },
+      "recommend": {
+        "category": "System",
+        "requires": [
+          "two-stage holding tank",
+          "non-contact radar level",
+          "inline pH sensor",
+          "closed-loop PLC with conditional discharge authorization"
+        ]
+      },
+      "rationale": "Dosing caustic neutralizer into a highly acidic stream risks pH overshoot, which itself creates a new compliance failure; two-stage automated neutralization with conditional discharge authorization prevents that.",
+      "source": "data/case-studies/automated-wastewater-ph-treatment.md"
+    },
+    {
+      "id": "municipal-h2s-hdpe-over-concrete",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "municipal manhole",
+        "sanitary sewer",
+        "h2s",
+        "hydrogen sulfide",
+        "sewer manhole replacement"
+      ],
+      "avoid": {
+        "material": "concrete"
+      },
+      "recommend": {
+        "manufacturer": "Houston PolyTank",
+        "product_line": "MagnaPlast",
+        "material": "HDPE"
+      },
+      "rationale": "Concrete corrodes under H2S/sulfuric-acid attack in municipal wastewater environments (~23-year average service life, field joints prone to leaks); monolithic HDPE is impervious to H2S with a stated 100-year design life and no field joints.",
+      "cross_vendor_confirmation": "Houston PolyTank's own MagnaPlast website (houstonpolytank.com) substantially expands this beyond the original PDF catalog citation: real applications named include municipal wastewater (sanitary sewer collection, interceptor/trunk lines, lift station transitions, high-H2S environments, chronic I&I problem areas), high-corrosion environments (force main discharge points, downstream of pump stations, warm-climate sewers with high biological activity), high water table/poor soil conditions (coastal regions, flood-prone areas, saturated soils), and industrial/process wastewater (food processing, chemical manufacturing, petroleum/refining, mining wastewater, steel/metals industries - i.e. this rule isn't purely municipal, it extends to industrial process wastewater with H2S/corrosive exposure). Real compliance standards not previously captured: ASTM F1759, D3350, D2321, F477; AASHTO traffic-loading criteria; CSI-formatted specs; traffic-rated H-20/HS-25 loading; engineered per the German DVS 2205 thermoplastic design standard. Real structural detail: integrated anti-flotation system (7-ft HDPE concrete-fill tub) specifically addresses the high-water-table/poor-soil trigger case. Real installation advantage: installs in 1/3 the time of concrete, no heavy lifting equipment required. See vendor-sources/houston-polytank-website.md.",
+      "source": "Houston PolyTank catalog p24, 'MagnaPlast vs. Conventional Concrete', vendor-sources/houston-polytank-website.md"
+    },
+    {
+      "id": "process-first-not-component-first",
+      "confidence": "confirmed",
+      "trigger_keywords": [],
+      "meta_principle": true,
+      "rationale": "Match components, materials, and control logic to the real application; don't treat the job like a catalog transaction (i.e. never recommend equipment from a general spec table alone \u2014 always require the full intake fields).",
+      "source": "data/case-studies/industrial-water-softener.md"
+    },
+    {
+      "id": "sodium-hypochlorite-epdm-rating",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "sodium hypochlorite",
+        "hypo"
+      ],
+      "material_ratings": {
+        "EPR, EPDM": "C",
+        "PVDF (Kynar)": "A",
+        "Fluorocarbon (FKM)": "B",
+        "PTFE": "A",
+        "Santoprene (EPDM & Polypropylene)": "A",
+        "UHMWPE": "A",
+        "Hastelloy C": "B",
+        "Nitrile (TS) / Buna-N": "D",
+        "Polypropylene": "D",
+        "304 Stainless": "D",
+        "Aluminum": "D"
+      },
+      "rating_scale": "A: <15% swelling/tensile-strength loss. B: <30%. C: <50%. D: >50%. -: not tested/not recommended. Basis: 70F (21C), 30 days to 1 year exposure, per Graco's own published methodology.",
+      "recommend": {
+        "material_options": [
+          "PVDF (Kynar) - A rated, best choice",
+          "PTFE - A rated",
+          "Santoprene or UHMWPE - A rated"
+        ],
+        "pump_type": "peristaltic preferred over diaphragm for off-gassing/gaseous sodium hypochlorite service - passes gas slugs safely without vapor lock, and does not require priming (per Blue-White)"
+      },
+      "avoid": {
+        "material_options": [
+          "Nitrile/Buna-N - D rated",
+          "Polypropylene - D rated",
+          "304 Stainless - D rated",
+          "Aluminum - D rated"
+        ]
+      },
+      "caution": {
+        "material": "EPDM",
+        "note": "C rated (moderate degradation, <50% swelling/tensile loss) - not a hard 'avoid' like the original unconfirmed hypothesis assumed, but PVDF/PTFE/Santoprene/UHMWPE (all A) are meaningfully better choices where available. FKM is B - usable but not equal to the A-rated options."
+      },
+      "rationale": "Resolves the prior 'unconfirmed hypothesis' entry using Graco's own Online Chemical Compatibility Guide raw dataset (fetched directly from https://www.graco.com/content/dam/graco/design/ipd/chemical_compatibility/data.js after the tool's interactive autocomplete proved unreliable - see graco-chemical-compatibility-guide.md). This is real, sourced, first-party data, not general industry knowledge.",
+      "cross_vendor_confirmation": "Blue-White Industries' own tube/diaphragm chemical compatibility tables (E/G/F/U scale, 28-day immersion at 73F) independently rate PVDF (their DiaFlex diaphragm material) as 'Excellent' for Sodium Hypochlorite at 25% concentration - consistent with Graco's A rating for PVDF above. Further confirmed by Blue-White's own MS6 SONIC-PRO ultrasonic flow meter (PVDF/PEEK body), which ships factory pre-calibrated for a short, vendor-curated chemical list that explicitly includes Sodium Hypochlorite 12.5% - i.e. Blue-White validates PVDF/PEEK hardware specifically for this chemical at the factory, not just on a lab compatibility chart. Blue-White also states a real pump-TYPE (not just material) rationale specific to this chemical: 'Peristaltic pumps are ideal for pumping gaseous chemicals such as sodium hypochlorite because they can pass slugs of gas safely, eliminating the chance of vapor lock' - i.e. for off-gassing sodium hypochlorite service, prefer a peristaltic pump family over a diaphragm pump even when both use A-rated wetted materials, because diaphragm pumps require priming and are vapor-lock-prone while peristaltic pumps are not. Third independent confirmation from Poly Processing's Sodium Hypochlorite storage-tank guidance: the chemical is UV-sensitive (requires carbon black/white/gray compound XLPE resin or mastic coatings/insulation), typically contains transition metals (nickel, iron, copper) that build up in a tank and cause off-gassing (mitigated by full-drain IMFO tanks), and is a potent oxidizer requiring the OR-1000 antioxidant tank system (4x normal polyethylene antioxidant strength) for wetted-surface protection - a storage-tank-material confirmation alongside the existing elastomer/diaphragm-material confirmations above. Poly Processing also states a real hard limit: on-site generation (0.8% concentration) tanks must stay under 4,000 gallons without engineering review. Fourth independent confirmation from Finish Thompson: its VKC/MSVKC vertical sump pumps (sealless mag-drive, PP/PVDF plastic construction, 60psi/140F envelope) explicitly name sodium hypochlorite as a suitable application in their own marketing copy - notable because Finish Thompson's PP/PVDF plastic construction lines up with the A-rated plastics (PVDF/PTFE/UHMWPE) above rather than the C-rated EPDM, and this pump line is materially distinct from Finish Thompson's 316SS AK/AV sealed-pump series (100-120psi/100-150F+), i.e. Finish Thompson itself steers customers toward plastic sealless construction for this specific chemical. See vendor-sources/blue-white-chemical-metering-pumps.md, vendor-sources/blue-white-flow-meters.md, vendor-sources/poly-processing-chemical-storage.md, and vendor-sources/finish-thompson-vertical-pumps.md. Fifth independent confirmation from Snyder Industries: the tank manufacturer maintains a dedicated named resin SKU - 'Opaque white sodium hypochlorite resin #880059' (UV block-out) - as a distinct material option across its Vertical, Horizontal, and Chemical Feed Station/Captor Double Wall tank families, separate from its standard HDLPE/XLPE resins. This is a tank-material confirmation (not elastomer/diaphragm/pump), consistent with Poly Processing's storage-tank guidance above but from a second, independent tank manufacturer. See vendor-sources/snyder-industries-tanks.md. Sixth independent confirmation from Peabody Engineering: NaOCl 12.5%, 1.5 SG (1.9 optional as added corrosion barrier), all non-metallic wetted components, sized 5gal+ across multiple tank families with dedicated resin considerations. Notably, Peabody states 'both EPDM and Viton elastomers' are in active real-world use for this chemical - a moderating data point against the 5-vendor consensus (Graco/Blue-White/Poly Processing/Finish Thompson/Snyder) that steers hard toward PVDF/Viton over EPDM; the C-rated EPDM caution above still stands (PVDF/PTFE/Santoprene/UHMWPE remain meaningfully better where available), but EPDM is evidently tolerated in practice at this vendor, not universally avoided. Double containment recommended. See vendor-sources/peabody-general-catalog.md. Seventh independent confirmation from Ace Roto-Mold/Den Hartog Industries' Chemical Resistance Data Chart - the strictest EPDM rating captured for this chemical across all 7 vendors: a flat N (Not Resistant) at every tested concentration (12%, 16.5%, >16.5%), stronger language than Graco's 'C' (moderate degradation) rating. Nitrile is also flat N. 316 Stainless Steel is flat N, directly confirming the existing avoid-stainless guidance. Santoprene (TPE) is R throughout, consistent with the A-rated elastomer pattern already established. See vendor-sources/ace-roto-mold-application-guidelines.md. Eighth and ninth independent confirmations from Asahi/America: (1) the General Catalog states ball valves are factory-equipped with a 1/8\" vent hole specifically to prevent off-gas buildup in sodium hypochlorite service - a third distinct equipment category (after pumps and tanks) confirming this chemical's real off-gassing hazard. (2) The Advanced PE Chemical Resistance table rates Chem Proline/Chem Prolok/Poly-Flo pipe as Resistant to NaOCl up to 12.5% with a PVC/FKM valve material pairing (FKM, not EPDM, is the recommended valve elastomer here) plus the same Vented Ball Valve requirement - and Asahi/America's own material-properties claim states its Advanced PE resin 'shows no reduction in installed quality with high concentrations of sodium hypochlorite.' Six real named field installations (RO Water Plant FL x2, Vallejo CA, Atlanta GA CSO tunnel, Zebra Mussel Abatement Lake Huron MI) independently confirm this chemical in real service on this pipe material, several explicitly replacing failed PVC/CPVC. See vendor-sources/asahi-america.md and vendor-sources/asahi-america-advanced-pe-piping.md. IMPORTANT CAVEAT from a broader chemical-resistance chart (combined-chemical-chart.csv, materials matching Asahi/America's own product line): at the 12.5%-active-chlorine-basis concentration specifically (as opposed to a generic '<=13% NaOCl' row), PVDF itself is rated X (Not Resistant) even at 68F/room temperature - a materially more conservative finding than every prior vendor confirmation in this rule, all of which treated PVDF as a top-tier 'A'/'Excellent' material. This suggests active-chlorine-basis concentration labeling (how commercial bleach/hypo strength is normally stated) represents a more aggressive real condition than the same nominal percentage measured as total NaOCl - at true 12.5% available-chlorine strength, only ECTFE, FEP, and PFA remained resistant across the full tested temperature range in this chart; HDPE, PP, and PVDF all failed even at room temperature. Treat PVDF as conditional, not automatically safe, at commercial-strength (12.5%+ active chlorine) sodium hypochlorite until concentration basis is confirmed with the customer. Also confirmed: Asahi/America's own older (12-2015) Advanced PE catalog edition states a real, precise operating envelope specific to this chemical - 'Chem Proline performs best at internal pressures below 80psi and liquid temperatures at 72F or lower' in sodium hypochlorite service, a materially lower pressure ceiling than the pipe's general 150psi rating (the same catalog's own permissible-operating-pressure chart shows a distinctly lower sodium-hypochlorite curve alongside the general curve). Tenth confirmation: Asahi/America's Type-14 diaphragm valve's 3-layer EPDM/PVDF/PTFE diaphragm construction specifically exists to give a PVDF gas barrier protecting the EPDM backing layer from gas permeation in aggressive off-gassing chemical service, sodium hypochlorite the named example - a fourth distinct equipment category (after pumps, tanks, and ball valves) engineering around this chemical's off-gassing behavior, this time via a diaphragm's internal layer construction. See vendor-sources/asahi-america-chemical-resistance-chart.md, vendor-sources/asahi-america-advanced-pe-piping.md, vendor-sources/asahi-america-metal-replacement-valves.md. Eleventh and twelfth confirmations from Hayward Flow Control: (1) their own thermoplastic-vs-metal valve comparison table states plainly 'Not suitable in Sodium Hypochlorite applications' for metal valves, while thermoplastic is 'Suitable with TBH-Z Series' - a valve-body-material-level confirmation distinct from the elastomer/tank/instrumentation confirmations already on this rule. (2) Hayward's TBH Series Z-Ball vented ball valve exists specifically to prevent sodium hypochlorite off-gassing/crystallization inside the valve cavity: 'The vent hole in the upstream side of the ball keeps sodium hypochlorite in the valve cavity in contact with fluid in the upstream piping, preventing off-gassing and crystallization... that could occur in a standard ball valve' - a real, mechanism-level confirmation of this rule's off-gassing hazard from a valve-cavity-design angle, distinct from prior tank/pump/pipe-vent confirmations. Hayward's own 20-chemical resistance table additionally rates EPDM 'B' (derates to 'C' per their own wetted-elastomer caveat) for Sodium Hypochlorite <20%, consistent with this rule's existing caution against relying on EPDM; PVDF/PTFE/PP/CPVC/PVC all rate 'A'. See vendor-sources/hayward-flow-control-mining.md, vendor-sources/hayward-flow-control-water-waste-treatment.md, vendor-sources/hayward-flow-control-chemfeed.md.",
+      "source": "vendor-sources/graco-chemical-compatibility-guide.md, vendor-sources/blue-white-chemical-metering-pumps.md, vendor-sources/poly-processing-chemical-storage.md, vendor-sources/finish-thompson-vertical-pumps.md, vendor-sources/snyder-industries-tanks.md, vendor-sources/peabody-general-catalog.md, vendor-sources/ace-roto-mold-application-guidelines.md"
+    },
+    {
+      "id": "hydrofluoric-acid-safe-tank-required",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "hydrofluoric acid",
+        "hf acid",
+        "hf"
+      ],
+      "avoid": {
+        "material": "HDPE",
+        "category": "Storage Tank",
+        "subtype_keywords": [
+          "single-wall without secondary containment"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Poly Processing",
+        "material": "XLPE (crosslinked polyethylene)",
+        "product_line": "SAFE-Tank",
+        "category": "Storage Tank",
+        "fallback": "IMFO tank (if SAFE-Tank is not feasible)"
+      },
+      "rationale": "Hydrofluoric acid penetrates tissue faster than typical acids, alters nerve function so exposure can go unnoticed (delaying treatment), and is absorbed through skin into the blood where it reacts with blood calcium and can cause cardiac arrest. XLPE gives 20x the environmental stress-crack resistance, 10x the molecular weight, and 5x the impact/tensile strength of HDPE. SAFE-Tank's tank-within-a-tank closed containment reduces health/environmental risk from the most dangerous chemical in this vendor's storage lineup; if SAFE-Tank isn't feasible, an IMFO flange reduces hands-on maintenance and therefore employee exposure risk.",
+      "source": "vendor-sources/poly-processing-chemical-storage.md",
+      "cross_vendor_confirmation": " Additional confirmation from Crane CPE/XOMOX: HF Acid service is explicitly named across FOUR distinct XOMOX product lines - Low Emission HF4D and Tertiary Top Seal sleeved plug valves (both purpose-built for HF Alkylation Units, the Tertiary Top Seal design specifically listed by UOP and ConocoPhillips Petroleum Company), the High Pressure sleeved plug valve (named HF alkylation services), and the Special Purpose Butterfly Valve family (HF Acid named in its process application list). This is real, valve-level (not just tank-level) confirmation that HF handling requires purpose-engineered equipment across multiple equipment categories, not just special tank materials. See vendor-sources/crane-cpe-xomox-sleeved-plug-valves.md and vendor-sources/crane-cpe-xomox-high-performance-butterfly-valves.md. Fifth confirmation from Hayward Flow Control's own 20-chemical resistance table: Hydrofluoric Acid 20% rates CPVC only 'C' (fair, testing recommended) while PP, PTFE, and PVDF all rate 'A'; Buna-N rates 'X', EPDM rates 'X', 316 SS rates 'X', Titanium rates 'X' - a real, additional confirmation that standard elastomers and stainless steel are poor material choices for HF service, consistent with this rule's existing material guidance. See vendor-sources/hayward-flow-control-chemfeed.md."
+    },
+    {
+      "id": "hydrogen-peroxide-safe-tank-and-pressure-relief",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "hydrogen peroxide",
+        "h2o2"
+      ],
+      "avoid": {
+        "category": "Manway/Lid",
+        "subtype_keywords": [
+          "standard bolted cover",
+          "non-relieving cover"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Poly Processing",
+        "material": "XLPE (crosslinked polyethylene, for concentrations <=50%)",
+        "product_line": "SAFE-Tank (or IMFO tank if secondary containment is already provided elsewhere)",
+        "requires": [
+          "Hinged-Weighted Manway Cover - opens automatically at 0.25 psi to vent decomposition pressure"
+        ]
+      },
+      "rationale": "Hydrogen peroxide is relatively unstable and decomposes into water and oxygen on environmental exposure; the primary danger of that decomposition is fire and/or explosion, and evacuation is mandatory if escape is suspected. XLPE is recommended specifically for concentrations at or below 50%. The Hinged-Weighted Manway (316 stainless steel weighted arm) is used primarily for hydrogen peroxide applications - it opens automatically at 0.25 psi to relieve pressure buildup during rapid decomposition, then re-closes and reseals the tank. This directly closes the gap flagged during the fittings/accessories capture (no existing rule covered H2O2 decomposition/venting risk).",
+      "source": "vendor-sources/poly-processing-chemical-storage.md, vendor-sources/poly-processing-fittings-accessories.md"
+    },
+    {
+      "id": "sulfuric-acid-secondary-containment-mandatory",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "sulfuric acid",
+        "h2so4"
+      ],
+      "meta_principle": true,
+      "avoid": {
+        "category": "Storage Tank",
+        "subtype_keywords": [
+          "no secondary containment",
+          "single-wall without containment basin"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Poly Processing",
+        "product_line": "SAFE-Tank with OR-1000 (if no secondary containment present) or IMFO with OR-1000 (if secondary containment already present)",
+        "constraint": "tank must be under 11,000 gallons and under 15 feet tall"
+      },
+      "rationale": "Poly Processing's own storage guidance states verbatim: 'Containment tank is required with this chemical in all applications' - the only one of the 10 chemistries captured this session with an unconditional (not situational) secondary-containment mandate. Real hazards driving this: sulfuric acid is extremely heavy (tests any material's mechanical integrity); adding water to concentrated sulfuric acid causes aerosol dispersal or explosion; contact with metals produces flammable hydrogen gas; and it dehydrates on contact, with the exothermic water reaction adding secondary thermal burn damage. This complements (does not replace) the existing acid-caustic-dosing-needs-closed-loop rule, which addresses dosing/PLC control rather than storage tank containment.",
+      "source": "vendor-sources/poly-processing-chemical-storage.md, vendor-sources/snyder-industries-tanks.md, vendor-sources/peabody-general-catalog.md, vendor-sources/ace-roto-mold-application-guidelines.md",
+      "cross_vendor_confirmation": " Second independent tank-material confirmation from Snyder Industries: the manufacturer maintains a dedicated named resin SKU - 'Sulfuric acid resin #880046' - across its Vertical, Horizontal, Chemical Feed Station, and Captor Double Wall tank families, separate from standard HDLPE/XLPE. This confirms sulfuric acid as a chemistry demanding dedicated tank material (not just secondary containment) from a second independent manufacturer, though Snyder's own page did not restate Poly Processing's unconditional containment-mandate language - treat the containment requirement as still sourced to Poly Processing alone until Snyder's own containment guidance (if any) is captured. See vendor-sources/snyder-industries-tanks.md. Third independent tank-vendor confirmation from Peabody Engineering's Special Application Tanks guidance: concentrated H2SO4 up to 98%, 1.9 SG, real concentration threshold - PVC fittings acceptable only to 70% concentration, CPVC/PVDF/316SS required above 70%; Viton/Teflon gaskets for higher concentrations; explicit hard ceiling of 'not recommended above 100\u00b0F'; double containment recommended; Peabody specifically recommends Linear PE (not XLPE) for this chemical and states XLPE-tank-with-linear-liner construction should be avoided. See vendor-sources/peabody-general-catalog.md. Fourth independent confirmation from Ace Roto-Mold/Den Hartog Industries' Chemical Resistance Data Chart: this is the most precise data point yet - polyethylene itself is rated N (chemically Not Resistant) at 98% concentration and in fuming form, INDEPENDENT of temperature. At 96% concentration PE is still R but capped to a hard 70\u00b0F max. This means the limiting factor at very high concentrations is concentration itself, not just heat - a materially different (and more precise) constraint than Peabody's temperature-only '100\u00b0F ceiling' framing. Below 96%, PE handles sulfuric acid at higher temperatures (70% concentration tested R up to 73\u00b0F, 80% to 73\u00b0F). EPDM caps to 70\u00b0F at 80%+ concentration; Nitrile is N (avoid) at every concentration 70%+; Santoprene remains R throughout. See vendor-sources/ace-roto-mold-application-guidelines.md. Fifth independent confirmation from Asahi/America's Advanced PE Chemical Resistance table: pipe rated Resistant up to 85% concentration with a PVC/FKM valve pairing - though real field installations (Anomatic OH and Chemco CA, both 2013) document 93% sulfuric acid in actual service, above the vendor's own stated general-table ceiling, informational rather than a vendor endorsement of that higher concentration. Notably, in Asahi/America's own RO Water Plant case study (South Florida, 2012), sulfuric acid was NOT given the standard Chem Proline/Advanced PE treatment used for every other chemical in that plant - it specifically required Ultra Proline (ECTFE/Halar) single wall + DuoPro (Halar x polypropylene double wall) instead, a real, vendor-self-selected exception confirming sulfuric acid demands a higher-spec fluoropolymer material even from a vendor whose flagship product line otherwise handles a very broad chemical range. See vendor-sources/asahi-america-advanced-pe-piping.md. Precise concentration/temperature ladder from combined-chemical-chart.csv: EPDM and FKM (the two most common valve elastomers) both degrade sharply above 80% concentration and fail outright (X) at 96-98% even at room temperature; PVC/CPVC follow a similar pattern, dropping to conditional by 68F and X by 104F at 96-98%. At 100% (fuming/oleum range), only ECTFE, PTFE (partially), FEP, and PFA remain resistant - everything else, including PVDF, fails even at room temperature. This is real, more granular data than any single vendor's flat concentration-ceiling claim (e.g. Asahi's own 'up to 85%' or Peabody's '100F ceiling') and should be used when a specific concentration/temperature combination needs checking. See vendor-sources/asahi-america-chemical-resistance-chart.md."
+    },
+    {
+      "id": "sodium-hydroxide-crystallization-and-containment",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "sodium hydroxide",
+        "naoh",
+        "caustic soda",
+        "liquid lye",
+        "caustic"
+      ],
+      "avoid": {
+        "subtype_keywords": [
+          "storage without temperature control",
+          "mechanically-attached sidewall fittings"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Poly Processing",
+        "material": "XLPE (crosslinked polyethylene, 5-year warranty)",
+        "product_line": "IMFO tank (if secondary containment already available) or SAFE-Tank (110% secondary containment, if not available)",
+        "requires": [
+          "temperature control to prevent crystallization/solidification"
+        ]
+      },
+      "rationale": "Sodium hydroxide is a 'slippery' chemical that finds leak paths, is extremely corrosive to tissue and highly toxic if ingested, and will crystallize and go solid if not kept at a specific temperature - a distinct real crystallization risk from the existing crystallizing-slurry-no-valves-seals rule (that rule covers lime slurry hardening in the fluid path; this covers a different chemical's temperature-dependent solidification in the storage tank itself). IMFO's molded (not inserted) flange avoids the sidewall-drilling maintenance issue that mechanical fittings create for a leak-seeking chemical like this.",
+      "source": "vendor-sources/poly-processing-chemical-storage.md, vendor-sources/peabody-general-catalog.md",
+      "cross_vendor_confirmation": "Independent confirmation and material specificity upgrade from Peabody Engineering's Special Application Tanks guidance: NaOH/KOH is explicitly 'sensitive to temperatures below 65\u00b0F, so insulation and heat tracing might be required at or above 50% concentration' - a precise, real temperature/concentration threshold not previously captured (the existing rule only stated a general crystallization risk). Peabody also states a real material double-exclusion: EPDM elastomers ARE compatible, but Viton is NOT recommended AND PVDF is NOT recommended - notable because PVDF is usually a top-tier 'safe default' material across other chemistries in this project (sodium hypochlorite, sulfuric acid), so it must NOT be assumed universally safe; sodium hydroxide is the first chemistry captured this project where PVDF is explicitly excluded. See vendor-sources/peabody-general-catalog.md. Additional, distinct confirmation from GF Signet's pH/ORP Calibration guidance: strong sodium hydroxide (NaOH) or potassium hydroxide (KOH) solutions are explicitly named (alongside hydrofluoric acid) as causing pH glass electrode erosion by abrasion - this is an instrumentation-degradation finding (not a tank/elastomer material finding like the confirmations above), relevant to any quote involving continuous pH monitoring in a NaOH/KOH-bearing stream: expect accelerated electrode wear and a shorter calibration interval than in a clean-water application. See vendor-sources/gf-signet-instrumentation-catalog.md. Additional confirmation from Asahi/America's Advanced PE Chemical Resistance table: pipe rated Resistant at the same 50% concentration threshold already established by this rule, with a PVC/EPDM valve pairing (EPDM compatible here, consistent with the rule's existing framing). Six real named field installations (Brenntag UT, City of Camas WA, Town of Creston IA, Clearwater FL, City of Vallejo CA, City of Hialeah FL) independently confirm 30-50% NaOH in real service on this pipe material, several explicitly replacing failed PVC/CPVC. See vendor-sources/asahi-america-advanced-pe-piping.md. Precise material data from combined-chemical-chart.csv confirms and sharpens the existing PVDF-exclusion finding: PVDF is conditional-to-X even at 68F room temperature at every tested NaOH concentration (15-50%), and FKM is rated X across the board at every concentration/temperature combination tested - a hard exclusion, not just a caution, for FKM specifically. EPDM remains the clear, fully-resistant elastomer choice through 176F at every concentration tested. CPVC is also notably weaker than PVC here, dropping to conditional-to-X by 104-140F across the same concentration range PVC tolerates to 140F. See vendor-sources/asahi-america-chemical-resistance-chart.md.",
+      "caution": {
+        "material": "PVDF and Viton/FKM",
+        "note": "Both explicitly NOT recommended by Peabody for sodium hydroxide/potassium hydroxide service, despite PVDF being a strong default choice for other oxidizer/acid chemistries in this project. EPDM IS compatible here - the opposite pattern from sodium hypochlorite, where EPDM is the weaker (C-rated) choice."
+      }
+    },
+    {
+      "id": "hydrofluosilicic-acid-imfo-or-safe-tank",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "hydrofluosilicic acid",
+        "fluosilicic acid",
+        "h2sif6"
+      ],
+      "avoid": {
+        "material_options": [
+          "metal",
+          "glass",
+          "stoneware"
+        ],
+        "subtype_keywords": [
+          "excess wetted fittings",
+          "storage near alkaline materials, oxidizing agents, combustible solids, or organic peroxides"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Poly Processing",
+        "material": "XLPE (crosslinked polyethylene)",
+        "product_line": "IMFO tank (preferred; minimize wetted fittings if not used) or SAFE-Tank (if secondary containment is not otherwise available)"
+      },
+      "rationale": "Hydrofluosilicic acid decomposes in heat releasing toxic fluoride compounds that may react violently with alkaline materials; is corrosive to most metals and attacks glass/stoneware; tends to find leak paths (like lye and sodium hypo); is incompatible with strong alkalis, strong concentrated acids, oxidizing agents, combustible solids, and organic peroxides; and reacts with metals to produce flammable hydrogen gas. XLPE's thermoset polymer chains act as a permeation/leakage/seepage barrier appropriate for a leak-prone chemical.",
+      "source": "vendor-sources/poly-processing-chemical-storage.md"
+    },
+    {
+      "id": "liquid-ammonium-sulfate-preferred-over-pressurized-ammonia",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "liquid ammonium sulfate",
+        "las",
+        "chloramination",
+        "ammonia dosing"
+      ],
+      "avoid": {
+        "subtype_keywords": [
+          "anhydrous ammonia",
+          "aqueous ammonia"
+        ],
+        "note": "avoid only when LAS is a viable process substitute - these require pressurized storage and special handling/safety procedures that LAS does not"
+      },
+      "recommend": {
+        "manufacturer": "Poly Processing",
+        "material": "XLPE (crosslinked polyethylene, 10x the Environmental Stress Crack Resistance of HDPE)",
+        "product_line": "IMFO tank (flat-bottom or sloped-bottom)",
+        "components": "PVC fittings, 316 stainless steel bolts, EPDM gaskets"
+      },
+      "rationale": "Liquid Ammonium Sulfate (LAS) is a stable, effective, non-pressurized source of ammonia for chloramination - unlike anhydrous or aqueous ammonia, it has indefinite storage life, is odorless, and is non-toxic, avoiding the pressurized-tank and special-handling requirements those alternatives impose. This is a process-chemistry-substitution rule (choose LAS over pressurized ammonia forms where chloramination is the goal), not just an equipment-material rule.",
+      "source": "vendor-sources/poly-processing-chemical-storage.md"
+    },
+    {
+      "id": "ferrics-alums-polymers-need-heat-mixing-scrubber",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "ferric",
+        "alum",
+        "polymer",
+        "coagulant",
+        "flocculant"
+      ],
+      "avoid": {
+        "subtype_keywords": [
+          "unheated storage",
+          "no mixing system"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Poly Processing",
+        "material": "XLPE (crosslinked polyethylene, tolerates expansion/contraction from elevated delivery temperatures)",
+        "product_line": "IMFO tank",
+        "requires": [
+          "heat pads and insulation (reduces separation/settling)",
+          "mixing system (prevents separation)",
+          "scrubber (if venting outdoors - protects surrounding foliage from ferric fumes)"
+        ]
+      },
+      "rationale": "Ferrics, alums, and polymers present separation/settling/coagulation issues that are compounded by temperature variations; settling causes pumping difficulty; these chemicals are often delivered at elevated temperature (testing tank expansion/contraction); ferric fumes can defoliate surrounding vegetation; and polymers can act as an environmental stress-cracking agent. IMFO's true-bottom drain aids sludge control and cleaning ease.",
+      "source": "vendor-sources/poly-processing-chemical-storage.md"
+    },
+    {
+      "id": "schurco-p-series-light-slurry-only",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "light slurry",
+        "dirty water",
+        "dewatering pump",
+        "low specific gravity slurry"
+      ],
+      "avoid": {
+        "manufacturer": "Schurco Slurry USA",
+        "product_line": "P Series",
+        "note": "avoid selecting for general heavy/abrasive slurry service"
+      },
+      "recommend": {
+        "manufacturer": "Schurco Slurry USA",
+        "product_line": "P Series",
+        "condition": "dirty water and light slurries only, specific gravity approximately 1.05",
+        "alternative_if_heavy_slurry": "S Series or L Series"
+      },
+      "rationale": "Schurco's own P Series page states its double-volute/thrust-reduction design is specifically for dirty water and light slurries of roughly 1.05 specific gravity - a narrow real design parameter distinct from the general heavy-slurry S/L/Z Series in the same product family. P Series's real advantage (single pumps achieving heads over 50% higher than standard slurry pumps) only holds within that light-slurry envelope; applying it to a genuinely heavy/abrasive slurry job would be a family mismatch even though it's marketed alongside the heavy-duty lines.",
+      "source": "vendor-sources/schurco-slurry.md"
+    },
+    {
+      "id": "prominent-ph-sensor-material-by-chemistry",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "hydrofluoric acid",
+        "fluoride",
+        "hf etching",
+        "high solids no chemical contamination",
+        "ph sensor selection"
+      ],
+      "avoid": {
+        "category": "Instrumentation",
+        "subtype_keywords": [
+          "standard ceramic/PTFE pH sensor for fluoride or HF service"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "ProMinent Fluid Controls",
+        "product_line": "DULCOTEST pH Sensor",
+        "model_options": [
+          "PHEF (1x HDPE diaphragm, 0-12 pH, special glass resistant to HF) for low-pH media containing fluoride e.g. etching solutions",
+          "PHEF-DJ (2x PTFE double junction) for gas scrubbers with fluoride",
+          "PHEX (open ring diaphragm) for high-solids waste/process water with no chemical contamination"
+        ]
+      },
+      "rationale": "ProMinent's own pH sensor selection guide ties specific diaphragm/glass constructions to specific chemistries: PHEF/PHEF-DJ use glass with increased resistance to hydrofluoric acid specifically because standard pH glass is attacked by HF/fluoride-containing media; PHEX's open ring diaphragm is for high-solids-content applications with no chemical contamination (not for chemically aggressive service). Choosing a standard ceramic-diaphragm sensor for HF/fluoride or high-solids service would risk premature sensor failure.",
+      "source": "vendor-sources/prominent-sensors-controllers.md"
+    },
+    {
+      "id": "prominent-chlorine-dioxide-application-matching",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "chlorine dioxide",
+        "clo2",
+        "legionella",
+        "bello zon"
+      ],
+      "recommend": {
+        "manufacturer": "ProMinent Fluid Controls",
+        "product_line": "Bello Zon",
+        "model_by_application": {
+          "Legionella control": "CDLb (0-120 g/h, diluted HCl+NaClO2, discontinuous)",
+          "food and beverage": "CDLb, CDLb H2SO4, CDEb, or CDVd depending on scale",
+          "municipal drinking/waste water": "CDLb, CDEb, CDVd, or CDKd depending on scale",
+          "industrial cooling tower water": "any Bello Zon model - all 6 support this application"
+        }
+      },
+      "rationale": "ProMinent's own chlorine dioxide performance-overview table maps each Bello Zon model to specific real applications rather than treating the family as interchangeable: CDLb is the only model explicitly listed for Legionella control; CDKd (7.5-12,000 g/h, concentrated HCl) is reserved for the largest municipal/industrial scale and is not listed for food and beverage use at all. Matching application to the vendor's own table avoids over- or under-sizing a disinfection system.",
+      "source": "vendor-sources/prominent-water-treatment-systems.md"
+    },
+    {
+      "id": "poly-processing-bulkhead-fitting-limitations",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "bulkhead fitting",
+        "tank fitting selection",
+        "small tank fitting"
+      ],
+      "avoid": {
+        "manufacturer": "Poly Processing",
+        "product_line": "Bulkhead Fitting",
+        "condition": "tanks larger than 3,000 gallons, tanks taller than 6 feet, or any application requiring maintenance-free/no-tank-entry service"
+      },
+      "recommend": {
+        "manufacturer": "Poly Processing",
+        "product_line": "IMFO Fittings, Bolted Flange Fittings, or Universal Ball Dome Flanges",
+        "condition": "for larger tanks or when external (no-tank-entry) maintenance is required"
+      },
+      "rationale": "Poly Processing's own product page carries an explicit warning: Bulkhead Fittings 'creep' over time, causing the nut to loosen (requiring regular drip monitoring), must be installed from inside the tank (requiring tank entry for repair/maintenance), and should not be used on the bottom sidewall of tanks greater than 3,000 gallons or taller than 6 feet. This is a real, vendor-stated size/maintenance-access limitation, not a general preference - selecting a Bulkhead Fitting outside these bounds is a documented failure risk.",
+      "source": "vendor-sources/poly-processing-fittings-accessories.md"
+    },
+    {
+      "id": "poly-processing-expansion-joint-required-large-tanks",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "expansion joint",
+        "flexible connector",
+        "tank vibration",
+        "pump piping stress"
+      ],
+      "avoid": {
+        "subtype_keywords": [
+          "expansion joint attached directly to tank wall or IMFO without a full-face flange",
+          "no expansion joint on tanks over 600 gallons"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Poly Processing",
+        "product_line": "PTFE Expansion Joint or EPDM Expansion Joint",
+        "condition": "required on tanks larger than 600 gallons",
+        "requires": "full-face flange must be installed on the tank first"
+      },
+      "rationale": "Poly Processing's own plumbing specifications state expansion joints are required on tanks larger than 600 gallons to absorb expansion/contraction and isolate vibration/shock from pumps and piping, and explicitly must NOT be attached directly to the tank wall or IMFO - a full-face flange is a mandatory prerequisite. This is a hard installation constraint that would otherwise produce a tank/piping damage risk on any 600+ gallon system quoted without it.",
+      "source": "vendor-sources/poly-processing-fittings-accessories.md"
+    },
+    {
+      "id": "flow-battery-storage-needs-rectangular-tank",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "flow battery",
+        "battery energy storage",
+        "electrolyte storage",
+        "BESS"
+      ],
+      "avoid": {
+        "category": "Storage Tank",
+        "subtype_keywords": [
+          "cylindrical tank for space-constrained containerized deployment"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Houston PolyTank",
+        "product_line": "Patented Extrusion-Wound Rectangular Tank",
+        "material": "PP or HDPE",
+        "capacity": "up to 18,000 gallons"
+      },
+      "rationale": "Houston PolyTank's own rectangular tank page explicitly names flow battery electrolyte storage and battery-energy storage systems as a real application distinct from its general chemical-processing/storage use cases - driven by the rectangular geometry's self-supporting design (no secondary supports needed), superior fit into corners/containment areas/high-cube shipping containers (maximizes usable volume vs. a cylindrical tank in the same footprint), and improved shipping efficiency/reduced freight cost. No other vendor captured in this project markets a tank specifically for this application.",
+      "source": "vendor-sources/houston-polytank-website.md"
+    },
+    {
+      "id": "hydrochloric-acid-scrubber-venting",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "hydrochloric acid",
+        "muriatic acid",
+        "hcl"
+      ],
+      "avoid": {
+        "subtype_keywords": [
+          "standard mushroom vent only",
+          "metal wetted components"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Peabody Engineering",
+        "material": "all non-metallic wetted components; EPDM or Viton elastomers",
+        "requires": [
+          "venting routed to a scrubbing system (not a standard atmospheric vent)",
+          "double containment"
+        ]
+      },
+      "rationale": "Hydrochloric/muriatic acid up to 37% concentration, 1.5 specific gravity. Peabody's own Special Application Tanks guidance states the noxious fumes require venting to a scrubbing system, not a standard mushroom vent - a real, specific ventilation-design requirement distinct from the general tank-material chemistry guidance captured for other acids in this project.",
+      "source": "vendor-sources/peabody-general-catalog.md, vendor-sources/ace-roto-mold-application-guidelines.md",
+      "cross_vendor_confirmation": " Independent confirmation from Ace Roto-Mold/Den Hartog Industries' Chemical Resistance Data Chart, 'all concentrations': EPDM and 316SS both rated V (Variable/Contact DHI) rather than a clean R - slightly more cautious than the existing 'EPDM and Viton both used' framing, reinforcing the general non-metallic-preferred guidance rather than contradicting it. See vendor-sources/ace-roto-mold-application-guidelines.md."
+    },
+    {
+      "id": "hydrogen-peroxide-welded-fittings-preferred",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "hydrogen peroxide",
+        "h2o2"
+      ],
+      "avoid": {
+        "subtype_keywords": [
+          "flanged or coupling connections where welded is feasible"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Peabody Engineering",
+        "material": "welded PE fittings preferred; passivated 316SS fittings/piping frequently used",
+        "requires": [
+          "special venting for decomposition off-gassing (O2 + water)",
+          "double containment"
+        ]
+      },
+      "rationale": "Hydrogen peroxide up to 50% concentration, 1.9 specific gravity. Peabody's guidance specifically prefers welded PE fittings over flanged/coupling connections - fewer gasket interfaces reduces catalytic-decomposition initiation points, since H2O2 decomposes into oxygen and water and off-gassing is a real design driver requiring special venting, not incidental to standard tank ventilation.",
+      "source": "vendor-sources/peabody-general-catalog.md, vendor-sources/ace-roto-mold-application-guidelines.md",
+      "cross_vendor_confirmation": " Independent confirmation from Ace Roto-Mold/Den Hartog Industries' Chemical Resistance Data Chart at 30% concentration: 316SS rated R (confirms Peabody's 'passivated 316SS fittings/piping frequently used' guidance with independent data), and explicitly adds Nitrile (Buna-N) as N (avoid) - a specific material exclusion not previously named for this chemistry. EPDM is only V (Variable/Contact DHI), Santoprene R. See vendor-sources/ace-roto-mold-application-guidelines.md."
+    },
+    {
+      "id": "chlorine-dioxide-hdlpe-pvdf-scrubber-venting",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "chlorine dioxide",
+        "clo2"
+      ],
+      "recommend": {
+        "manufacturer": "Peabody Engineering",
+        "material": "HDLPE or PVDF tank; Viton and Teflon gaskets most common; Teflon/PVDF piping and fittings most common",
+        "constraint": "sizes 5-1300 gallons",
+        "requires": [
+          "venting routed to a scrubbing system",
+          "double containment"
+        ]
+      },
+      "rationale": "Chlorine dioxide, 1.9 specific gravity. Peabody's Special Application Tanks guidance lists this alongside sulfuric acid, sodium hypochlorite, and hydrogen peroxide as one of the oxidizer chemistries requiring Linear PE (not cross-linked XLPE) tank material - Peabody explicitly does not recommend XLPE tanks with a linear liner for any of these four oxidizers.",
+      "source": "vendor-sources/peabody-general-catalog.md"
+    },
+    {
+      "id": "escr-stress-cracking-distinct-from-chemical-resistance",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "stress crack",
+        "escr",
+        "environmental stress crack",
+        "known stress crack agent"
+      ],
+      "meta_principle": true,
+      "rationale": "Ace Roto-Mold/Den Hartog Industries' Chemical Resistance Data Chart flags certain chemicals as '(A) Known Stress Crack Agent' or '(B) Suspected Stress Crack Agent' independent of their R/N/V chemical-resistance rating - meaning a chemical can rate 'R' (chemically resistant, no dissolution/degradation) and still be a real environmental-stress-crack (ESCR) risk under mechanical load. ESCR is a distinct polyethylene failure mode from simple chemical attack: certain chemicals accelerate cracking under mechanical stress even with no direct chemical effect on the resin, and elevated temperature compounds the risk. Real, actionable mitigation stated by the vendor: reduce stress concentration specifically at fittings, bands, and tie-down lugs - these are where ESCR failures actually initiate, not the general tank wall. Named real stress-crack agents from this vendor's chart include acetaldehyde, acetic acid, aniline, corn oil, hydrofluoric acid, and dozens of other organics/acids/alcohols - full list in vendor-sources/ace-roto-mold-application-guidelines.md and the source PDF.",
+      "recommend": {
+        "requires": [
+          "check the chemical against the vendor's (A)/(B) stress-crack flag in addition to its R/N/V chemical-resistance rating",
+          "minimize mechanical stress concentration at fittings, bands, and tie-down lugs for any chemical flagged (A) or (B)"
+        ]
+      },
+      "source": "vendor-sources/ace-roto-mold-application-guidelines.md"
+    },
+    {
+      "id": "chrome-reduction-ph-orp-setpoints",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "chrome reduction",
+        "hexavalent chromium",
+        "cr6+",
+        "chromium reduction"
+      ],
+      "process_parameters": {
+        "ph_range": "2.0-2.5 optimum; reaction rate slows significantly by pH 3.0, very slow by pH 4.0",
+        "orp_setpoint_mv": "-300 mV typical, -400 mV max, at pH 2.0 (process-specific, vendor notes 'processes vary')",
+        "min_detention_time": "15 minutes minimum for most chrome reduction processes",
+        "reducing_agents": [
+          "sulfur dioxide",
+          "sodium sulfite",
+          "sodium metabisulfite"
+        ]
+      },
+      "safety_hazard": "Lowering pH further than needed to compensate for insufficient detention time risks releasing hazardous sulfur dioxide gas into the atmosphere.",
+      "rationale": "Hexavalent chromium (Cr6+) is ~1,000x more toxic than trivalent chromium (Cr3+) and does not form a settleable/filterable hydroxide precipitate, unlike Cr3+ - chrome reduction is a mandatory pretreatment step before standard metal hydroxide precipitation, with strictly controlled discharge limits on hexavalent chrome specifically. These are real, vendor-published process control setpoints, not general industry knowledge.",
+      "source": "vendor-sources/gf-signet-application-solutions.md"
+    },
+    {
+      "id": "cyanide-destruction-ph-orp-setpoints",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "cyanide destruction",
+        "cyanide",
+        "cn destruct"
+      ],
+      "process_parameters": {
+        "batch_method": {
+          "stage_1_ph": "raised to 11.5 using sodium hydroxide, then chlorine added until ORP reaches +450mV - converts cyanide to cyanate",
+          "stage_2": "same tank neutralized with acid + small amount of chlorine, converts cyanate to carbonate",
+          "monitoring_target": "9.5 pH / 450mV oxidation level maintained on both stages"
+        },
+        "two_step_method": {
+          "stage_1": "pH + ORP control converts cyanide to cyanate; target oxidation below 0.1 ppm; pH/ORP setpoints and detention time determined per-installation based on loading rate",
+          "stage_2": "pH lowered with sulfuric acid; ORP controls oxidizer addition rate based on loading/detention time; modern systems often use up to 4-hour detention time"
+        },
+        "named_cyanide-generating_processes": [
+          "plating of copper, brass, gold, zinc",
+          "conversion coatings",
+          "chemical milling",
+          "barrel finishing",
+          "burnishing",
+          "heat treating",
+          "electrochemical machining"
+        ]
+      },
+      "safety_hazard": "Batch method: acid injection must be manually locked out to prevent pH from dropping below pH 11 during the destruct stage - below pH ~11, oxidation cannot properly break down cyanide to cyanate. Two-step method: pH must be adjusted rapidly in Stage 1 to avoid releasing extremely toxic cyanogen chloride gas.",
+      "rationale": "Cyanide is an extremely toxic complexing agent widely used in plating processes. The two-stage method (cyanide to cyanate, then cyanate to carbonate/nitrogen gas) is the nationally preferred treatment approach; some jurisdictions accept single-stage (batch) treatment. These are real, vendor-published process control setpoints and explicit gas-release safety hazards, not general industry knowledge.",
+      "source": "vendor-sources/gf-signet-application-solutions.md"
+    },
+    {
+      "id": "ph-orp-electrode-poisoning-ion-selection",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "ph electrode",
+        "orp electrode",
+        "ph sensor",
+        "cyanide destruction",
+        "chrome reduction",
+        "plating wastewater",
+        "heavy metals"
+      ],
+      "avoid": {
+        "category": "Instrumentation",
+        "subtype_keywords": [
+          "general purpose pH electrode",
+          "2724-2726",
+          "2734-2736"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Georg Fischer (GF Signet)",
+        "product_line": "2764-2767 or 2774-2777 'Harsh Chemicals' pH/ORP electrode family",
+        "constraint": "for continuous exposure to mercury (Hg2+), copper (Cu+), lead (Pb2+), perchlorate, bromine, iodine, cyanide (CN-), sulfide (S2-), or silver-halide/silver-complex chemicals"
+      },
+      "rationale": "Signet's own published pH/ORP Electrode Application Matrix rates its general-purpose 2724-2726/2734-2736 electrode families only '**' (Compatible, the lowest non-excluded tier) against every one of these poisoning chemicals, while the Harsh Chemicals family (2764-2767) rates '*****' (Better) against the identical list. This is not a hard compatibility cutoff (general-purpose electrodes will technically function) but a real electrode-life/reliability distinction - continuous exposure to silver-ion-reactive or heavy-metal chemistries will foul or poison a general-purpose electrode's reference junction faster than the harsh-chemical-rated version. Directly relevant to any cyanide destruction (see cyanide-destruction-ph-orp-setpoints) or chrome reduction (see chrome-reduction-ph-orp-setpoints) system quote, since both processes generate exactly these poisoning ions in the monitored stream, and to any plating-bath wastewater treatment quote generally.",
+      "source": "vendor-sources/gf-signet-instrumentation-catalog.md"
+    },
+    {
+      "id": "hydrogen-peroxide-diaphragm-valve-required",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "hydrogen peroxide",
+        "h2o2"
+      ],
+      "avoid": {
+        "category": "Valve",
+        "subtype_keywords": [
+          "ball valve without vent",
+          "generic elastomer seat"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Asahi/America",
+        "material_options": [
+          "PVDF wetted body",
+          "PTFE seat/seal"
+        ],
+        "product_line": "Diaphragm Valves specifically required (not just PVDF/PTFE-wetted ball or butterfly)",
+        "constraint": "rated to 100% concentration on Advanced PE (Chem Proline/Chem Prolok/Poly-Flo) pipe"
+      },
+      "rationale": "Asahi/America's own Chemical Resistance table for its Advanced PE piping systems is the first source in this project to give hydrogen peroxide its own row: pipe rated Resistant up to 100% concentration, but the valve material pairing is PVDF/PTFE with an explicit special-consideration note that Diaphragm Valves are required for this chemical - a real, distinct valve-TYPE requirement (not just a wetted-material choice) tied to this specific strong oxidizer, parallel to the Vented-Ball-Valve requirement already established for sodium hypochlorite and hydrochloric acid in the same table. A real field installation (Steag Chemical, King Mountain NC, 2012) independently confirms 30% H2O2 in service on this pipe material, replacing failed CPVC.",
+      "source": "vendor-sources/asahi-america-advanced-pe-piping.md",
+      "cross_vendor_confirmation": " Precise concentration ladder from combined-chemical-chart.csv: real elastomer tolerance is narrower than sodium hypochlorite's - EPDM only fully resistant at <=20% concentration (already conditional by 104F, X by 176F at that concentration), and both EPDM and FKM fail outright (X) at 50% even at room temperature. PVC/CPVC also fail at 50% at room temperature. Only PVDF, ECTFE, FEP, and PFA remain reliably resistant into the 70-90% concentration range. Confirms 'oxidizer' is not a single compatibility category - hydrogen peroxide's real thresholds are meaningfully stricter than sodium hypochlorite's despite both being common oxidizing biocides. See vendor-sources/asahi-america-chemical-resistance-chart.md."
+    },
+    {
+      "id": "hydrochloric-acid-vented-ball-valve-and-fkm",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "hydrochloric acid",
+        "hcl",
+        "muriatic acid"
+      ],
+      "avoid": {
+        "category": "Valve",
+        "subtype_keywords": [
+          "standard (non-vented) ball valve",
+          "EPDM seal above 25% concentration"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Asahi/America",
+        "material_options": [
+          "PVC or CPVC pipe up to ~25%",
+          "PVDF/ECTFE/PTFE/FEP/PFA for higher concentration or temperature"
+        ],
+        "product_line": "PVC/FKM valve pairing with Vented Ball Valves (off-gas relief)",
+        "constraint": "up to 37% concentration per Advanced PE general table; real threshold data shows FKM and EPDM both degrade to conditional/failed by 35-38% concentration even near room temperature"
+      },
+      "rationale": "Asahi/America's Advanced PE Chemical Resistance table rates HCl resistant to 37% with a PVC/FKM valve pairing and an explicit Vented Ball Valve hardware requirement (identical off-gas-relief pattern already established for sodium hypochlorite) - a real, hardware-level parallel between these two chemistries. A real field installation (Superior Energy, Lafayette LA and City of Trussville, AL WWTP, both 2012-2014) independently confirms 37% HCl in real service on Chem Proline Advanced PE pipe. combined-chemical-chart.csv sharpens this with real temperature thresholds: FKM and EPDM both drop to conditional at room temperature and fail (X) by 104F at 35% concentration - meaningfully narrower tolerance than the general table's single 'Resistant up to 37%' claim suggests, so elastomer selection should account for expected process temperature, not just concentration.",
+      "source": "vendor-sources/asahi-america-advanced-pe-piping.md, vendor-sources/asahi-america-chemical-resistance-chart.md"
+    },
+    {
+      "id": "peracetic-acid-40pct-ptfe-pvdf-only",
+      "confidence": "single-vendor",
+      "trigger_keywords": [
+        "peracetic acid",
+        "PAA",
+        "peroxyacetic acid"
+      ],
+      "avoid": {
+        "category": "Valve",
+        "subtype_keywords": [
+          "CPVC",
+          "PP",
+          "PVC",
+          "PVC-GF"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Hayward Flow Control",
+        "product_line": "PVDF or PTFE-wetted valves/strainers",
+        "category": "Valve"
+      },
+      "rationale": "Peracetic Acid at 40% concentration is one of the most restrictive rows in Hayward Flow Control's own chemical resistance table: CPVC, PP, PVC, and PVC-GF all rate 'X' (not recommended) - a materially harder chemistry than most oxidizers captured elsewhere in this project, since PVC/CPVC are otherwise broadly compatible materials across nearly every other chemistry in the same table. Only PTFE and PVDF rate 'A' (excellent). EPDM rates 'B' only (derates to 'C' per Hayward's own wetted-elastomer caveat), Viton rates 'A'. Single-vendor confidence pending a second independent confirmation source.",
+      "source": "data/vendor-sources/hayward-flow-control-chemfeed.md",
+      "cross_vendor_confirmation": "Single vendor (Hayward Flow Control) at this time - no second confirming source yet captured in this project. Flag for cross-vendor confirmation if a future vendor capture surfaces peracetic acid compatibility data."
+    },
+    {
+      "id": "chlorine-gas-monel-hastelloy-vented-ball-valve",
+      "confidence": "single-vendor",
+      "trigger_keywords": [
+        "chlorine",
+        "chlorine gas",
+        "liquid chlorine",
+        "chlor-alkali"
+      ],
+      "avoid": {
+        "category": "Valve",
+        "subtype_keywords": [
+          "standard trim",
+          "non-vented ball"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "AVCO Valve",
+        "product_line": "Chlorine Service Ball Valve (1100/1900 Series platform)",
+        "category": "Valve"
+      },
+      "rationale": "AVCO Valve's dedicated chlorine service ball valve complies with Chlorine Institute Pamphlet 6, appropriate for Chlorine Service Classes I & IV - a real, named industry chlorine-handling standard. Configuration: carbon steel (WCB) body/ends with ball, stem, and retainers in Monel 400 or Hastelloy C (full-Monel or full-Hastelloy also offered for further internal corrosion protection); the ball is vented to provide pressure relief during operation, the same off-gassing/pressure-relief engineering pattern already established for sodium hypochlorite service (Hayward TBH Z-Ball, Richter GU/GUT overflow valves) but applied here to chlorine gas/liquid specifically. B7 body bolts and 2H nuts for added strength. Available as the 1100 Series platform (full port, minimal pressure drop) or 1900 Series platform (V-ball, Cv-selected) when throttling control is needed.",
+      "source": "data/vendor-sources/avco-valve-chemical-processing.md",
+      "cross_vendor_confirmation": "Single vendor (AVCO Valve) at this time for the specific Chlorine Institute Pamphlet 6 compliance and Monel/Hastelloy chlorine trim recommendation. Partial, indirect confirmation from Crane CPE/XOMOX's Type 800 dry-chlorine-service HPBV datasheet and general chlor-alkali/chlorine-liquefaction application listings (see crane-cpe-xomox-high-performance-butterfly-valves.md), and Richter's RSS bellows-sealed control valve's chlorine-service design claim (see richter-ct-control-valves.md) - both confirm chlorine as a real, validated service across other vendors' equipment, but neither names the Chlorine Institute Pamphlet 6 standard or the vented-ball/Monel-Hastelloy trim specifics captured here. Flag for a fuller cross-vendor confirmation if a future capture surfaces matching detail."
+    },
+    {
+      "id": "sulfuric-acid-98plus-material-selection",
+      "confidence": "single-vendor",
+      "trigger_keywords": [
+        "sulfuric acid",
+        "h2so4",
+        "98% sulfuric",
+        "oleum",
+        "sulfur trioxide"
+      ],
+      "avoid": {
+        "category": "Valve",
+        "subtype_keywords": [
+          "PVDF threaded",
+          "Noryl body",
+          "threaded PTFE"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Griffco Valve",
+        "product_line": "Back Pressure Valves / Pressure Relief Valves",
+        "category": "Valve"
+      },
+      "rationale": "Griffco Valve's technical bulletin (TIB2010-001, 'Sulfuric Acid Options') documents a real field failure pattern: at 98.3%+ concentration, sulfuric acid carries a natural sulfur trioxide (SO3) contaminant - commonly termed '98+% sulfuric acid' - that attacks and causes stress fractures in both PVDF and Noryl, materials that are otherwise fine at lower concentrations. Quantified material options: Noryl (to 95%, 200F), PVDF (to 95%, 175F), Halar/ECTFE (to 100%, 200F), PTFE in flanged one-piece construction only (to 100%, 200F - threaded PTFE fails from cold-flow leakage at the joint, not chemical attack), and Alloy 20 (to 100%, 300F, most expensive/most robust option). The PTFE cold-flow-at-threaded-joints failure mode is cross-vendor consistent with JCS Tool's molded-vs-threaded-liner findings (see jcs-tool-ptfe-lined-fittings.md) - treat 'PTFE must be one-piece/flanged, not threaded' as a general rule for any concentrated-acid threaded connection, not just sulfuric acid.",
+      "source": "data/vendor-sources/griffco-valve.md",
+      "cross_vendor_confirmation": "Single vendor (Griffco) for the specific concentration/temperature breakpoints. The PTFE-cold-flow-at-threaded-joints mechanism is independently corroborated by JCS Tool's manufacturing-process finding that gapped/separately-molded PTFE liners reduce strength and vacuum rating (a related, not identical, failure mode). No other vendor in this project has published quantified sulfuric-acid concentration/temperature limits by material; flag for fuller cross-vendor confirmation if a future capture surfaces matching detail."
+    },
+    {
+      "id": "316ss-corrosion-common-chemicals",
+      "confidence": "single-vendor",
+      "trigger_keywords": [
+        "sodium hydroxide",
+        "caustic soda",
+        "hydrochloric acid",
+        "sulfuric acid",
+        "hydrofluoric acid",
+        "hydrogen peroxide",
+        "hypochlorous acid",
+        "potassium hypochlorite",
+        "aluminum chloride",
+        "ammonium fluoride",
+        "aniline hydrochloride",
+        "aqua regia",
+        "bromine",
+        "calcium nitrate",
+        "chloric acid",
+        "chloro sulfonic acid",
+        "chromic acid",
+        "fluorine gas",
+        "hydrobromic acid",
+        "mercuric chloride",
+        "methyl cellosolve",
+        "potassium bichromate",
+        "sodium fluoride",
+        "stannic chloride",
+        "trichloroacetic acid"
+      ],
+      "avoid": {
+        "category": "Valve",
+        "subtype_keywords": [
+          "316SS wetted",
+          "316 stainless steel wetted",
+          "316SS body"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "any",
+        "product_line": "PVDF, PTFE, or PFA wetted construction (check data/reference/flowline-chemical-compatibility.csv for the specific chemical/concentration/temperature)",
+        "category": "Valve"
+      },
+      "rationale": "Flowline's published chemical compatibility table (data/reference/flowline-chemical-compatibility.csv, 285 chemicals x up to 2 concentration/temperature points each) rates 316 stainless steel as Corroded (C) for 29 named chemicals at the tested concentration/temperature, including several this project quotes routinely: sodium hydroxide, hydrochloric acid, sulfuric acid, hydrofluoric acid, hydrogen peroxide, hypochlorous acid, and potassium hypochlorite. This directly contradicts the 316SS-as-safe-default assumption baked into many other vendor product lines already in this catalog (e.g. AVCO Valve, Griffco). For nearly every one of these 29 chemicals, the same row rates at least one plastic (usually PVDF or PTFE, sometimes PVC/PP) as Excellent or Good - the fix is switching wetted material, not avoiding the chemical. Always check the specific concentration/temperature row in the reference CSV before defaulting to 316SS wetted parts for any of these chemicals; ratings are concentration- and temperature-dependent, not a single yes/no per chemical (consistent with the pattern already established in Griffco's sulfuric acid bulletin).",
+      "source": "data/vendor-sources/flowline-chemical-compatibility.md, data/reference/flowline-chemical-compatibility.csv",
+      "cross_vendor_confirmation": "Single vendor (Flowline) for this specific consolidated table, but individual data points corroborate existing single-chemical findings already in this file: sulfuric-acid-98plus-material-selection (Griffco) already steers away from certain materials at high concentration, and the general PVDF/PTFE broad-spectrum resistance is corroborated by Richter, JCS Tool, and Griffco. No other vendor in this project has published a single table covering this many chemicals against 316SS specifically; treat the concentration/temperature breakpoints as Flowline's own until independently confirmed."
+    },
+    {
+      "id": "hydrofluoric-acid-ph-sensor-concentration-selection",
+      "confidence": "single-vendor",
+      "trigger_keywords": [
+        "hydrofluoric acid",
+        "hf acid",
+        "hf pickling",
+        "hf etching"
+      ],
+      "avoid": {
+        "category": "Instrument",
+        "subtype_keywords": [
+          "general purpose pH sensor",
+          "standard pH electrode"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Icon Process Controls",
+        "product_line": "P14 Series pH Sensor Transmitters (P14H or P14F)",
+        "category": "Instrument"
+      },
+      "rationale": "Icon Process Controls' ProCon P14 Series pH sensor line splits HF acid service into two distinct models by concentration: P14H for HF Acid under 4000 ppm (~0.4%) and P14F for HF Acid over 4000 ppm - a real, quantified threshold, not just a generic 'chemical resistant' pH sensor claim. This is an instrumentation-selection finding distinct from the existing hydrofluoric-acid-safe-tank-required rule (which covers tank/valve material selection) - together they cover both the containment/handling equipment and the process-monitoring instrumentation needed for a complete HF acid system quote. Both P14 models share PP polypropylene shell, PTFE Teflon NEXUS liquid junction, and double salt bridge reference construction; the difference between the two models is the internal reference/junction tuning for the specific concentration range, not the wetted material.",
+      "source": "data/vendor-sources/icon-process-controls-analytical.md",
+      "cross_vendor_confirmation": "Single vendor (Icon Process Controls) for this specific pH-sensor concentration split. Cross-references the existing hydrofluoric-acid-safe-tank-required rule's broader HF material-selection guidance (Poly Processing SAFE-Tank, Crane CPE/XOMOX sleeved valves, Hayward Flow Control's chemical resistance table) - this rule adds the analytical-instrumentation layer that was missing from that broader HF guidance."
+    },
+    {
+      "id": "combined-corrosion-abrasion-glass-ceramic-strainer",
+      "confidence": "single-vendor",
+      "trigger_keywords": [
+        "seawater",
+        "abrasive slurry",
+        "scrubber",
+        "corrosive and abrasive",
+        "brine slurry"
+      ],
+      "avoid": {
+        "category": "Strainer",
+        "subtype_keywords": [
+          "standard alloy basket strainer",
+          "PVDF-only strainer",
+          "plastic-only strainer"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Fluidtrol Process Technologies",
+        "product_line": "Glass Ceramic Matrix Composite Basket Strainer",
+        "category": "Strainer"
+      },
+      "rationale": "Fluidtrol's Glass Ceramic Matrix Composite basket strainer is a seamless-cast fiberglass/ceramic/vinyl ester matrix explicitly engineered for fluid systems that are BOTH corrosive and abrasive simultaneously (seawater, scrubber discharge, and similar challenging systems) - a combined-hazard case that most single-purpose materials in this project's existing rules don't address (e.g. PVDF solves corrosion but not abrasion; hardened alloys solve abrasion but not broad chemical resistance). Custom-built to order (vertical or horizontal large basket strainer configurations), ASME Sec X / PS15-69 standard. Relevant to mining/mineral-processing brine slurries and marine/seawater scrubber applications where this project's existing abrasive-slurry guidance (mining-slurry-pump.md) doesn't fully address chemical corrosivity, or vice versa.",
+      "source": "data/vendor-sources/fluidtrol.md",
+      "cross_vendor_confirmation": "Single vendor (Fluidtrol) - no other vendor captured in this project offers a combined corrosion+abrasion-rated strainer material by name. Cross-references this project's existing abrasive-slurry-no-centrifugal rule (pump selection for abrasive slurry) and the general PVDF/PTFE broad-spectrum chemical resistance pattern (Richter, JCS Tool, Griffco) - this rule adds the specific case where BOTH hazards are present at once, which those other rules don't jointly solve."
+    },
+    {
+      "id": "ro-membrane-scale-fouling-antiscalant-dosing",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "reverse osmosis",
+        "RO membrane",
+        "membrane fouling",
+        "membrane scaling",
+        "brackish water RO",
+        "seawater RO",
+        "antiscalant"
+      ],
+      "avoid": {
+        "category": "RO System",
+        "subtype_keywords": [
+          "no pretreatment chemical dosing",
+          "membrane system without antiscalant injection"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "AXEON Water Technologies",
+        "product_line": "Antiscalant Chemical Addition / Chemical Injection System (membrane protection)",
+        "category": "Chemical Injection System"
+      },
+      "rationale": "RO membranes fed with brackish, seawater, or other high-TDS/hardness feed water scale and foul over time, degrading permeate flow and salt rejection and shortening membrane life; inorganic scaling specifically requires ongoing antiscalant chemical dosing ahead of the membrane, not just downstream cleaning. AXEON confirms this as standard practice across three independent product lines: brackish/seawater RO product copy explicitly cites 'antiscalant chemical dosing' to extend membrane life and reach up to 75% recovery; the PWS-Series packaged pretreatment skid ships with a standard 'chemical injection system for membrane protection'; and the Mobile & Containerized systems line offers 'inlet feed water antiscalant chemical addition systems' as a standard customization option. Once fouling/scaling does occur, AXEON's own CIP-Series cleaning guidance ties foulant type to cleaner chemistry: organic fouling needs alkaline cleaners (e.g. sodium hydroxide), inorganic scale needs acid cleaners (e.g. citric acid, hydrochloric acid), biological fouling needs biocides/sanitizers, and colloidal fouling needs surfactant-based cleaners.",
+      "source": "data/vendor-sources/axeon-water-membrane-systems.md",
+      "cross_vendor_confirmation": "Single vendor (AXEON) captured for RO membrane systems specifically, but the underlying antiscalant chemical dosing practice is standard, well-established water-treatment chemistry (not an AXEON-proprietary claim) and directly extends this project's existing chemical dosing/feed pump equipment context (Griffco, Iwaki, chemical-feed-dosing case studies already in this project) into RO/membrane pretreatment specifically, a gap not previously covered by any existing rule. Additional cross-reference: Epiphene Incorporated (epiphene.com) offers a genuinely distinct, chemical-free physical-separation alternative to this same scale/fouling problem - removing the 0.1-10 micron suspended particles that act as the physical nucleation catalyst for scale formation, rather than chemically keeping dissolved minerals in solution. Not a competing claim against antiscalant dosing, but a complementary/alternative mitigation path worth citing alongside it for RO/membrane pretreatment or cooling-tower scale-control quotes. See data/vendor-sources/epiphene-silt-separation-cph16.md."
+    },
+    {
+      "id": "eptfe-broad-spectrum-gasket-sealant-packing",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "flange gasket",
+        "flange seal",
+        "sodium hypochlorite",
+        "chlorine gas",
+        "sulfuric acid",
+        "compression packing",
+        "valve stem packing",
+        "glass-lined steel",
+        "GLS flange"
+      ],
+      "avoid": {
+        "category": "Gasket or Packing",
+        "subtype_keywords": [
+          "rubber gasket",
+          "EPDM gasket",
+          "standard PTFE sheet gasket",
+          "graphite-only packing"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "GORE",
+        "product_line": "Universal Pipe Gasket (Style 800) / GR Sheet Gasketing / Gasket Tape Series 500 & 1000 / Joint Sealant / GFO Packing Fiber",
+        "category": "Gasket, Sealant, or Compression Packing"
+      },
+      "rationale": "GORE's 100% expanded PTFE (ePTFE) gasket, sealant, and packing lines share a single, real, broad-spectrum chemical resistance claim: resistant to all process media across the full pH 0-14 range, with only two named exceptions (molten alkali metals and elemental fluorine). This is backed by real third-party certifications, not just marketing copy: BAM-tested for liquid/gaseous oxygen service, and both GORE Universal Pipe Gasket (Style 800) and GR Sheet Gasketing are specifically named in Eurochlor's and the Chlorine Institute's published guidance on gaskets for wet/dry chlorine gas and liquid chlorine service - directly relevant to this project's existing sodium hypochlorite engineering context, and to sulfuric acid service (also explicitly named as a target application). Operating range -269C to 315C (up to 600F), full vacuum to 210 bar (3000 psi) for the pre-fabricated Universal Pipe Gasket; form-in-place tape/cord variants (Series 500, Series 1000, Joint Sealant) trade some pressure ceiling for on-site conformability on large, irregular, damaged, or low-bolt-load flanges where a rigid pre-fabricated gasket can't seal reliably - Series 1000 specifically engineered for glass-lined steel (GLS) flanges, which constrain bolt load because the glass lining itself is fragile. GFO Packing Fiber extends the same pH 0-14 chemical resistance into rotating/reciprocating shaft compression packing (not a flange gasket), rated -240C to +288C and shaft speeds to 4,300 ft/min, with municipal wastewater treatment explicitly named as a target application alongside chemical processing.",
+      "source": "data/vendor-sources/gore-gaskets-sealants.md",
+      "cross_vendor_confirmation": "Directly reinforces this project's existing sodium-hypochlorite-corrosion-common-chemicals and 98% sulfuric acid rules from the material-source side (gasket/seal, not tank/pipe/pump material) - GORE's own chlorine-service and oxygen-service third-party certifications independently confirm the same chemistries those rules already flag as demanding top-tier material selection. Also confirms Allied Fluid Products (allied-fluid-products-line-card.md) as a real regional distributor for this exact GORE product line (Universal Pipe Gasket Style 800, Joint Sealant, GR Sheet Gasketing, Gasket Tape Series 500/1000, Valve Stem Packing, GFO Packing), sourced independently from GORE's own manufacturer site rather than only the distributor's brand listing."
+    },
+    {
+      "id": "trifluralin-filter-dosing-root-intrusion-drip-dispersal",
+      "confidence": "single-vendor",
+      "trigger_keywords": [
+        "root intrusion",
+        "subsurface drip dispersal",
+        "dripperline clogging",
+        "septic drip field",
+        "wastewater drip dispersal"
+      ],
+      "avoid": {
+        "category": "Dripperline",
+        "subtype_keywords": [
+          "chemically-impregnated dripperline without physical root barrier",
+          "non-pressure-compensating dripperline"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Netafim",
+        "product_line": "Techfilter (trifluralin-embedded replaceable filter cartridge)",
+        "category": "Filter / Chemical Dosing Component"
+      },
+      "rationale": "Subsurface drip dispersal (SDD) systems for wastewater effluent reuse face a real, distinct failure mode - root intrusion into the dripperline that clogs emitters. Netafim's primary defense is physical (Bioline dripperline's internal geometry separates the dripper's water-exit point from root-accessible tubing surfaces), but where local regulations require a chemical root inhibitor, or the designer/owner wants additional assurance, Netafim offers Techfilter - a replaceable filter cartridge embedded with trifluralin, an herbicide used extensively in agriculture that stops cell division in any root tip it contacts. As system water passes through the filter, a very low concentration (parts per billion) is metered continuously into the piping network, distributing evenly throughout the dripperline without impregnating the tubing itself. This is a genuinely distinct chemical-dosing mechanism from this project's other chemical-feed/injection captures (Graco, AXEON, etc.) - dosing through a passive flow-through filter cartridge rather than a metering pump - and ties trifluralin (a specific, named agricultural herbicide) to a wastewater-dispersal application not seen elsewhere in this project. Performing prescribed Techfilter maintenance qualifies for a limited Lifetime Warranty against root intrusion, versus Bioline's standalone 10-year warranty (35 mil+ wall thickness only) without it.",
+      "source": "data/vendor-sources/netafim-wastewater-drip-dispersal.md",
+      "cross_vendor_confirmation": "Single vendor (Netafim) - no other vendor captured in this project offers a filter-cartridge-based trifluralin dosing system for root-intrusion prevention. This is a distinct product category from this project's existing chemical metering pump / injection system captures (Graco Mongoose/chemical injection line, AXEON XP-Series chemical injection) - worth cross-referencing if a future wastewater drip dispersal quote needs root-intrusion protection beyond Bioline's physical barrier alone."
+    },
+    {
+      "id": "ald-diaphragm-chlorine-nitric-acid-limits-heap-leaching",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "heap leaching",
+        "chlorine gas",
+        "chlorine dioxide",
+        "nitric acid",
+        "sulfuric acid valve diaphragm",
+        "leach solution",
+        "cyanide leaching"
+      ],
+      "avoid": {
+        "category": "Valve Diaphragm",
+        "subtype_keywords": [
+          "ALD70 diaphragm",
+          "standard EPDM diaphragm"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Netafim",
+        "product_line": "Hastelloy diaphragm/wetted components (MIN configuration upgrade)",
+        "category": "Valve Diaphragm"
+      },
+      "rationale": "Netafim's Mining Products catalog publishes a real chemical resistance chart for ALD70, the diaphragm material used across its 75/90/100 Series valves in heap-leaching service (the 'MIN' mining configuration). Several named chemicals rate flatly 'Not Good' regardless of concentration or temperature: nitric acid (not good even at 10%), chlorine dioxide, and chlorine gas. Sulfuric acid - the primary heap-leaching lixiviant for copper/uranium/nickel extraction per this same catalog's own process diagram (Cu2O3 + H2SO4 -> Cu2(SO4)3 + H2O) - is rated only to 38C max, a notably more restrictive limit than this project's existing sulfuric acid guidance which centers on PVDF/PTFE/FEP/PFA tank and pipe materials surviving to much higher temperatures at high concentration. This is a real, actionable reminder that a valve's diaphragm elastomer can be the limiting material in a system even when the body/liner material handles the chemical fine at higher temperature - relevant to any heap-leaching, gold/silver cyanide, or chlorine-based quote using this valve family. Netafim's own catalog identifies the fix: components can be ordered in Hastelloy instead, explicitly because Hastelloy 'is resistant against chlorine gas, hypochlorite and chlorine dioxide solutions' and has 'excellent resistance against concentrated solutions of oxidizing salts (such as iron III and copper chloride).'",
+      "source": "data/vendor-sources/netafim-mining-heap-leaching.md",
+      "cross_vendor_confirmation": "Directly confirms and extends this project's existing chlorine-gas-monel-hastelloy-vented-ball-valve rule from a second, independent vendor and product category (valve diaphragm elastomer, not valve body or ball) - Netafim's own catalog text names the identical substitute material (Hastelloy) for the identical chemistries (chlorine gas, chlorine dioxide, hypochlorite) as the existing rule, reached independently via a mining-equipment catalog rather than a chemical-processing valve vendor. The sulfuric acid 38C diaphragm limit is a new, more granular data point not previously captured for a valve diaphragm specifically (as distinct from tank/pipe body material), worth checking whenever quoting a Netafim 75/90/100 Series valve for hot sulfuric acid leach-solution service."
+    },
+    {
+      "id": "chemical-free-nucleation-seed-removal-scale-prevention",
+      "confidence": "single-vendor",
+      "trigger_keywords": [
+        "scale prevention",
+        "cooling tower scale",
+        "calcium carbonate scale",
+        "membrane fouling",
+        "RO pretreatment",
+        "chemical-free water treatment",
+        "silt separation"
+      ],
+      "avoid": {
+        "category": "Scale Control",
+        "subtype_keywords": [
+          "antiscalant-only chemical program without particulate pretreatment"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Epiphene Incorporated",
+        "product_line": "CPH-16 Silt Separator Skid",
+        "category": "Silt Separator / Solids Separation"
+      },
+      "rationale": "Mineral scale (e.g. calcium carbonate) does not form spontaneously in bulk solution - it requires a physical nucleation site. Epiphene distinguishes homogeneous nucleation (dissolved minerals agglomerate in bulk fluid, causing fouling/sludge) from heterogeneous nucleation (minerals precipitate onto pre-existing microscopic suspended particles in the 0.1-10 micron range - silt, sand, biological matter - which lower the energy barrier for crystal formation; this is the primary mechanism for hard scale on heat-transfer surfaces). Rather than chemically inhibiting crystal growth after the fact (the conventional antiscalant/dispersant approach), Epiphene's CPH-16 technology physically removes the 0.1-10 micron nucleation-seed particles before they can catalyze scale formation. Real, quantified separation performance at specific gravity 2.6: 66% removal at 5 microns, 94% at 15 microns, 30% even at 1 micron in a single pass. Vendor-stated real benefits: reduced biocide/dispersant chemical dosing, higher cycles of concentration (less blowdown water use), and a named 25% cooling-capacity-expansion claim for data centers from preventing scale-driven efficiency loss. This is a genuinely distinct scale-prevention mechanism (physical particle removal) from every chemical antiscalant-dosing approach already captured in this project - complementary rather than competing, useful whenever a customer wants to minimize chemical handling/dosing infrastructure specifically.",
+      "source": "data/vendor-sources/epiphene-chemical-free-silt-separation.md",
+      "cross_vendor_confirmation": "Single vendor (Epiphene) for this specific chemical-free nucleation-seed-removal mechanism - directly cross-references and complements this project's existing ro-membrane-scale-fouling-antiscalant-dosing rule (AXEON), which addresses the same underlying scale-formation physics via chemical antiscalant injection rather than physical particle pretreatment. A future quote for RO/desalination pretreatment or cooling-tower scale control should consider both approaches (chemical antiscalant dosing vs. physical silt/nucleation-seed removal, or both together) depending on whether the customer prioritizes minimal chemical handling infrastructure."
+    },
+    {
+      "id": "ketones-attack-pvdf",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "acetone",
+        "ketone",
+        "methyl ethyl ketone",
+        "mek"
+      ],
+      "meta_principle": true,
+      "avoid": {
+        "material": "PVDF",
+        "note": "PVDF is treated as a top-tier, near-default safe material across many other rules in this file (sodium hypochlorite, sulfuric acid, hydrofluoric acid) - that default does NOT extend to ketones."
+      },
+      "recommend": {
+        "material_options": "check data/reference/flowline-chemical-compatibility.csv for the specific ketone/concentration/temperature - PTFE, PFA, and PP are the materials that carry PVDF's broad-spectrum reputation without ketones' exception"
+      },
+      "rationale": "Flowline's chemical compatibility chart rates Acetone 'Caution' for PVDF at every tested temperature - the one clear, singular exception to PVDF's otherwise near-universal Excellent rating across acids, caustics, oxidizers, salts, and most solvents captured in this project. Any quote that defaults to PVDF because 'it handles everything' must carry an explicit ketone/acetone exception, regardless of whether the PVDF component is a pump, valve, tank liner, or tubing.",
+      "source": "data/reference/nuance-appendix.md (nuance 53), data/reference/flowline-chemical-compatibility.csv, data/vendor-sources/flowline-chemical-compatibility.md"
+    },
+    {
+      "id": "hydrocarbons-refrigerants-avoid-316ss-and-magmeter",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "freon",
+        "refrigerant",
+        "hydrocarbon",
+        "fuel",
+        "diesel",
+        "gasoline",
+        "crude oil",
+        "creosote",
+        "tall oil"
+      ],
+      "avoid": {
+        "category": "Instrumentation",
+        "material": "316SS",
+        "subtype_keywords": [
+          "magmeter",
+          "magnetic flow meter"
+        ]
+      },
+      "recommend": {
+        "material_options": "PVDF, PFA, or PTFE for wetted parts (all rate Excellent across all six refrigerants tested: Freon-11, -12, -21, -22, -113, -114)",
+        "category": "Instrumentation",
+        "product_line": "clamp-on ultrasonic flow meter (zero wetted parts) or a fluoropolymer in-line ultrasonic meter, not a magmeter"
+      },
+      "rationale": "Two distinct findings from reading the Flowline chart against this project's own instrumentation corpus. First, across all six refrigerants in the chart (Freon-11, -12, -21, -22, -113, -114) PVDF, PFA, and PTFE all rate Excellent while 316 stainless steel drops to Fair - the only place in the 552-row table where stainless is the weakest listed wetted material against an otherwise benign-looking fluid (a milder version of the same pattern appears on creosote/tall oil and hot olive oil). Second, GF Signet's own 2551 and 2552 magmeter datasheets state a minimum fluid conductivity of 20 microsiemens/cm, which hydrocarbons and refrigerants do not meet - meaning most of this project's captured flow-instrumentation catalog is physically inapplicable to this chemical family regardless of wetted-material choice. Both findings invert the intuitive assumption ('stainless is the safe default,' 'a magmeter is the accurate flow-measurement choice'), so both must be stated explicitly rather than assumed away.",
+      "source": "data/reference/nuance-appendix.md (nuance 2), data/reference/flowline-chemical-compatibility.csv, data/vendor-sources/gf-signet-instrumentation-catalog.md, data/vendor-sources/icon-process-controls-flow-meters.md"
+    },
+    {
+      "id": "saltwater-vs-seawater-316ss-divergence",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "sea water",
+        "seawater",
+        "salt water",
+        "saltwater",
+        "brine",
+        "saturated salt water"
+      ],
+      "meta_principle": true,
+      "avoid": {
+        "note": "do not treat 'salt water' and 'sea water' as interchangeable when specifying 316SS wetted parts - they rate differently"
+      },
+      "recommend": {
+        "material_options": "sea water: PVC/PP/PVDF/PFA/PTFE/316SS all rate Excellent at 40C and 80C (316SS is fine here). Saturated salt water: 316SS drops to Fair at both temperatures while all thermoplastics stay Excellent - avoid 316SS wetted parts specifically for saturated/high-concentration brine, even though sea water itself is not a problem for the same material."
+      },
+      "rationale": "Flowline's chart rates sea water Excellent across PVC, PP, PVDF, PFA, PTFE, and 316SS at both 40C and 80C, but rates saturated salt water Fair on 316SS at both temperatures while all thermoplastics stay Excellent. Two media that read as near-synonyms on a datasheet behave differently against stainless - a real, counter-intuitive distinction worth checking explicitly rather than assuming 'salt water' and 'sea water' share one compatibility profile.",
+      "source": "data/reference/nuance-appendix.md (nuance 69), data/reference/flowline-chemical-compatibility.csv"
+    },
+    {
+      "id": "fda-compliant-material-not-just-food-beverage",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "cosmetic",
+        "pharmaceutical",
+        "pharma",
+        "personal care",
+        "shampoo",
+        "toothpaste",
+        "glycerin",
+        "liquid soap",
+        "ointment",
+        "specialty chemical",
+        "fda compliant"
+      ],
+      "meta_principle": true,
+      "recommend": {
+        "requires": [
+          "ask whether FDA-compliant (CFR21.177 / EC 1935/2004/EC) wetted material options are needed even when the application isn't food or beverage"
+        ]
+      },
+      "rationale": "FTI Air's FDA-compliant AODD pump lines (CFR21.177, EC 1935/2004/EC compliant, ATEX available on metallic models) list real named applications far beyond food/beverage: wine, vinegar, soy sauce, and fish oil, but also shampoo, glycerin, liquid soap, honey, ointments, fluoride, formaldehyde, dyes, toothpaste, and bath gel. This corrects a natural assumption that FDA-compliant equipment is only relevant to food-industry buyers - cosmetics, pharma-adjacent, and specialty chemical processors are equally in-scope and should be asked about FDA-compliant material options during intake, not just food/beverage customers.",
+      "source": "data/reference/nuance-appendix.md (nuance 33), data/vendor-sources/ftiair-fda-compliant.md"
+    },
+    {
+      "id": "blue-white-nsf61-municipal-only",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "potable water",
+        "drinking water",
+        "nsf-61",
+        "nsf 61",
+        "municipal water supply"
+      ],
+      "avoid": {
+        "manufacturer": "Blue-White",
+        "product_line": "A-Series (Industrial)",
+        "note": "not NSF-61 listed, despite nearly identical hardware to the Municipal M-Series"
+      },
+      "recommend": {
+        "manufacturer": "Blue-White",
+        "product_line": "M-Series (Municipal)",
+        "constraint": "NSF-61 listed - required for any potable/drinking-water-contact peristaltic metering pump application"
+      },
+      "rationale": "Blue-White's Municipal-market peristaltic pumps (M-series) carry NSF-61 listing while the nearly-identical Industrial-market A-series does not, despite similar hardware - a market-segment-driven certification split, not a hardware difference. Do not assume all Blue-White peristaltic models are NSF-61 rated just because the product family generally is; any potable-water-contact application must specify the M-Series by name.",
+      "source": "data/reference/nuance-appendix.md (nuance 23), data/vendor-sources/blue-white-chemical-metering-pumps.md"
+    },
+    {
+      "id": "lined-fitting-molded-vs-inserted-liner-quality",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "lined fitting",
+        "ptfe-lined",
+        "molded liner",
+        "inserted liner",
+        "lined pipe fitting"
+      ],
+      "meta_principle": true,
+      "avoid": {
+        "subtype_keywords": [
+          "separately-molded, inserted liner",
+          "gapped liner-to-body construction"
+        ]
+      },
+      "recommend": {
+        "requires": [
+          "liner molded directly to the fitting body (not a separately-molded liner inserted afterward)"
+        ]
+      },
+      "rationale": "JCS Tool's own competitive claim - that 90-degree elbow liners molded directly to the fitting body avoid both bend-induced liner stress and the housing-to-liner gap created by a separately-molded, inserted liner - is a general quality criterion applicable to any vendor's lined-fitting products, not just JCS's own. This is a vendor-agnostic evaluation criterion: the molded-vs-inserted-liner distinction affects mechanical strength and vacuum rating regardless of which brand ultimately gets specified, and is cross-vendor-consistent with the PTFE-cold-flow-at-threaded-joints failure mode already documented in the sulfuric-acid-98plus-material-selection rule (Griffco).",
+      "source": "data/reference/nuance-appendix.md (nuance 58), data/vendor-sources/jcs-tool-ptfe-lined-fittings.md"
+    },
+    {
+      "id": "groundwater-uranium-anion-exchange-progressive",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "uranium",
+        "uranium removal",
+        "radionuclide",
+        "groundwater treatment",
+        "ion exchange",
+        "uranyl"
+      ],
+      "avoid": {
+        "category": "Ion Exchange Resin",
+        "subtype_keywords": [
+          "cation",
+          "softening resin"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "ResinTech",
+        "product_line": "SBG2-HP",
+        "category": "Ion Exchange Resin",
+        "requires": [
+          "twin-vessel progressive configuration",
+          "Type 2 anion resin, Cl- form"
+        ]
+      },
+      "rationale": "Uranium in groundwater at typical pH exists as an anionic uranyl-carbonate complex, so a strong-base Type 2 anion resin (Cl- form) removes it -- a cation softening resin targets a different failure mode (hardness) and would not remove uranium. Twin-vessel progressive (lead/lag) configuration, not parallel, maximizes time-to-breakthrough for a regulated contaminant target.",
+      "source": "data/case-studies/river-island-uranium-ion-exchange.md"
+    },
+    {
+      "id": "contaminant-removal-ix-volumetric-regeneration-trigger",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "ion exchange",
+        "resin regeneration",
+        "uranium removal",
+        "radionuclide",
+        "MCL compliance"
+      ],
+      "avoid": {
+        "category": "Controls",
+        "subtype_keywords": [
+          "time-clock regeneration",
+          "breakthrough sampling only"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Clack",
+        "product_line": "WS2H/F",
+        "category": "Ion Exchange Control Valve",
+        "requires": [
+          "volumetric (flow-totalized) regeneration trigger"
+        ]
+      },
+      "rationale": "When breakthrough of a regulated contaminant (not just hardness) is the failure mode being guarded against, a volumetric regeneration trigger set at a conservative fraction of the resin's rated gallons/CF capacity is a stronger control philosophy than a simple time-clock trigger, since it ties regeneration to actual measured throughput rather than an assumed usage rate.",
+      "source": "data/case-studies/river-island-uranium-ion-exchange.md"
+    },
+    {
+      "id": "tenorm-avoidance-via-throughput-margin",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "TENORM",
+        "radioactive resin",
+        "uranium resin",
+        "radionuclide resin disposal"
+      ],
+      "recommend": {
+        "category": "System",
+        "requires": [
+          "regeneration throughput setpoint set well below the resin manufacturer's stated TENORM accumulation limit"
+        ]
+      },
+      "rationale": "When a resin's own manufacturer states a TENORM (Technologically Enhanced Naturally Occurring Radioactive Material) accumulation threshold, the safe design pattern is setting the regeneration throughput setpoint at a large conservative safety margin below that threshold (a real ~5.2x margin was used in the River Island project) rather than relying on downstream waste characterization alone to catch a problem after it has already occurred.",
+      "source": "data/case-studies/river-island-uranium-ion-exchange.md"
+    }
+  ]
+}

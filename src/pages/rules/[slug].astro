@@ -1,0 +1,51 @@
+---
+import DataLayout from '../../layouts/DataLayout.astro';
+import { getRules, type Rule } from '../../lib/rules';
+
+export async function getStaticPaths() {
+  const rules = getRules();
+  return rules.map((r) => ({ params: { slug: r.id }, props: { rule: r } }));
+}
+
+interface Props { rule: Rule }
+const { rule } = Astro.props;
+
+const humanTitle = rule.id.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+const avoidText = rule.avoid ? `${rule.avoid.subtype_keywords?.join(', ') || rule.avoid.category} (${rule.avoid.category})` : null;
+const recommendText = rule.recommend ? `${rule.recommend.manufacturer ?? ''} ${rule.recommend.product_line ?? ''} (${rule.recommend.category ?? ''})`.trim() : null;
+
+const title = humanTitle;
+const description = rule.rationale;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'TechArticle',
+  headline: humanTitle,
+  description: rule.rationale,
+  about: rule.trigger_keywords,
+  author: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)', url: 'https://www.libertyces.com' },
+  publisher: { '@type': 'Organization', name: 'LibertyCES', url: 'https://www.libertyces.com' },
+};
+---
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath={`/rules/${rule.id}/`}>
+  <h1>{humanTitle}</h1>
+  <div class="tldr">
+    <strong>Direct answer:</strong> {rule.rationale}
+    <div>Confidence: <strong>{rule.confidence}</strong></div>
+  </div>
+
+  <table>
+    <tbody>
+      <tr><th>Applies when</th><td>{rule.trigger_keywords.join(', ')}</td></tr>
+      {avoidText && <tr><th>Avoid</th><td>{avoidText}</td></tr>}
+      {recommendText && <tr><th>Recommend instead</th><td>{recommendText}</td></tr>}
+      <tr><th>Rationale</th><td>{rule.rationale}</td></tr>
+      <tr><th>Confidence</th><td>{rule.confidence}</td></tr>
+      <tr><th>Source</th><td>{rule.source}</td></tr>
+    </tbody>
+  </table>
+
+  <p style="font-size:12px;color:#666;">This is a general engineering rule derived from real field/case-study evidence, not a substitute for a project-specific specification review — confirm against your exact process conditions before ordering equipment.</p>
+
+  <p><a href="/rules/">All engineering rules &rarr;</a> · <a href="/datasets/engineering_rules.json">Download full ruleset (JSON) &rarr;</a></p>
+</DataLayout>
