@@ -1,0 +1,60 @@
+---
+import DataLayout from '../layouts/DataLayout.astro';
+import rows from '../data/pump-material-resistance.json';
+
+const MATERIALS = [
+  ['cpvc', 'CPVC'], ['glass_filled_pp', 'Glass-Filled PP'], ['pvdf', 'PVDF'],
+  ['ryton_pps', 'Ryton PPS'], ['etfe', 'ETFE'], ['ptfe', 'PTFE'], ['ss316', '316 SS'],
+  ['hastelloy_c276', 'Hastelloy C-276'], ['titanium', 'Titanium'], ['carbon', 'Carbon'],
+  ['ceramic', 'Ceramic'], ['silicon_carbide', 'Silicon Carbide'], ['epdm', 'EPDM'],
+  ['fkm', 'FKM (Viton)'], ['fep', 'FEP'],
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Centrifugal Pump Material Chemical Resistance — Max Temperature Limits',
+  description: `Maximum safe operating temperature (°F) by chemical for ${rows.length} chemicals across 15 centrifugal pump wetted-end materials, including flashpoint, flammability, and specific gravity where published.`,
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc.', url: 'https://www.libertyces.com' },
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/pump-material-resistance.json' },
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://data.libertyces.com/datasets/pump-material-resistance.csv' },
+  ],
+  variableMeasured: MATERIALS.map(([, label]) => `${label} max temperature limit (°F)`),
+};
+---
+<DataLayout
+  title="Centrifugal Pump Material Chemical Resistance"
+  description={`Max safe operating temperature (°F) by chemical across 15 centrifugal pump wetted-end materials, for ${rows.length} chemicals.`}
+  jsonLd={jsonLd}
+  canonicalPath="/pump-material-resistance"
+>
+  <h1>Centrifugal Pump Material Chemical Resistance — Max Temperature Limits</h1>
+  <div class="tldr">
+    <strong>Direct answer:</strong> This table gives the maximum safe operating temperature, in °F, for {rows.length} chemicals against 15 centrifugal-pump wetted-end materials — CPVC, glass-filled polypropylene, PVDF, Ryton PPS, ETFE, PTFE, 316 stainless steel, Hastelloy C-276, titanium, carbon, ceramic, silicon carbide, EPDM, FKM (Viton), and FEP. "NR" = not recommended at any temperature; "ND" = no data published. Numbers are the manufacturer's published ceiling, not a guarantee — always confirm against your specific pump model's own temperature limits, which may be lower. For a free spec review, call James Riggins at <a href="tel:+15593955500">(559) 395-5500</a> or email <a href="mailto:james@libertyces.com">james@libertyces.com</a>.
+  </div>
+
+  <p>Raw data: <a href="/datasets/pump-material-resistance.json">JSON</a> / <a href="/datasets/pump-material-resistance.csv">CSV</a>. Source: manufacturer centrifugal pump chemical resistance chart. Where published, flashpoint/flammability data is included via the "flammable" and "specific_gravity" fields in the raw dataset (a chemical is flammable if its flashpoint is 140°F or below — only materials suitable for flammables should be used with those chemicals).</p>
+
+  <div style="overflow-x:auto">
+  <table>
+    <thead>
+      <tr><th>Chemical</th><th>Sp. Gr.</th>{MATERIALS.map(([, label]) => <th>{label}</th>)}</tr>
+    </thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          <td>{r.chemical}{r.flammable ? ' 🔥' : ''}</td>
+          <td>{r.specific_gravity ?? '—'}</td>
+          {MATERIALS.map(([key]) => <td>{r[key]}</td>)}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  </div>
+
+  <p>🔥 = flashpoint at or below 140°F (flammable — only flammable-rated pump materials should be used).</p>
+
+  <p><a href="/">← LibertyCES Data</a> · <a href="/tube-compatibility">Peristaltic pump tube compatibility</a> · <a href="/seal-material-compatibility">Elastomer seal material compatibility</a></p>
+</DataLayout>

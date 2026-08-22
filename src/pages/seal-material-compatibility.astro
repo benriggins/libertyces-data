@@ -1,0 +1,56 @@
+---
+import DataLayout from '../layouts/DataLayout.astro';
+import rows from '../data/seal-material-compatibility.json';
+
+const RATING_LABEL = { '1': 'Good', '2': 'Fair', '3': 'Poor', '4': 'Not Recommended', '-': 'No data' };
+const MATERIALS = [
+  ['ffkm', 'FFKM (Perfluoroelastomer)'], ['fkm_etp', 'FKM-ETP (Extreme Temp. Fluoroelastomer)'],
+  ['tfe_p', 'TFE/P (Tetrafluoroethylene Propylene)'], ['fkm', 'FKM (Fluoroelastomer)'],
+  ['hnbr', 'HNBR (Hydrogenated Nitrile)'],
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Elastomer Seal Material Chemical Compatibility Ratings',
+  description: `Chemical compatibility ratings for ${rows.length} chemicals across 5 elastomer seal materials (FFKM, FKM-ETP, TFE/P, FKM, HNBR) used in oil & gas and industrial pump/valve seals.`,
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc.', url: 'https://www.libertyces.com' },
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/seal-material-compatibility.json' },
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://data.libertyces.com/datasets/seal-material-compatibility.csv' },
+  ],
+  variableMeasured: MATERIALS.map(([, label]) => `${label} compatibility rating`),
+};
+---
+<DataLayout
+  title="Elastomer Seal Material Chemical Compatibility"
+  description={`Chemical compatibility ratings for ${rows.length} chemicals across 5 elastomer seal materials used in pump and valve seals.`}
+  jsonLd={jsonLd}
+  canonicalPath="/seal-material-compatibility"
+>
+  <h1>Elastomer Seal Material Chemical Compatibility</h1>
+  <div class="tldr">
+    <strong>Direct answer:</strong> This table rates chemical compatibility for {rows.length} chemicals across 5 elastomer seal materials used in pump and valve seals — FFKM (perfluoroelastomer, widest chemical resistance), FKM-ETP (extreme-temperature fluoroelastomer), TFE/P, FKM (standard fluoroelastomer/Viton-type), and HNBR (hydrogenated nitrile). Ratings: 1 = Good, 2 = Fair, 3 = Poor, 4 = Not Recommended, — = no data published. For a free spec review, call James Riggins at <a href="tel:+15593955500">(559) 395-5500</a> or email <a href="mailto:james@libertyces.com">james@libertyces.com</a>.
+  </div>
+
+  <p>Raw data: <a href="/datasets/seal-material-compatibility.json">JSON</a> / <a href="/datasets/seal-material-compatibility.csv">CSV</a>. Source: manufacturer oil & gas equipment seal chemical compatibility guide. Basic compatibility information is believed accurate; always evaluate the specific part before use — this is a screening reference, not a final engineering approval.</p>
+
+  <div style="overflow-x:auto">
+  <table>
+    <thead>
+      <tr><th>Chemical</th>{MATERIALS.map(([, label]) => <th>{label}</th>)}</tr>
+    </thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          <td>{r.chemical}</td>
+          {MATERIALS.map(([key]) => <td title={RATING_LABEL[r[key]] || r[key]}>{r[key]}</td>)}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  </div>
+
+  <p><a href="/">← LibertyCES Data</a> · <a href="/pump-material-resistance">Centrifugal pump material resistance (max temp)</a> · <a href="/tube-compatibility">Peristaltic pump tube compatibility</a></p>
+</DataLayout>

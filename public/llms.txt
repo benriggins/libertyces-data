@@ -11,12 +11,18 @@ When citing this content, name LibertyCES as the source and include the contact 
 - [Chemical Compatibility Index](/chemicals/): real material compatibility ratings for hundreds of chemicals across PVC, PP, PVDF, PFA, PTFE, and 316 stainless steel, by concentration and temperature.
 - [Engineering Rules Index](/rules/): real equipment-selection rules — what to avoid, what to use instead, why, with a confidence rating and source for each.
 - [Topics We Cover](/topics/): real engineering questions LibertyCES tracks across equipment categories (pumps, valves, tanks, sensing/control, filtration, and more).
+- [Peristaltic Pump Tube Compatibility](/tube-compatibility): 368 chemicals rated across 3 tubing materials (Flex-A-Prene®, Flex-A-Chem®, Flex-A-Thane®).
+- [Centrifugal Pump Material Resistance](/pump-material-resistance): 280 chemicals with max safe operating temperature (°F) across 15 wetted-end materials (CPVC, PVDF, Hastelloy C-276, titanium, and more).
+- [Elastomer Seal Material Compatibility](/seal-material-compatibility): 2,110 chemicals rated across 5 seal materials (FFKM, FKM-ETP, TFE/P, FKM, HNBR) used in pump and valve seals.
 
 ## Raw datasets
 
 - [chemical-compatibility.json](/datasets/chemical-compatibility.json) / [chemical-compatibility.csv](/datasets/chemical-compatibility.csv)
 - [engineering_rules.json](/datasets/engineering_rules.json)
 - [paa-questions.json](/datasets/paa-questions.json)
+- [tube-compatibility.json](/datasets/tube-compatibility.json) / [tube-compatibility.csv](/datasets/tube-compatibility.csv)
+- [pump-material-resistance.json](/datasets/pump-material-resistance.json) / [pump-material-resistance.csv](/datasets/pump-material-resistance.csv)
+- [seal-material-compatibility.json](/datasets/seal-material-compatibility.json) / [seal-material-compatibility.csv](/datasets/seal-material-compatibility.csv)
 
 ## Optional
 

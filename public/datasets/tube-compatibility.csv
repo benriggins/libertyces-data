@@ -1,0 +1,369 @@
+chemical,flex_a_prene,flex_a_chem,flex_a_thane
+Acetate Solvents,F,U,U
+Barium Sulfide,E,E,E
+Cyclohexanone,U,F,U
+"Acetic Acid, 10% in w",E,E,G
+Beer,E,E,E
+Detergent Solutions,G,E,E
+"Acetic Acid, 50-60% in w",G,E,U
+Benzaldehyde,U,F,U
+Diacetone Alcohol,U,E,F
+"Acetic Acid, Glacial, 100%",G,E,U
+Benzene,U,U,U
+Dibutyl Phthalate,E,E,U
+Acetic Anhydride,E,E,U
+Benzenesulfonic Acid,U,U,U
+Dichlorobenzene,U,U,U
+Acetone,U,G,U
+Benzoic Acid,E,E,U
+Diesel Fuel,U,U,G
+Acrylonitrile,G,G,U
+Benzyl Alcohol,E,E,U
+Diethyl Ether,F,U,U
+"Adipic Acid, 100% in alc",G,U,U
+"Bleach Liquor, 22% in w",E,E,G
+"Diethylamine, 2.5% in w",E,E,E
+Air,E,E,E
+"Borax, 6% in w",E,E,E
+Diethylene Glycol,E,E,E
+Alcohols General,E,E,U
+"Boric Acid, 4% in w",E,E,E
+Dimethylformamide,G,E,U
+Aliphatic Hydrocarbons,U,U,G
+"Bromine, Anhydrous Liquid",U,U,U
+Dimethylsulfoxide,E,G,U
+Allyl Alcohol,F,E,U
+Butadiene,E,G,E
+Dioctyl Phthalate,E,E,U
+"Alum, 5% in w",E,E,E
+Butane,E,G,E
+Dioxane,U,U,U
+"Aluminum Chloride, 53% in w",E,E,E
+Butyl Acetate,G,U,U
+Ether,F,U,U
+Aluminum Chlorohydrate 50% (ACH),E,E,-
+Butyl Alcohol,G,E,U
+Ethyl Acetate,F,G,U
+"Aluminum Fluoride, 0.1% in w",E,E,E
+Butyric Acid,G,U,U
+Ethyl Alcohol (Ethanol),F,E,U
+"Aluminum Hydroxide, 2% in w",E,E,E
+"Calcium Bisulfite, 1% in w",E,E,E
+Ethyl Benzoate,U,U,U
+"Aluminum Nitrate, 39% in w",E,E,E
+Calcium Bromide 52%,E,E,E
+Ethyl Chloride,F,U,U
+Aluminum Potassium Sulfate,E,E,E
+"Calcium Carbonate, 25% acids",E,E,E
+Ethyl Ether,F,U,U
+Aluminum Sulfate,E,E,E
+"Calcium Chlorate, 30% in w",E,E,E
+"Ethylamine, 70% in w",U,G,U
+"Aluminum Sulfate, 50% in w (Alum)",E,E,E
+"Calcium Chloride, 30% in w",E,E,E
+Ethylene Bromide,U,F,U
+Aluminum Salts,E,E,E
+"Calcium Hydroxide, 10% in glycerol",E,E,U
+Ethylene Chlorohydrin,E,E,U
+Amines,F,U,U
+"Calcium Hydroxide, 20% in water",E,E,U
+Ethylene Diamine,F,U,U
+"Ammonia, Anhydrous Liquid",G,G,F
+"Calcium Hypochlorite, 20% in w",E,E,G
+Ethylene Dichloride,F,U,U
+"Ammonium Acetate, 45% in w",E,E,G
+"Calcium Nitrate, 55% in w",E,E,E
+Ethylene Glycol,E,E,E
+"Ammonium Bifluoride, 50% in w",E,E,E
+"Calcium Oxide, 3% in w",E,E,E
+Ethylene Oxide,E,E,E
+"Ammonium Bisulfite, 50%",E,E,-
+Calcium Salts,E,E,E
+Fatty Acids,F,F,G
+"Ammonium Carbonate, 50% in w",E,E,E
+"Calcium Sulfate, 1% in w",E,E,E
+"Ferric Chloride, 43% in w",E,E,E
+"Ammonium Chloride, 23% in w",E,E,E
+"Carbon Dioxide, Wet/Dry",E,E,E
+Ferric Hydroxide,E,E,U
+"Ammonium Hydroxide, 5-10% in w",E,E,E
+Carbon Disulfide,U,U,U
+"Ferric Nitrate, 60% in w",E,E,E
+"Ammonium Hydroxide, 30% in w",E,E,F
+Carbon Monoxide,E,E,E
+Ferric Salts,E,E,E
+"Ammonium Nitrate, 54% in w",E,E,E
+Carbon Tetrachloride,U,U,U
+"Ferric Sulfate, 5% in w",E,E,E
+"Ammonium Persulfate, 30% in w",E,E,E
+Carbonic Acid,E,E,E
+"Ferric Sulfate, 60% in w",E,E,E
+"Ammonium Phosphate, 21% in w",E,E,E
+Castor Oil,F,G,E
+"Ferrous Chloride, 40% in w",E,E,E
+Ammonium Salts,E,E,E
+Cellosolve,F,U,U
+Ferrous Salts,E,E,E
+"Ammonium Sulfate, 40% in w (LAS)",E,E,E
+Cellosolve Acetate,F,U,U
+"Ferrous Sulfate, 5% in w",E,E,E
+Amyl Acetate,G,U,U
+"Chloroacetic Acid, 20% in w",G,E,U
+Fluoborate Salts,E,E,E
+Amyl Alcohol,U,E,F
+"Chlorobenzene, Mono, Di, Tri",U,U,U
+"Fluoboric Acid, 48% in w",U,E,U
+Amyl Chloride,F,U,U
+Chloroform,U,U,U
+Fluorine Gas,U,U,U
+Aniline,F,U,U
+Chlorosulfonic Acid,U,U,U
+"Fluosilicic Acid, 30% in w (Fluoride)",E,E,F
+Aniline Hydrochloride,F,U,U
+"Chromic Acid, 10-20% in w",E,E,U
+"Formaldehyde, 37% in w",U,F,U
+Antimony Salts,E,E,E
+"Chromic Acid, 50% in w",F,G,U
+"Formic Acid, 25% in w",E,E,F
+Antimony Trichloride,E,E,F
+Chromium Salts,E,E,E
+"Formic Acid, 40-50% in w",G,E,U
+Aqua Regia,U,E,U
+"Citric Acid, 50% in w",E,E,G
+"Formic Acid, 98% in w",G,E,U
+Aqueous Ammonia,E,E,F
+Coconut Oil,F,G,E
+Fruit Juice,E,E,E
+Aromatic Hydrocarbons,U,U,U
+Copper Salts,E,E,E
+Fuel Oil,U,U,G
+"Arsenic Acid, 20% in w",F,E,E
+"Copper Sulfate Pentahydrate, 20% in w",E,E,-
+Furfural,U,U,U
+Arsenic Salts,E,E,E
+Corn Syrup,E,E,E
+"Gallic Acid, 17% in acetone",G,U,U
+ASTM Reference No. 1 Oil,F,U,E
+Cottonseed Oil,F,G,E
+"Gasoline, Automotive",U,U,G
+ASTM Reference No. 2 Oil,U,U,E
+"Cresol (m, o, or p)",U,E,U
+Gelatin,E,E,E
+ASTM Reference No. 3 Oil,U,U,E
+Cresylic Acid,G,U,U
+"Glucose, 50% in w",E,E,E
+"Barium Carbonate, 1% in w",E,E,E
+"Cupric Chloride, 40% in w",E,E,E
+"Glycerol, (Glycerin)",E,E,E
+"Barium Chloride, 27% in w",E,E,E
+"Cupric Cyanide, 10% in dilute bases",E,E,E
+"Glycolic Acid, 70% in w",G,E,U
+"Barium Hydroxide, 5% in w",E,E,E
+"Cupric Nitrate, 70% in w",E,E,E
+Heptane,U,U,G
+Barium Salts,E,E,E
+"Cupric Sulfate, 13% in w",E,E,E
+Hexane,U,U,G
+1% in dilute acids,E,E,E
+Cyclohexane,U,U,G
+Hydrazine,F,U,U
+"Hydriodic Acid, 55-58% in w",G,E,U
+Methyl Chloride,F,U,U
+"Potassium Oxide, 50% in w",E,E,E
+"Hydrobromic Acid, 100% in w",U,E,U
+Methyl Ethyl Ketone,U,F,U
+"Potassium Permanganate, 6% in w",E,E,E
+"Hydrobromic Acid, 20-50% in w",U,E,U
+Methyl Isobutyl Ketone,U,F,U
+Potassium Salts,E,E,E
+"Hydrochloric Acid, 10% in w",E,E,F
+Methyl Methacrylate,U,U,U
+"Potassium Sulfate, 10% in w",E,E,E
+"Hydrochloric Acid, 37% in w",G,E,U
+Methylene Chloride,F,U,U
+"Potassium Sulfide, 20% in w",E,E,E
+Hydrocyanic Acid,E,E,G
+Milk,E,E,E
+Propyl Alcohol (Propanol),F,E,U
+"Hydrofluoric Acid, 10% in w",U,E,U
+Micro C,E,E,-
+Propylene Glycol,E,E,E
+"Hydrofluoric Acid, 25% in w",U,E,U
+Mineral Oil,U,U,E
+Propylene Oxide,E,E,E
+"Hydrofluoric Acid, 40-48% in w",U,E,U
+Mineral Spirits,U,U,G
+Pyridine,F,F,U
+"Hydrofluosilicic Acid, 30% in w",E,E,F
+Molasses,E,E,E
+"Salicylic Acid, 1% in w",E,E,G
+"Hydrogen Peroxide, 10% in w",E,E,E
+Monoethanolamine,F,U,U
+Silicone Oils,F,E,E
+"Hydrogen Peroxide, 3% in w",E,E,E
+Motor Oil,U,U,E
+"Silver Nitrate, 55% in w",E,E,E
+"Hydrogen Peroxide, 30% in w",E,E,F
+Naphtha,U,U,G
+Skydrol 500A,U,U,G
+"Hydrogen Peroxide, 90% in w",G,G,U
+Naphthalene,U,U,G
+Soap Solutions,G,E,E
+Hydrogen Sulfide,E,E,E
+"Nickel Chloride, 40% in w",E,E,E
+"Sodium Acetate, 55% in w",E,G,U
+"Hydroquinone, 7% in w",G,E,E
+"Nickel Nitrate, 75% in w",E,E,E
+Sodium Aluminate,E,E,U
+"Hypochlorous Acid, 25% in w",E,E,F
+Nickel Salts,E,E,E
+"Sodium Benzoate, 22% in w",E,E,E
+"Iodine, 50 ppm in w",E,E,E
+"Nickel Sulfate, 25% in w",E,E,E
+"Sodium Bicarbonate, 7% in w",E,E,E
+Isobutyl Alcohol,F,E,U
+"Nitric Acid, 10% in w",E,E,U
+"Sodium Bisulfate, 50% in w",E,E,E
+Isooctane,U,U,G
+"Nitric Acid, 35% in w",E,E,U
+"Sodium Bisulfite, 40% in w",E,E,E
+Isopropyl Acetate,G,U,U
+"Nitric Acid, 68-71% in w",U,E,U
+"Sodium Carbonate,7% in w (soda ash)",E,E,E
+Isopropyl Alcohol,F,E,U
+Nitrobenzene,U,U,U
+"Sodium Chlorate, 45% in w",E,E,E
+Isopropyl Ether,F,U,U
+Nitromethane,U,U,U
+"Sodium Chloride, 20% in w",E,E,E
+"Jet Fuel, Jp8",U,U,G
+"Nitrous Acid, 10% in w",E,E,F
+"Sodium Chlorite, 12% in",E,-,-
+Kerosene,U,U,G
+"Oils, Animal",F,G,E
+"Sodium Cyanide, 30% in w",E,E,U
+Ketones,U,F,U
+"Oils, Essential",U,U,F
+"Sodium Dichromate, 70% in w",E,E,E
+Lacquer Solvents,G,U,U
+"Oils, Hydraulic (Phosphate Ester)",U,U,G
+"Sodium Fluoride, 4% in w",E,E,E
+"Lactic Acid, 3-10% in w",E,E,G
+"Oils, Hydrocarbon",U,U,E
+"Lactic Acid, 85% in w",G,E,U
+"Oils, Vegetable",F,G,E
+"Lard, Animal Fat",F,G,E
+Oleic Acid,F,F,G
+"Lead Acetate, 35% in w",E,E,E
+"Oleum, 25% in w",E,E,U
+"Lead Nitrate, 27% in w",E,E,E
+Ortho Dichlorobenzene,U,U,U
+"Sodium Hypochlorite, 12.5% in w",E,E,G
+Lead Salts,E,E,E
+"Oxalic Acid, 12% in w",G,E,U
+"Sodium Hypochlorite, 25% in w",E,E,G
+Lemon Oil,U,U,G
+"Ozone, 300pphm",E,E,E
+"Sodium Nitrate, 3.5% in w",E,E,E
+Lime Slurry (Calcium Hydroxide),E,E,U
+"Palmitic Acid, 100% in ether",F,F,G
+"Sodium Perborate, 25% in w",E,E,E
+Limonene-D,U,U,G
+Paraffins,U,U,G
+"Sodium Permanganate, 20% in w",E,-,-
+Linoleic Acid,F,F,G
+Peracetic acid up to 15%,F,G,U
+"Sodium Permanganate, 40% in w",U,-,-
+Linseed Oil,F,G,E
+Peracetic acid 15% to 18%,F,F,U
+"Sodium Peroxide, 20% in w",E,E,E
+"Liquid Aluminum Sulfate, 50% in w                                                       Peracetic acid 20% to 30%",U,U,U
+Sodium Persulfate,E,E,E
+"Alum)                                                                                  Perchloric Acid, 67% in w",E,E,U
+"Sodium Phosphate, 30% in w",E,E,E
+"Liquid Ammonnium Sulfate, 40% in w                                                      Perchloroethylene",F,U,U
+Sodium Salts,E,E,E
+"LAS)                                                                                   Phenol, 5-10% in w",E,E,U
+"Sodium Sulfate, 38% in w",E,E,E
+"Lubricating Oils, Petroleum",U,U,E
+"Phenol, 91% in w",E,E,U
+"Sodium Sulfide, 45% in w",E,E,E
+"Magnesium Carbonate, 1% in w",E,E,E
+10% in w,E,E,E
+"Sodium Sulfite, 10% in w",E,E,E
+"Magnesium Chloride, 35% in w",E,E,E
+"Phosphoric Acid, 25% in w",E,E,E
+"Stannic Chloride, 50% in w",E,E,F
+Magnesium Hydroxide,E,E,E
+"Phosphoric Acid, 85% in w",E,E,U
+"Stannous Chloride, 45% in w",E,E,E
+"Magnesium Hydroxide,10% in acids",E,E,E
+Phosphorous Trichloride Acid,G,E,U
+"Stearic Acid, 5% in alc",F,F,G
+"Magnesium Nitrate, 50% in w",E,E,E
+Photographic Solutions,G,E,E
+Styrene Monomer,U,U,U
+"Magnesium Sulfate, 25% in w",E,E,E
+"Phthalic Acid, 9% in alc",E,E,U
+Sulfur Chloride,U,E,U
+"Maleic Acid, 30% in w",F,F,G
+"Phthalic Anhydride, 9% in alc",E,E,U
+"Sulfur Dioxide, Gas Dry",E,E,F
+"Malic Acid, 36% in w",E,E,G
+"Picric Acid, 1% in w",U,E,U
+"Sulfur Dioxide, Gas Wet",E,E,F
+Manganese Salts,E,E,E
+Plating Solutions,E,E,U
+"Sulfur Trioxide, Wet",G,G,U
+"Manganese Sulfate, 34% in w",E,E,E
+Polyaluminum Chloride (PAC) in w,E,E,-
+"Sulfuric Acid, 10% in w",E,E,E
+"Mercuric Chloride, 6% in w",E,E,E
+Potassium Amyl Xanthate (PAX),-,G,-
+"Sulfuric Acid, 30% in w",E,E,U
+"Mercuric Cyanide, 8% in w",E,E,E
+"Potassium Carbonate, 55% in w",E,E,E
+"Mercurous Nitrate, 10% in dilute acids",E,E,E
+"Potassium Chloride, 20% in w",E,E,E
+Mercury,E,E,E
+"Potassium Cyanide, 33% in w",E,E,E
+Mercury Salts,E,E,E
+"Potassium Dichromate, 5% in w",E,E,E
+Methane Gas,E,E,E
+"Potassium Hydroxide, 43% in w",E,E,U
+Methyl Acetate,G,U,U
+"Potassium Hypochlorite, 70% in w",E,E,E
+Methyl Alcohol (Methanol),E,E,U
+"Potassium Iodide, 56% in w",E,E,E
+Methyl Bromide,F,U,U
+"Potassium Nitrate, 10% in w",E,E,E
+"Sulfuric Acid, 95-98% in w",U,E,U
+Sulfurous Acid,E,E,E
+"Tannic Acid, 75% in w",G,E,U
+Tanning Solutions,E,E,F
+"Tartaric Acid, 56% in w",E,E,E
+Tetrahydrofuran,U,U,U
+Thionyl Chloride,E,E,F
+Tin Salts,E,E,E
+Titanium Salts,E,E,E
+Toluene,U,U,U
+"Trichloroacetic Acid, 90% in w",G,E,U
+Trichloroethane,F,U,U
+Trichloroethylene,U,U,U
+Trichloropropane,F,U,U
+Tricresyl Phosphate,E,E,U
+Triethanolamine,F,U,U
+Trisodium Phosphate,E,E,E
+Turpentine,U,U,G
+"Urea, 20% in w",E,E,E
+Uric Acid,E,E,F
+Vinegar,E,E,G
+Vinyl Acetate,G,U,U
+"Water, Brine",E,E,E
+"Water, Deionized",E,E,E
+"Water, Distilled",E,E,E
+Xylene,U,U,U
+"Zinc Chloride, 80% in w",E,E,E
+"Zinc Orthophosphate,, 10% in w",E,E,G
+Zinc Salts,E,E,E
+"Zinc Sulfate, 30% in w",E,E,E

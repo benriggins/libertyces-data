@@ -21,6 +21,7 @@ const jsonLdArray = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
   <title>{title} | LibertyCES Data</title>
   <meta name="description" content={description} />
   <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="OZ8SQE_29F7HwJN1xOAP6S9F9bNukAtGzHPqZdGRjo8" />
   <link rel="canonical" href={canonical} />
   {jsonLdArray.map((ld) => (
     <script type="application/ld+json" set:html={JSON.stringify(ld)} />
@@ -42,6 +43,9 @@ const jsonLdArray = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
     <a href="/chemicals/">Chemicals</a>
     <a href="/rules/">Engineering Rules</a>
     <a href="/topics/">Topics</a>
+    <a href="/tube-compatibility">Tube Compatibility</a>
+    <a href="/pump-material-resistance">Pump Materials</a>
+    <a href="/seal-material-compatibility">Seal Materials</a>
     <a href="https://www.libertyces.com">libertyces.com</a>
   </nav>
   <hr />

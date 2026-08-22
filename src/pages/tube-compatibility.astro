@@ -1,0 +1,51 @@
+---
+import DataLayout from '../layouts/DataLayout.astro';
+import rows from '../data/tube-compatibility.json';
+
+const RATING_LABEL = { E: 'Excellent', G: 'Good', F: 'Fair', U: 'Not Recommended', '-': 'No data' };
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Peristaltic Pump Tube Chemical Compatibility Ratings',
+  description: `Chemical compatibility ratings for ${rows.length} chemicals across 3 peristaltic pump tubing materials (Flex-A-Prene, Flex-A-Chem, Flex-A-Thane), from 28-day room-temperature (73°F) immersion testing.`,
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc.', url: 'https://www.libertyces.com' },
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/tube-compatibility.json' },
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://data.libertyces.com/datasets/tube-compatibility.csv' },
+  ],
+  variableMeasured: ['Flex-A-Prene rating', 'Flex-A-Chem rating', 'Flex-A-Thane rating'],
+};
+---
+<DataLayout
+  title="Peristaltic Pump Tube Chemical Compatibility"
+  description={`Chemical compatibility ratings for ${rows.length} chemicals across 3 peristaltic pump tubing materials: Flex-A-Prene, Flex-A-Chem, Flex-A-Thane.`}
+  jsonLd={jsonLd}
+  canonicalPath="/tube-compatibility"
+>
+  <h1>Peristaltic Pump Tube Chemical Compatibility</h1>
+  <div class="tldr">
+    <strong>Direct answer:</strong> This table rates chemical compatibility for {rows.length} chemicals against 3 peristaltic-pump tube materials — Flex-A-Prene® (thermoplastic elastomer), Flex-A-Chem® (chemical-resistant thermoplastic), and Flex-A-Thane® (polyurethane) — based on 28-day room-temperature (73°F) immersion testing. Ratings: E = Excellent, G = Good, F = Fair, U = Not Recommended, — = no rating published. For a free spec review, call James Riggins at <a href="tel:+15593955500">(559) 395-5500</a> or email <a href="mailto:james@libertyces.com">james@libertyces.com</a>.
+  </div>
+
+  <p>Raw data: <a href="/datasets/tube-compatibility.json">JSON</a> / <a href="/datasets/tube-compatibility.csv">CSV</a>. Source: manufacturer 28-day immersion testing chart, tested at 73°F. Blank/"—" ratings mean no data was published for that chemical/material pair — treat as unknown, not safe. This is a screening reference; confirm tube material selection with a project-specific specification review before installation.</p>
+
+  <table>
+    <thead>
+      <tr><th>Chemical</th><th>Flex-A-Prene®</th><th>Flex-A-Chem®</th><th>Flex-A-Thane®</th></tr>
+    </thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          <td>{r.chemical}</td>
+          <td title={RATING_LABEL[r.flex_a_prene] || r.flex_a_prene}>{r.flex_a_prene}</td>
+          <td title={RATING_LABEL[r.flex_a_chem] || r.flex_a_chem}>{r.flex_a_chem}</td>
+          <td title={RATING_LABEL[r.flex_a_thane] || r.flex_a_thane}>{r.flex_a_thane}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <p><a href="/">← LibertyCES Data</a> · <a href="/chemicals/">Material chemical compatibility (PVC/PP/PVDF/PFA/PTFE/316SS)</a></p>
+</DataLayout>

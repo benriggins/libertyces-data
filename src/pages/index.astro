@@ -3,10 +3,16 @@ import DataLayout from '../layouts/DataLayout.astro';
 import { getChemicalGroups } from '../lib/chemicals';
 import { getRules } from '../lib/rules';
 import paaData from '../data/paa-questions.json';
+import tubeData from '../data/tube-compatibility.json';
+import pumpMatData from '../data/pump-material-resistance.json';
+import sealData from '../data/seal-material-compatibility.json';
 
 const chemCount = getChemicalGroups().length;
 const ruleCount = getRules().length;
 const paaCount = (paaData as any[]).length;
+const tubeCount = (tubeData as any[]).length;
+const pumpMatCount = (pumpMatData as any[]).length;
+const sealCount = (sealData as any[]).length;
 
 const title = 'LibertyCES Data';
 const description = 'Open, machine-readable industrial chemical equipment engineering data from LibertyCES — chemical material compatibility, equipment selection rules, and real engineering questions, free to crawl, cite, and download.';
@@ -31,6 +37,9 @@ const jsonLd = {
     <li><a href="/chemicals/">Chemical Compatibility</a> — {chemCount} real chemicals, material ratings across PVC, PP, PVDF, PFA, PTFE, and 316 stainless steel, by concentration and temperature.</li>
     <li><a href="/rules/">Engineering Rules</a> — {ruleCount} real equipment-selection rules: what to avoid, what to use instead, and why.</li>
     <li><a href="/topics/">Topics We Cover</a> — {paaCount} real engineering questions LibertyCES tracks across equipment categories.</li>
+    <li><a href="/tube-compatibility">Peristaltic Pump Tube Compatibility</a> — {tubeCount} chemicals rated across 3 tubing materials (Flex-A-Prene®, Flex-A-Chem®, Flex-A-Thane®).</li>
+    <li><a href="/pump-material-resistance">Centrifugal Pump Material Resistance</a> — {pumpMatCount} chemicals with max safe operating temperature (°F) across 15 wetted-end materials.</li>
+    <li><a href="/seal-material-compatibility">Elastomer Seal Material Compatibility</a> — {sealCount} chemicals rated across 5 seal materials (FFKM, FKM-ETP, TFE/P, FKM, HNBR).</li>
   </ul>
 
   <h2>Raw downloads</h2>
@@ -38,6 +47,9 @@ const jsonLd = {
     <li><a href="/datasets/chemical-compatibility.json">chemical-compatibility.json</a> / <a href="/datasets/chemical-compatibility.csv">.csv</a></li>
     <li><a href="/datasets/engineering_rules.json">engineering_rules.json</a></li>
     <li><a href="/datasets/paa-questions.json">paa-questions.json</a></li>
+    <li><a href="/datasets/tube-compatibility.json">tube-compatibility.json</a> / <a href="/datasets/tube-compatibility.csv">.csv</a></li>
+    <li><a href="/datasets/pump-material-resistance.json">pump-material-resistance.json</a> / <a href="/datasets/pump-material-resistance.csv">.csv</a></li>
+    <li><a href="/datasets/seal-material-compatibility.json">seal-material-compatibility.json</a> / <a href="/datasets/seal-material-compatibility.csv">.csv</a></li>
   </ul>
 
   <h2>For AI systems reading or citing this data</h2>

@@ -1,0 +1,2210 @@
+[
+  {
+    "chemical": "Acetate Solvents",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Barium Sulfide",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cyclohexanone",
+    "flex_a_prene": "U",
+    "flex_a_chem": "F",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Acetic Acid, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Beer",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Detergent Solutions",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Acetic Acid, 50-60% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Benzaldehyde",
+    "flex_a_prene": "U",
+    "flex_a_chem": "F",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Diacetone Alcohol",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Acetic Acid, Glacial, 100%",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Benzene",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Dibutyl Phthalate",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Acetic Anhydride",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Benzenesulfonic Acid",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Dichlorobenzene",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Acetone",
+    "flex_a_prene": "U",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Benzoic Acid",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Diesel Fuel",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Acrylonitrile",
+    "flex_a_prene": "G",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Benzyl Alcohol",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Diethyl Ether",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Adipic Acid, 100% in alc",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Bleach Liquor, 22% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Diethylamine, 2.5% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Air",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Borax, 6% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Diethylene Glycol",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Alcohols General",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Boric Acid, 4% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Dimethylformamide",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aliphatic Hydrocarbons",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Bromine, Anhydrous Liquid",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Dimethylsulfoxide",
+    "flex_a_prene": "E",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Allyl Alcohol",
+    "flex_a_prene": "F",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Butadiene",
+    "flex_a_prene": "E",
+    "flex_a_chem": "G",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Dioctyl Phthalate",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Alum, 5% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Butane",
+    "flex_a_prene": "E",
+    "flex_a_chem": "G",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Dioxane",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aluminum Chloride, 53% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Butyl Acetate",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ether",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aluminum Chlorohydrate 50% (ACH)",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "-"
+  },
+  {
+    "chemical": "Butyl Alcohol",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ethyl Acetate",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aluminum Fluoride, 0.1% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Butyric Acid",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ethyl Alcohol (Ethanol)",
+    "flex_a_prene": "F",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aluminum Hydroxide, 2% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Calcium Bisulfite, 1% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ethyl Benzoate",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aluminum Nitrate, 39% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Calcium Bromide 52%",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ethyl Chloride",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aluminum Potassium Sulfate",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Calcium Carbonate, 25% acids",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ethyl Ether",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aluminum Sulfate",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Calcium Chlorate, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ethylamine, 70% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aluminum Sulfate, 50% in w (Alum)",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Calcium Chloride, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ethylene Bromide",
+    "flex_a_prene": "U",
+    "flex_a_chem": "F",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aluminum Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Calcium Hydroxide, 10% in glycerol",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ethylene Chlorohydrin",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Amines",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Calcium Hydroxide, 20% in water",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ethylene Diamine",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ammonia, Anhydrous Liquid",
+    "flex_a_prene": "G",
+    "flex_a_chem": "G",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Calcium Hypochlorite, 20% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Ethylene Dichloride",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ammonium Acetate, 45% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Calcium Nitrate, 55% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ethylene Glycol",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ammonium Bifluoride, 50% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Calcium Oxide, 3% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ethylene Oxide",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ammonium Bisulfite, 50%",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "-"
+  },
+  {
+    "chemical": "Calcium Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Fatty Acids",
+    "flex_a_prene": "F",
+    "flex_a_chem": "F",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Ammonium Carbonate, 50% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Calcium Sulfate, 1% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ferric Chloride, 43% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ammonium Chloride, 23% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Carbon Dioxide, Wet/Dry",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ferric Hydroxide",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ammonium Hydroxide, 5-10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Carbon Disulfide",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ferric Nitrate, 60% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ammonium Hydroxide, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Carbon Monoxide",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ferric Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ammonium Nitrate, 54% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Carbon Tetrachloride",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ferric Sulfate, 5% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ammonium Persulfate, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Carbonic Acid",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ferric Sulfate, 60% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ammonium Phosphate, 21% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Castor Oil",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ferrous Chloride, 40% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ammonium Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cellosolve",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ferrous Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ammonium Sulfate, 40% in w (LAS)",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cellosolve Acetate",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ferrous Sulfate, 5% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Amyl Acetate",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Chloroacetic Acid, 20% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Fluoborate Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Amyl Alcohol",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Chlorobenzene, Mono, Di, Tri",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Fluoboric Acid, 48% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Amyl Chloride",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Chloroform",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Fluorine Gas",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aniline",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Chlorosulfonic Acid",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Fluosilicic Acid, 30% in w (Fluoride)",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Aniline Hydrochloride",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Chromic Acid, 10-20% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Formaldehyde, 37% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "F",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Antimony Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Chromic Acid, 50% in w",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Formic Acid, 25% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Antimony Trichloride",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Chromium Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Formic Acid, 40-50% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aqua Regia",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Citric Acid, 50% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Formic Acid, 98% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Aqueous Ammonia",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Coconut Oil",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Fruit Juice",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Aromatic Hydrocarbons",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Copper Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Fuel Oil",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Arsenic Acid, 20% in w",
+    "flex_a_prene": "F",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Copper Sulfate Pentahydrate, 20% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "-"
+  },
+  {
+    "chemical": "Furfural",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Arsenic Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Corn Syrup",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Gallic Acid, 17% in acetone",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "ASTM Reference No. 1 Oil",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cottonseed Oil",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Gasoline, Automotive",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "ASTM Reference No. 2 Oil",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cresol (m, o, or p)",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Gelatin",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "ASTM Reference No. 3 Oil",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cresylic Acid",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Glucose, 50% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Barium Carbonate, 1% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cupric Chloride, 40% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Glycerol, (Glycerin)",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Barium Chloride, 27% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cupric Cyanide, 10% in dilute bases",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Glycolic Acid, 70% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Barium Hydroxide, 5% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cupric Nitrate, 70% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Heptane",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Barium Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cupric Sulfate, 13% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hexane",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "1% in dilute acids",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Cyclohexane",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Hydrazine",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Hydriodic Acid, 55-58% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Methyl Chloride",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Potassium Oxide, 50% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrobromic Acid, 100% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Methyl Ethyl Ketone",
+    "flex_a_prene": "U",
+    "flex_a_chem": "F",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Potassium Permanganate, 6% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrobromic Acid, 20-50% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Methyl Isobutyl Ketone",
+    "flex_a_prene": "U",
+    "flex_a_chem": "F",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Potassium Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrochloric Acid, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Methyl Methacrylate",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Potassium Sulfate, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrochloric Acid, 37% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Methylene Chloride",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Potassium Sulfide, 20% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrocyanic Acid",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Milk",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Propyl Alcohol (Propanol)",
+    "flex_a_prene": "F",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Hydrofluoric Acid, 10% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Micro C",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "-"
+  },
+  {
+    "chemical": "Propylene Glycol",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrofluoric Acid, 25% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Mineral Oil",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Propylene Oxide",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrofluoric Acid, 40-48% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Mineral Spirits",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Pyridine",
+    "flex_a_prene": "F",
+    "flex_a_chem": "F",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Hydrofluosilicic Acid, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Molasses",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Salicylic Acid, 1% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Hydrogen Peroxide, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Monoethanolamine",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Silicone Oils",
+    "flex_a_prene": "F",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrogen Peroxide, 3% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Motor Oil",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Silver Nitrate, 55% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrogen Peroxide, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Naphtha",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Skydrol 500A",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Hydrogen Peroxide, 90% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Naphthalene",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Soap Solutions",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Hydrogen Sulfide",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Nickel Chloride, 40% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Sodium Acetate, 55% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Hydroquinone, 7% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Nickel Nitrate, 75% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Sodium Aluminate",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Hypochlorous Acid, 25% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Nickel Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Sodium Benzoate, 22% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Iodine, 50 ppm in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Nickel Sulfate, 25% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Sodium Bicarbonate, 7% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Isobutyl Alcohol",
+    "flex_a_prene": "F",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Nitric Acid, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Bisulfate, 50% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Isooctane",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Nitric Acid, 35% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Bisulfite, 40% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Isopropyl Acetate",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Nitric Acid, 68-71% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Carbonate,7% in w (soda ash)",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Isopropyl Alcohol",
+    "flex_a_prene": "F",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Nitrobenzene",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Chlorate, 45% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Isopropyl Ether",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Nitromethane",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Chloride, 20% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Jet Fuel, Jp8",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Nitrous Acid, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Sodium Chlorite, 12% in",
+    "flex_a_prene": "E",
+    "flex_a_chem": "-",
+    "flex_a_thane": "-"
+  },
+  {
+    "chemical": "Kerosene",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Oils, Animal",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Sodium Cyanide, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Ketones",
+    "flex_a_prene": "U",
+    "flex_a_chem": "F",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Oils, Essential",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Sodium Dichromate, 70% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Lacquer Solvents",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Oils, Hydraulic (Phosphate Ester)",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Sodium Fluoride, 4% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Lactic Acid, 3-10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Oils, Hydrocarbon",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Lactic Acid, 85% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Oils, Vegetable",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Lard, Animal Fat",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Oleic Acid",
+    "flex_a_prene": "F",
+    "flex_a_chem": "F",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Lead Acetate, 35% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Oleum, 25% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Lead Nitrate, 27% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Ortho Dichlorobenzene",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Hypochlorite, 12.5% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Lead Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Oxalic Acid, 12% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Hypochlorite, 25% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Lemon Oil",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Ozone, 300pphm",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Sodium Nitrate, 3.5% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Lime Slurry (Calcium Hydroxide)",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Palmitic Acid, 100% in ether",
+    "flex_a_prene": "F",
+    "flex_a_chem": "F",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Sodium Perborate, 25% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Limonene-D",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Paraffins",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Sodium Permanganate, 20% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "-",
+    "flex_a_thane": "-"
+  },
+  {
+    "chemical": "Linoleic Acid",
+    "flex_a_prene": "F",
+    "flex_a_chem": "F",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Peracetic acid up to 15%",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Permanganate, 40% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "-",
+    "flex_a_thane": "-"
+  },
+  {
+    "chemical": "Linseed Oil",
+    "flex_a_prene": "F",
+    "flex_a_chem": "G",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Peracetic acid 15% to 18%",
+    "flex_a_prene": "F",
+    "flex_a_chem": "F",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Peroxide, 20% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Liquid Aluminum Sulfate, 50% in w                                                       Peracetic acid 20% to 30%",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Persulfate",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Alum)                                                                                  Perchloric Acid, 67% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Phosphate, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Liquid Ammonnium Sulfate, 40% in w                                                      Perchloroethylene",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "LAS)                                                                                   Phenol, 5-10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Sulfate, 38% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Lubricating Oils, Petroleum",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Phenol, 91% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sodium Sulfide, 45% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Magnesium Carbonate, 1% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Sodium Sulfite, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Magnesium Chloride, 35% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Phosphoric Acid, 25% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Stannic Chloride, 50% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Magnesium Hydroxide",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Phosphoric Acid, 85% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Stannous Chloride, 45% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Magnesium Hydroxide,10% in acids",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Phosphorous Trichloride Acid",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Stearic Acid, 5% in alc",
+    "flex_a_prene": "F",
+    "flex_a_chem": "F",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Magnesium Nitrate, 50% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Photographic Solutions",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Styrene Monomer",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Magnesium Sulfate, 25% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Phthalic Acid, 9% in alc",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sulfur Chloride",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Maleic Acid, 30% in w",
+    "flex_a_prene": "F",
+    "flex_a_chem": "F",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Phthalic Anhydride, 9% in alc",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sulfur Dioxide, Gas Dry",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Malic Acid, 36% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Picric Acid, 1% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sulfur Dioxide, Gas Wet",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Manganese Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Plating Solutions",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sulfur Trioxide, Wet",
+    "flex_a_prene": "G",
+    "flex_a_chem": "G",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Manganese Sulfate, 34% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Polyaluminum Chloride (PAC) in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "-"
+  },
+  {
+    "chemical": "Sulfuric Acid, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Mercuric Chloride, 6% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Potassium Amyl Xanthate (PAX)",
+    "flex_a_prene": "-",
+    "flex_a_chem": "G",
+    "flex_a_thane": "-"
+  },
+  {
+    "chemical": "Sulfuric Acid, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Mercuric Cyanide, 8% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Potassium Carbonate, 55% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Mercurous Nitrate, 10% in dilute acids",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Potassium Chloride, 20% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Mercury",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Potassium Cyanide, 33% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Mercury Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Potassium Dichromate, 5% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Methane Gas",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Potassium Hydroxide, 43% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Methyl Acetate",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Potassium Hypochlorite, 70% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Methyl Alcohol (Methanol)",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Potassium Iodide, 56% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Methyl Bromide",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Potassium Nitrate, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Sulfuric Acid, 95-98% in w",
+    "flex_a_prene": "U",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Sulfurous Acid",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Tannic Acid, 75% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Tanning Solutions",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Tartaric Acid, 56% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Tetrahydrofuran",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Thionyl Chloride",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Tin Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Titanium Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Toluene",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Trichloroacetic Acid, 90% in w",
+    "flex_a_prene": "G",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Trichloroethane",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Trichloroethylene",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Trichloropropane",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Tricresyl Phosphate",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Triethanolamine",
+    "flex_a_prene": "F",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Trisodium Phosphate",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Turpentine",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Urea, 20% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Uric Acid",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "F"
+  },
+  {
+    "chemical": "Vinegar",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Vinyl Acetate",
+    "flex_a_prene": "G",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Water, Brine",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Water, Deionized",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Water, Distilled",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Xylene",
+    "flex_a_prene": "U",
+    "flex_a_chem": "U",
+    "flex_a_thane": "U"
+  },
+  {
+    "chemical": "Zinc Chloride, 80% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Zinc Orthophosphate,, 10% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "G"
+  },
+  {
+    "chemical": "Zinc Salts",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  },
+  {
+    "chemical": "Zinc Sulfate, 30% in w",
+    "flex_a_prene": "E",
+    "flex_a_chem": "E",
+    "flex_a_thane": "E"
+  }
+]

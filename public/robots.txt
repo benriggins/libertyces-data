@@ -29,3 +29,5 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://data.libertyces.com/sitemap-index.xml
+
+IndexNow: https://data.libertyces.com/20d889840e40a4994f66f9f10bb7cb2d.txt
