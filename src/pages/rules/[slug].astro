@@ -1,6 +1,7 @@
 ---
 import DataLayout from '../../layouts/DataLayout.astro';
 import { getRules, type Rule } from '../../lib/rules';
+import { JAMES_BIO_URL, SPEC_REVIEW_URL } from '../../lib/equipment-links';
 
 export async function getStaticPaths() {
   const rules = getRules();
@@ -23,11 +24,25 @@ const jsonLd = {
   headline: humanTitle,
   description: rule.rationale,
   about: rule.trigger_keywords,
-  author: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)', url: 'https://www.libertyces.com' },
+  author: { '@type': 'Person', name: 'James Riggins', jobTitle: 'Founder', url: JAMES_BIO_URL, worksFor: { '@type': 'Organization', name: 'LibertyCES' } },
   publisher: { '@type': 'Organization', name: 'LibertyCES', url: 'https://www.libertyces.com' },
 };
+
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Engineering Rules', url: 'https://data.libertyces.com/rules/' },
+  { name: humanTitle, url: `https://data.libertyces.com/rules/${rule.id}/` },
+];
+
+const faqs = [
+  { question: `When does this rule apply?`, answer: rule.trigger_keywords.join(', ') },
+  { question: `Why?`, answer: rule.rationale },
+];
+if (recommendText) {
+  faqs.push({ question: `What does LibertyCES recommend instead?`, answer: recommendText });
+}
 ---
-<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath={`/rules/${rule.id}/`}>
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath={`/rules/${rule.id}/`} breadcrumbs={breadcrumbs} faqs={faqs}>
   <h1>{humanTitle}</h1>
   <div class="tldr">
     <strong>Direct answer:</strong> {rule.rationale}
@@ -46,6 +61,10 @@ const jsonLd = {
   </table>
 
   <p style="font-size:12px;color:#666;">This is a general engineering rule derived from real field/case-study evidence, not a substitute for a project-specific specification review — confirm against your exact process conditions before ordering equipment.</p>
+
+  <div class="equipment-block">
+    <p>Reviewed by <a href={JAMES_BIO_URL}>James Riggins</a>, Founder, LibertyCES — 30+ years specifying industrial fluid-handling equipment for the exact failure modes this rule addresses. <a href={SPEC_REVIEW_URL(`/rules/${rule.id}/`)}>Request a free spec review &rarr;</a></p>
+  </div>
 
   <p><a href="/rules/">All engineering rules &rarr;</a> · <a href="/datasets/engineering_rules.json">Download full ruleset (JSON) &rarr;</a></p>
 </DataLayout>

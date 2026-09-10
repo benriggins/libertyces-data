@@ -1,6 +1,7 @@
 ---
 import DataLayout from '../layouts/DataLayout.astro';
 import rows from '../data/tube-compatibility.json';
+import { TUBE_EQUIPMENT_LINKS, JAMES_BIO_URL, SPEC_REVIEW_URL } from '../lib/equipment-links';
 
 const RATING_LABEL = { E: 'Excellent', G: 'Good', F: 'Fair', U: 'Not Recommended', '-': 'No data' };
 
@@ -17,12 +18,22 @@ const jsonLd = {
   ],
   variableMeasured: ['Flex-A-Prene rating', 'Flex-A-Chem rating', 'Flex-A-Thane rating'],
 };
+
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Tube Compatibility', url: 'https://data.libertyces.com/tube-compatibility' },
+];
+const faqs = [
+  { question: 'Which peristaltic tube material has the best chemical resistance?', answer: 'Flex-A-Chem® is generally the most chemically resistant of the 3 materials rated here, but always confirm against the specific chemical in the table below — no single tube material is universally compatible.' },
+];
 ---
 <DataLayout
   title="Peristaltic Pump Tube Chemical Compatibility"
   description={`Chemical compatibility ratings for ${rows.length} chemicals across 3 peristaltic pump tubing materials: Flex-A-Prene, Flex-A-Chem, Flex-A-Thane.`}
   jsonLd={jsonLd}
   canonicalPath="/tube-compatibility"
+  breadcrumbs={breadcrumbs}
+  faqs={faqs}
 >
   <h1>Peristaltic Pump Tube Chemical Compatibility</h1>
   <div class="tldr">
@@ -46,6 +57,15 @@ const jsonLd = {
       ))}
     </tbody>
   </table>
+
+  <div class="equipment-block">
+    <h2>Equipment LibertyCES Supplies</h2>
+    <p>LibertyCES specifies peristaltic pumps and tubing matched to these exact chemical compatibility ratings.</p>
+    <ul>
+      {TUBE_EQUIPMENT_LINKS.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+    </ul>
+    <p>Reviewed by <a href={JAMES_BIO_URL}>James Riggins</a>, Founder, LibertyCES. <a href={SPEC_REVIEW_URL('/tube-compatibility')}>Request a free spec review &rarr;</a></p>
+  </div>
 
   <p><a href="/">← LibertyCES Data</a> · <a href="/chemicals/">Material chemical compatibility (PVC/PP/PVDF/PFA/PTFE/316SS)</a></p>
 </DataLayout>

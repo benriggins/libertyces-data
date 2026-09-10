@@ -23,10 +23,14 @@ const jsonLd = {
     { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/chemical-compatibility.json' },
   ],
 };
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Chemicals', url: 'https://data.libertyces.com/chemicals/' },
+];
 ---
-<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/chemicals/">
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/chemicals/" breadcrumbs={breadcrumbs}>
   <h1>Chemical Compatibility Index</h1>
-  <div class="tldr"><strong>Direct answer:</strong> {groups.length} real chemicals, {groups.reduce((n, g) => n + g.rows.length, 0)} published material-compatibility ratings across 6 materials (PVC, PP, PVDF, PFA, PTFE, 316 stainless steel), sourced from real published vendor data.</div>
+  <div class="tldr"><strong>Direct answer:</strong> {groups.length} real chemicals, {groups.reduce((n, g) => n + g.rows.length, 0)} published material-compatibility ratings across 6 materials (PVC, PP, PVDF, PFA, PTFE, 316 stainless steel), sourced from real published vendor data and reviewed by <a href="https://www.libertyces.com/james-riggins-treatment-water-expert">James Riggins</a>, Founder, LibertyCES.</div>
 
   {Array.from(byFamily.entries()).sort((a, b) => a[0].localeCompare(b[0])).map(([family, items]: any) => (
     <div>

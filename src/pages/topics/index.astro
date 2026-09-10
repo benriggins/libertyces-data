@@ -21,8 +21,12 @@ const jsonLd = {
   description,
   numberOfItems: byCluster.size,
 };
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Topics', url: 'https://data.libertyces.com/topics/' },
+];
 ---
-<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/topics/">
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/topics/" breadcrumbs={breadcrumbs}>
   <h1>Topics We Cover</h1>
   <div class="tldr"><strong>Direct answer:</strong> LibertyCES tracks {paa.length} real engineering questions across {byCluster.size} equipment categories — this page maps the real questions procurement, plant, and engineering teams ask, grouped by topic. It is a coverage map, not a fabricated Q&amp;A — where LibertyCES has published a real answer, it's linked below.</div>
 

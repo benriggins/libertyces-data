@@ -14,8 +14,12 @@ const jsonLd = {
   creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)', url: 'https://www.libertyces.com' },
   distribution: { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/engineering_rules.json' },
 };
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Engineering Rules', url: 'https://data.libertyces.com/rules/' },
+];
 ---
-<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/rules/">
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/rules/" breadcrumbs={breadcrumbs}>
   <h1>Engineering Rules Index</h1>
   <div class="tldr"><strong>Direct answer:</strong> {rules.length} real equipment-selection rules, each stating what to avoid, what to use instead, why, and the confidence level of the underlying evidence.</div>
 

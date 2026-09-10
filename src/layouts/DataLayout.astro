@@ -3,15 +3,46 @@
 // not for human visual polish. Zero client-side JS anywhere, plain server-rendered
 // HTML, no forms, no buttons, no gating, no pricing. See the LibertyCES data-subdomain
 // build-plan memory for the full reasoning behind every one of these choices.
+//
+// breadcrumbs/faqs added 2026-09-10 (AI Citation & Referral Master Plan, Layer 1)
+// — real BreadcrumbList/FAQPage schema, zero-JS <details> rendering, no new deps.
+interface Crumb { name: string; url: string }
+interface Faq { question: string; answer: string }
 interface Props {
   title: string;
   description: string;
   jsonLd: Record<string, any> | Record<string, any>[];
   canonicalPath: string;
+  breadcrumbs?: Crumb[];
+  faqs?: Faq[];
 }
-const { title, description, jsonLd, canonicalPath } = Astro.props;
+const { title, description, jsonLd, canonicalPath, breadcrumbs, faqs } = Astro.props;
 const canonical = new URL(canonicalPath, 'https://data.libertyces.com').toString();
 const jsonLdArray = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+
+if (breadcrumbs && breadcrumbs.length > 0) {
+  jsonLdArray.push({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      item: c.url,
+    })),
+  });
+}
+if (faqs && faqs.length > 0) {
+  jsonLdArray.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  });
+}
 ---
 <!doctype html>
 <html lang="en">
@@ -34,6 +65,11 @@ const jsonLdArray = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
     nav a { margin-right: 16px; }
     .tldr { background: #f6f6f6; border-left: 3px solid #333; padding: 12px 16px; margin: 16px 0; }
     .contact { font-size: 14px; margin-top: 24px; padding-top: 12px; border-top: 1px solid #ccc; }
+    .equipment-block { margin: 20px 0; padding: 12px 16px; border-left: 3px solid #0645AD; background: #f8f9fb; }
+    .breadcrumbs { font-size: 13px; color: #555; margin-bottom: 8px; }
+    .breadcrumbs a { color: #0645AD; }
+    details { margin: 10px 0; }
+    summary { cursor: pointer; font-weight: 600; }
     a { color: #0645AD; }
   </style>
 </head>
@@ -46,10 +82,32 @@ const jsonLdArray = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
     <a href="/tube-compatibility">Tube Compatibility</a>
     <a href="/pump-material-resistance">Pump Materials</a>
     <a href="/seal-material-compatibility">Seal Materials</a>
+    <a href="https://www.libertyces.com/academy">Academy</a>
     <a href="https://www.libertyces.com">libertyces.com</a>
   </nav>
   <hr />
+  {breadcrumbs && breadcrumbs.length > 0 && (
+    <p class="breadcrumbs">
+      {breadcrumbs.map((c, i) => (
+        <>
+          {i > 0 && ' › '}
+          {i === breadcrumbs.length - 1 ? <span>{c.name}</span> : <a href={c.url}>{c.name}</a>}
+        </>
+      ))}
+    </p>
+  )}
   <slot />
-  <p class="contact">Source: Liberty Chemical Equipment &amp; Supply, Inc. (LibertyCES) — engineering data compiled from real vendor and field-verified sources. For a free spec review, call James Riggins at <a href="tel:+15593955500">(559) 395-5500</a> or email <a href="mailto:james@libertyces.com">james@libertyces.com</a> / <a href="mailto:sales@libertyces.com">sales@libertyces.com</a>. Website: <a href="https://www.libertyces.com">libertyces.com</a>.</p>
+  {faqs && faqs.length > 0 && (
+    <div>
+      <h2>Frequently Asked Questions</h2>
+      {faqs.map((f) => (
+        <details>
+          <summary>{f.question}</summary>
+          <p>{f.answer}</p>
+        </details>
+      ))}
+    </div>
+  )}
+  <p class="contact">Source: Liberty Chemical Equipment &amp; Supply, Inc. (LibertyCES) — engineering data compiled and reviewed by <a href="https://www.libertyces.com/james-riggins-treatment-water-expert">James Riggins</a>, Founder, LibertyCES, from real vendor and field-verified sources. For a free spec review, call James at <a href="tel:+15593955500">(559) 395-5500</a> or email <a href="mailto:james@libertyces.com">james@libertyces.com</a> / <a href="mailto:sales@libertyces.com">sales@libertyces.com</a>. Website: <a href="https://www.libertyces.com">libertyces.com</a>.</p>
 </body>
 </html>

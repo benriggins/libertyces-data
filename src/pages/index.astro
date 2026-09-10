@@ -17,14 +17,32 @@ const sealCount = (sealData as any[]).length;
 const title = 'LibertyCES Data';
 const description = 'Open, machine-readable industrial chemical equipment engineering data from LibertyCES — chemical material compatibility, equipment selection rules, and real engineering questions, free to crawl, cite, and download.';
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)',
-  url: 'https://www.libertyces.com',
-  sameAs: ['https://github.com/benriggins/libertyces-technical-reference'],
-  description: 'LibertyCES specifies industrial pumps, valves, tanks, chemical feed systems, and containment equipment for municipal water/wastewater treatment, chemical processing, mining, and semiconductor manufacturing.',
-};
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)',
+    url: 'https://www.libertyces.com',
+    sameAs: ['https://github.com/benriggins/libertyces-technical-reference'],
+    description: 'LibertyCES specifies industrial pumps, valves, tanks, chemical feed systems, and containment equipment for municipal water/wastewater treatment, chemical processing, mining, and semiconductor manufacturing.',
+    founder: { '@type': 'Person', name: 'James Riggins', jobTitle: 'Founder', url: 'https://www.libertyces.com/james-riggins-treatment-water-expert' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'LibertyCES Data',
+    url: 'https://data.libertyces.com/',
+    description,
+    publisher: { '@type': 'Organization', name: 'LibertyCES', url: 'https://www.libertyces.com' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'DataCatalog',
+    name: 'LibertyCES Open Engineering Data',
+    description,
+    creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)', url: 'https://www.libertyces.com' },
+  },
+];
 ---
 <DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/">
   <h1>LibertyCES Data</h1>
@@ -42,6 +60,9 @@ const jsonLd = {
     <li><a href="/pump-material-resistance">Centrifugal Pump Material Resistance</a> — {pumpMatCount} chemicals with max safe operating temperature (°F) across 15 wetted-end materials.</li>
     <li><a href="/seal-material-compatibility">Elastomer Seal Material Compatibility</a> — {sealCount} chemicals rated across 5 seal materials (FFKM, FKM-ETP, TFE/P, FKM, HNBR).</li>
   </ul>
+
+  <h2>The LibertyCES Semiconductor Academy</h2>
+  <p>A free 12-module engineering course on specifying, protecting, and maintaining chemical/fluid-handling systems for semiconductor fabs, taught by James Riggins — real audio briefings, video overviews, and full transcripts, cited against this same data throughout. <a href="https://www.libertyces.com/academy/courses/semiconductor">The Semiconductor Fluid-Handling Specification Course &rarr;</a></p>
 
   <h2>Raw downloads</h2>
   <ul>

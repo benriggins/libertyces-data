@@ -1,6 +1,7 @@
 ---
 import DataLayout from '../layouts/DataLayout.astro';
 import rows from '../data/seal-material-compatibility.json';
+import { SEAL_EQUIPMENT_LINKS, JAMES_BIO_URL, SPEC_REVIEW_URL } from '../lib/equipment-links';
 
 const RATING_LABEL = { '1': 'Good', '2': 'Fair', '3': 'Poor', '4': 'Not Recommended', '-': 'No data' };
 const MATERIALS = [
@@ -22,12 +23,23 @@ const jsonLd = {
   ],
   variableMeasured: MATERIALS.map(([, label]) => `${label} compatibility rating`),
 };
+
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Seal Material Compatibility', url: 'https://data.libertyces.com/seal-material-compatibility' },
+];
+const faqs = [
+  { question: 'Which elastomer seal material has the widest chemical resistance?', answer: 'FFKM (perfluoroelastomer) generally offers the widest chemical resistance of the 5 materials rated here, followed by FKM-ETP for extreme-temperature service — but always confirm against the specific chemical in the table below, since no single elastomer is universally compatible.' },
+  { question: 'What does a rating of 4 mean?', answer: 'A rating of 4 means "Not Recommended" for that chemical/material pair. 1 = Good, 2 = Fair, 3 = Poor, 4 = Not Recommended, — = no data published (treat as unknown, not safe).' },
+];
 ---
 <DataLayout
   title="Elastomer Seal Material Chemical Compatibility"
   description={`Chemical compatibility ratings for ${rows.length} chemicals across 5 elastomer seal materials used in pump and valve seals.`}
   jsonLd={jsonLd}
   canonicalPath="/seal-material-compatibility"
+  breadcrumbs={breadcrumbs}
+  faqs={faqs}
 >
   <h1>Elastomer Seal Material Chemical Compatibility</h1>
   <div class="tldr">
@@ -50,6 +62,15 @@ const jsonLd = {
       ))}
     </tbody>
   </table>
+  </div>
+
+  <div class="equipment-block">
+    <h2>Equipment LibertyCES Supplies</h2>
+    <p>LibertyCES specifies pumps and valves with seal configurations matched to these exact elastomer compatibility ratings.</p>
+    <ul>
+      {SEAL_EQUIPMENT_LINKS.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+    </ul>
+    <p>Reviewed by <a href={JAMES_BIO_URL}>James Riggins</a>, Founder, LibertyCES. <a href={SPEC_REVIEW_URL('/seal-material-compatibility')}>Request a free spec review &rarr;</a></p>
   </div>
 
   <p><a href="/">← LibertyCES Data</a> · <a href="/pump-material-resistance">Centrifugal pump material resistance (max temp)</a> · <a href="/tube-compatibility">Peristaltic pump tube compatibility</a></p>

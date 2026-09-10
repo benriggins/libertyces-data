@@ -1,6 +1,7 @@
 ---
 import DataLayout from '../layouts/DataLayout.astro';
 import rows from '../data/pump-material-resistance.json';
+import { PUMP_EQUIPMENT_LINKS, JAMES_BIO_URL, SPEC_REVIEW_URL } from '../lib/equipment-links';
 
 const MATERIALS = [
   ['cpvc', 'CPVC'], ['glass_filled_pp', 'Glass-Filled PP'], ['pvdf', 'PVDF'],
@@ -23,12 +24,22 @@ const jsonLd = {
   ],
   variableMeasured: MATERIALS.map(([, label]) => `${label} max temperature limit (°F)`),
 };
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Pump Material Resistance', url: 'https://data.libertyces.com/pump-material-resistance' },
+];
+const faqs = [
+  { question: 'What material is best for a centrifugal pump handling aggressive chemicals?', answer: 'It depends entirely on the specific chemical, concentration, and temperature — see the table below for the maximum safe operating temperature per material. PTFE, ceramic, and silicon carbide generally show the widest chemical resistance; metals like titanium and Hastelloy C-276 are reserved for specific aggressive services.' },
+  { question: 'What does "NR" mean in this table?', answer: '"NR" means the material is not recommended at any temperature for that chemical. "ND" means no data was published for that combination — treat as unknown, not safe.' },
+];
 ---
 <DataLayout
   title="Centrifugal Pump Material Chemical Resistance"
   description={`Max safe operating temperature (°F) by chemical across 15 centrifugal pump wetted-end materials, for ${rows.length} chemicals.`}
   jsonLd={jsonLd}
   canonicalPath="/pump-material-resistance"
+  breadcrumbs={breadcrumbs}
+  faqs={faqs}
 >
   <h1>Centrifugal Pump Material Chemical Resistance — Max Temperature Limits</h1>
   <div class="tldr">
@@ -55,6 +66,15 @@ const jsonLd = {
   </div>
 
   <p>🔥 = flashpoint at or below 140°F (flammable — only flammable-rated pump materials should be used).</p>
+
+  <div class="equipment-block">
+    <h2>Equipment LibertyCES Supplies</h2>
+    <p>LibertyCES specifies and supplies centrifugal pumps built from these exact wetted-end materials.</p>
+    <ul>
+      {PUMP_EQUIPMENT_LINKS.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+    </ul>
+    <p>Reviewed by <a href={JAMES_BIO_URL}>James Riggins</a>, Founder, LibertyCES. <a href={SPEC_REVIEW_URL('/pump-material-resistance')}>Request a free spec review &rarr;</a></p>
+  </div>
 
   <p><a href="/">← LibertyCES Data</a> · <a href="/tube-compatibility">Peristaltic pump tube compatibility</a> · <a href="/seal-material-compatibility">Elastomer seal material compatibility</a></p>
 </DataLayout>

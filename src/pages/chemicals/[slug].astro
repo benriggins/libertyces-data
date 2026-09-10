@@ -1,6 +1,8 @@
 ---
 import DataLayout from '../../layouts/DataLayout.astro';
 import { getChemicalGroups, legend, MATERIALS, MATERIAL_NAMES, ratingLabel, type ChemGroup } from '../../lib/chemicals';
+import { getSealRow, getPumpRow, getTubeRow, getSealRows, getPumpRows, getTubeRows, coverageDepth } from '../../lib/related-data';
+import { FAMILY_EQUIPMENT_LINKS, MAIN_SITE_CHEMICAL_SLUGS, JAMES_BIO_URL, SPEC_REVIEW_URL } from '../../lib/equipment-links';
 
 export async function getStaticPaths() {
   const groups = getChemicalGroups();
@@ -13,8 +15,51 @@ const { group } = Astro.props;
 const bestMaterials = MATERIALS.filter((m) => group.rows.some((r: any) => r[m] === 'E'));
 const worstMaterials = MATERIALS.filter((m) => group.rows.some((r: any) => r[m] === 'C'));
 
+// Layer 2a — merge the other 3 material datasets into this same page/URL if this
+// chemical also appears there. Zero new URLs; pure density gain.
+const sealRow = getSealRow(group.media);
+const pumpRow = getPumpRow(group.media);
+const tubeRow = getTubeRow(group.media);
+const depth = coverageDepth(group.media, true);
+
+// Concentration-variant qualifier extracted from the dataset's own chemical name
+// (e.g. "Sulfuric Acid, 50%" -> "50%"), for datasets that split by concentration.
+function qualifier(rowName: string): string {
+  const idx = rowName.indexOf(',');
+  return idx === -1 ? '—' : rowName.slice(idx + 1).trim();
+}
+const sealRows = getSealRows(group.media);
+const pumpRows = getPumpRows(group.media);
+const tubeRows = getTubeRows(group.media);
+
+const SEAL_MATERIALS: [string, string][] = [
+  ['ffkm', 'FFKM'], ['fkm_etp', 'FKM-ETP'], ['tfe_p', 'TFE/P'], ['fkm', 'FKM'], ['hnbr', 'HNBR'],
+];
+const SEAL_LABEL: Record<string, string> = { '1': 'Good', '2': 'Fair', '3': 'Poor', '4': 'Not Recommended', '-': 'No data' };
+const PUMP_MATERIALS: [string, string][] = [
+  ['cpvc', 'CPVC'], ['glass_filled_pp', 'Glass-Filled PP'], ['pvdf', 'PVDF'], ['ryton_pps', 'Ryton PPS'],
+  ['etfe', 'ETFE'], ['ptfe', 'PTFE'], ['ss316', '316 SS'], ['hastelloy_c276', 'Hastelloy C-276'],
+  ['titanium', 'Titanium'], ['carbon', 'Carbon'], ['ceramic', 'Ceramic'], ['silicon_carbide', 'Silicon Carbide'],
+  ['epdm', 'EPDM'], ['fkm', 'FKM'], ['fep', 'FEP'],
+];
+const TUBE_LABEL: Record<string, string> = { E: 'Excellent', G: 'Good', F: 'Fair', U: 'Not Recommended', '-': 'No data' };
+
+// Layer 1d — the Referral Bridge: real equipment this data governs, named and linked.
+const familySlug = group.family
+  .toLowerCase()
+  .replace(/[,&/]/g, ' ')
+  .replace(/[^a-z0-9]+/g, '-')
+  .replace(/(^-|-$)/g, '');
+const equipmentLinks = FAMILY_EQUIPMENT_LINKS[familySlug] ?? [];
+const hasMainSitePage = MAIN_SITE_CHEMICAL_SLUGS.has(group.slug);
+
 const title = `${group.media} Material Compatibility`;
 const description = `Real material compatibility data for ${group.media} across PVC, PP, PVDF, PFA, PTFE, and 316 stainless steel — by concentration and temperature. ${group.rows.length} published rating${group.rows.length === 1 ? '' : 's'}.`;
+
+const variableMeasured = ['Chemical concentration', 'Temperature', 'Material compatibility rating'];
+if (sealRow) variableMeasured.push('Elastomer seal material compatibility rating');
+if (pumpRow) variableMeasured.push('Centrifugal pump wetted-end material max temperature');
+if (tubeRow) variableMeasured.push('Peristaltic pump tube material compatibility rating');
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -22,22 +67,49 @@ const jsonLd = {
   name: `${group.media} Chemical Compatibility Dataset`,
   description,
   creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)', url: 'https://www.libertyces.com' },
+  author: { '@type': 'Person', name: 'James Riggins', jobTitle: 'Founder', url: JAMES_BIO_URL, worksFor: { '@type': 'Organization', name: 'LibertyCES' } },
   keywords: [group.media, `${group.media} compatibility`, `${group.media} chemical resistance`, ...MATERIALS.map((m) => `${group.media} ${MATERIAL_NAMES[m]}`)],
-  variableMeasured: ['Chemical concentration', 'Temperature', 'Material compatibility rating'],
+  variableMeasured,
   distribution: [
     { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://data.libertyces.com/datasets/chemical-compatibility.csv' },
     { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/chemical-compatibility.json' },
   ],
 };
+
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Chemicals', url: 'https://data.libertyces.com/chemicals/' },
+  { name: group.media, url: `https://data.libertyces.com/chemicals/${group.slug}/` },
+];
+
+const faqs = [
+  {
+    question: `What material is best for ${group.media}?`,
+    answer: bestMaterials.length > 0
+      ? `Rated Excellent in at least one tested concentration/temperature condition: ${bestMaterials.map((m) => MATERIAL_NAMES[m]).join(', ')}. Always confirm against the exact concentration and temperature in your application — compatibility can shift across the range.`
+      : `No material in this dataset is rated Excellent across the tested conditions for ${group.media} — review the full table below and confirm material selection with a project-specific spec review.`,
+  },
+  {
+    question: `Is ${group.media} compatible with PVDF?`,
+    answer: group.rows.some((r: any) => r.pvdf) ? `See the PVDF column in the table below for the specific concentration/temperature ratings published for ${group.media}.` : `No PVDF rating has been published for ${group.media} in this dataset — treat as unknown, not safe, until verified against a manufacturer-specific data sheet.`,
+  },
+];
+if (equipmentLinks.length > 0) {
+  faqs.push({
+    question: `What equipment does LibertyCES supply for ${group.media} service?`,
+    answer: `LibertyCES specifies pumps, valves, tanks, piping, and containment equipment for ${group.family.toLowerCase()} service, including ${group.media}. See the equipment guides linked below, or request a free spec review.`,
+  });
+}
 ---
-<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath={`/chemicals/${group.slug}/`}>
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath={`/chemicals/${group.slug}/`} breadcrumbs={breadcrumbs} faqs={faqs}>
   <h1>{group.media} — Material Compatibility</h1>
   <div class="tldr">
-    <strong>Direct answer:</strong> {group.media} compatibility data spans {group.rows.length} real published rating{group.rows.length === 1 ? '' : 's'} across the concentration/temperature conditions tested.
+    <strong>Direct answer:</strong> {group.media} compatibility data spans {group.rows.length} real published rating{group.rows.length === 1 ? '' : 's'} across the concentration/temperature conditions tested{depth > 1 ? `, plus ${depth - 1} additional material dataset${depth - 1 === 1 ? '' : 's'} below (seal, pump, and/or tube materials)` : ''}.
     {bestMaterials.length > 0 && <span> Materials rated Excellent in at least one tested condition: {bestMaterials.map((m) => MATERIAL_NAMES[m]).join(', ')}.</span>}
     {worstMaterials.length > 0 && <span> Materials that show corrosion in at least one tested condition: {worstMaterials.map((m) => MATERIAL_NAMES[m]).join(', ')} — do not assume compatibility across all concentrations of this chemical.</span>}
   </div>
 
+  <h2>Pipe, Tank &amp; Wetted Material Compatibility</h2>
   <table>
     <thead>
       <tr><th>Concentration</th><th>Temp (&deg;F)</th><th>Temp (&deg;C)</th>{MATERIALS.map((m) => <th>{MATERIAL_NAMES[m]}</th>)}</tr>
@@ -53,9 +125,80 @@ const jsonLd = {
       ))}
     </tbody>
   </table>
-
   <p><strong>Legend:</strong> {Object.entries(legend).map(([k, v]) => `${k} = ${v}`).join(' · ')}</p>
+
+  {sealRows.length > 0 && (
+    <>
+      <h2>Elastomer Seal Material Compatibility</h2>
+      <table>
+        <thead><tr><th>Variant</th>{SEAL_MATERIALS.map(([, label]) => <th>{label}</th>)}</tr></thead>
+        <tbody>
+          {sealRows.map((r) => (
+            <tr>
+              <td>{qualifier(r.chemical)}</td>
+              {SEAL_MATERIALS.map(([key]) => <td>{SEAL_LABEL[(r as any)[key]] ?? (r as any)[key]}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:#666;">Ratings: 1 = Good, 2 = Fair, 3 = Poor, 4 = Not Recommended. Full dataset: <a href="/seal-material-compatibility">Elastomer Seal Material Compatibility</a> (2,110 chemicals).</p>
+    </>
+  )}
+
+  {pumpRows.length > 0 && (
+    <>
+      <h2>Centrifugal Pump Wetted-End Material — Max Temperature (&deg;F)</h2>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Variant</th><th>Sp. Gr.</th>{PUMP_MATERIALS.map(([, label]) => <th>{label}</th>)}</tr></thead>
+        <tbody>
+          {pumpRows.map((r) => (
+            <tr>
+              <td>{qualifier(r.chemical)}{r.flammable ? ' 🔥' : ''}</td>
+              <td>{r.specific_gravity ?? '—'}</td>
+              {PUMP_MATERIALS.map(([key]) => <td>{(r as any)[key]}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      </div>
+      <p style="font-size:12px;color:#666;">🔥 = flammable (flashpoint ≤140&deg;F) — only flammable-rated pump materials should be used. "NR" = not recommended at any temperature, "ND" = no data published. Full dataset: <a href="/pump-material-resistance">Centrifugal Pump Material Resistance</a> (280 chemicals).</p>
+    </>
+  )}
+
+  {tubeRows.length > 0 && (
+    <>
+      <h2>Peristaltic Pump Tube Compatibility</h2>
+      <table>
+        <thead><tr><th>Variant</th><th>Flex-A-Prene&reg;</th><th>Flex-A-Chem&reg;</th><th>Flex-A-Thane&reg;</th></tr></thead>
+        <tbody>
+          {tubeRows.map((r) => (
+            <tr>
+              <td>{qualifier(r.chemical)}</td>
+              <td>{TUBE_LABEL[r.flex_a_prene] ?? r.flex_a_prene}</td>
+              <td>{TUBE_LABEL[r.flex_a_chem] ?? r.flex_a_chem}</td>
+              <td>{TUBE_LABEL[r.flex_a_thane] ?? r.flex_a_thane}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:#666;">Based on 28-day room-temperature (73&deg;F) immersion testing. Full dataset: <a href="/tube-compatibility">Peristaltic Pump Tube Compatibility</a> (368 chemicals).</p>
+    </>
+  )}
+
   <p style="font-size:12px;color:#666;">Source: Flowline chemical compatibility chart, real published vendor data, compiled by LibertyCES. Blank ratings mean no rating was published for that combination — treat as unknown, not safe. This data is a screening reference, not a final engineering approval; confirm with a manufacturer-specific data sheet before specifying equipment.</p>
+
+  {equipmentLinks.length > 0 && (
+    <div class="equipment-block">
+      <h2>Equipment LibertyCES Supplies for {group.family} Service</h2>
+      <p>LibertyCES specifies and supplies the pumps, valves, tanks, piping, and instrumentation that store, transfer, meter, and contain {group.media.toLowerCase()} and other {group.family.toLowerCase()} — never the chemical itself, always the equipment engineered to handle it.</p>
+      <ul>
+        {equipmentLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+        {hasMainSitePage && <li><a href={`https://www.libertyces.com/chemicals/${group.slug}`}>{group.media} — Equipment Selection Guide on libertyces.com</a></li>}
+      </ul>
+      <p>Reviewed by <a href={JAMES_BIO_URL}>James Riggins</a>, Founder, LibertyCES — 30+ years specifying industrial fluid-handling equipment. <a href={SPEC_REVIEW_URL(`/chemicals/${group.slug}/`)}>Request a free spec review &rarr;</a></p>
+    </div>
+  )}
 
   <p>
     <a href="https://www.libertyces.com/guides/chemical-compatibility-chart">Full LibertyCES Chemical Compatibility Chart (551 rows) &rarr;</a><br />

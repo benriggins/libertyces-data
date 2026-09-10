@@ -76,12 +76,18 @@ const jsonLd = {
     'adsorption',
   ],
 };
+
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Removal vs. Destruction', url: 'https://data.libertyces.com/treatment-removal-vs-destruction' },
+];
 ---
 <DataLayout
   title="Industrial Wastewater Treatment: Removal vs. Destruction"
   description="Reference table of industrial wastewater treatment mechanisms — which remove and concentrate a compound, which actually destroy it, and what residual each one produces."
   jsonLd={jsonLd}
   canonicalPath="/treatment-removal-vs-destruction"
+  breadcrumbs={breadcrumbs}
 >
   <h1>Industrial Wastewater Treatment: Removal vs. Destruction</h1>
 
