@@ -952,7 +952,10 @@
         "abrasive slurry",
         "scrubber",
         "corrosive and abrasive",
-        "brine slurry"
+        "brine slurry",
+        "leach circuit",
+        "heap leach slurry",
+        "leach solution strainer"
       ],
       "avoid": {
         "category": "Strainer",
@@ -1341,7 +1344,12 @@
         "93% sulfuric",
         "96% sulfuric",
         "98% sulfuric",
-        "concentrated sulfuric acid"
+        "concentrated sulfuric acid",
+        "concentrated acid tank",
+        "11/15 rule",
+        "snyder 880046",
+        "houston polytank sulfuric acid",
+        "heap leach acid storage"
       ],
       "avoid": {
         "category": "Tank",
@@ -1355,8 +1363,8 @@
         "product_line": "Carbon steel storage tanks",
         "category": "Tank"
       },
-      "rationale": "Corrects a working assumption that concentrated sulfuric acid always requires exotic alloys. Two independent vendors (General Industries Inc., ProTank) state in their own published literature that carbon steel PASSIVATES at 93-98% H2SO4 \u2014 forms a protective coating that makes concentrated acid LESS corrosive to carbon steel than dilute acid \u2014 making carbon steel the standard, economical bulk-storage tank material at this specific concentration band, not a fallback. ProTank additionally states FRP tops out around 80% and XLPE fails within 6 months at 98% \u2014 both unsuitable for storage at the 93-98% band. This does NOT extend to pumps/valves, where turbulent flow, velocity, and lower-concentration excursions still require Alloy 20/PTFE-lined/one-piece-flanged construction per the existing sulfuric-acid-98plus-material-selection rule (Griffco source, SO3 contaminant attacks PVDF/Noryl). Carver Pump's own case study and G2C/G2S Series tech spec PDF independently confirm Alloy 20 (ASTM A744 Grade CN-7M) as a real wetted-parts material for sulfuric acid pump service, consistent with the existing rule's pump-side recommendation. IMPORTANT NUANCE: Alloy 20 is NOT one of Carver's standard catalog material codes (their standard options are A/cast iron, B/316SS-fitted, C/all-316SS, X/Special) \u2014 in the standard Key Component Materials table, Alloy 20 appears only for the slinger. A full Alloy-20-wetted-parts build (as used in the real case study, replacing a failing self-priming PVDF pump with a G2S vertical sump pump, 22 ft submergence, 2,500 GPM) is a special/custom order under code X, not an off-the-shelf SKU \u2014 factor real lead time into any quote calling for full Alloy 20 wetted parts. Treat tank material and pump/valve material as governed by different mechanisms for this chemical \u2014 do not apply one rule's material choice to the other equipment category. REAL UNRESOLVED CONFLICT, added after cross-checking Poly Processing's own Tank_Specs.pdf: Poly Processing's own compatibility table lists sulfuric acid as XLPE-compatible up to 98% with no stated service-life caveat, directly contradicting ProTank's published claim that XLPE fails within 6 months of service at 98% concentration. Do not spec an XLPE tank for 98% sulfuric acid off either vendor's claim alone \u2014 this is the same category of disagreement as the sodium-hypochlorite HDLPE-vs-XLPE conflict documented in sodium-hypochlorite-epdm-rating; present both positions in comparison content, and verify with a vendor-specific warranty/service-life statement at the exact concentration before a real spec decision.",
-      "source": "data/vendor-sources/general-industries-inc.md, data/vendor-sources/protank.md",
+      "rationale": "Corrects a working assumption that concentrated sulfuric acid always requires exotic alloys. Two independent vendors (General Industries Inc., ProTank) state in their own published literature that carbon steel PASSIVATES at 93-98% H2SO4 \u2014 forms a protective coating that makes concentrated acid LESS corrosive to carbon steel than dilute acid \u2014 making carbon steel the standard, economical bulk-storage tank material at this specific concentration band, not a fallback. ProTank additionally states FRP tops out around 80% and XLPE fails within 6 months at 98% \u2014 both unsuitable for storage at the 93-98% band. This does NOT extend to pumps/valves, where turbulent flow, velocity, and lower-concentration excursions still require Alloy 20/PTFE-lined/one-piece-flanged construction per the existing sulfuric-acid-98plus-material-selection rule (Griffco source, SO3 contaminant attacks PVDF/Noryl). Carver Pump's own case study and G2C/G2S Series tech spec PDF independently confirm Alloy 20 (ASTM A744 Grade CN-7M) as a real wetted-parts material for sulfuric acid pump service, consistent with the existing rule's pump-side recommendation. IMPORTANT NUANCE: Alloy 20 is NOT one of Carver's standard catalog material codes (their standard options are A/cast iron, B/316SS-fitted, C/all-316SS, X/Special) \u2014 in the standard Key Component Materials table, Alloy 20 appears only for the slinger. A full Alloy-20-wetted-parts build (as used in the real case study, replacing a failing self-priming PVDF pump with a G2S vertical sump pump, 22 ft submergence, 2,500 GPM) is a special/custom order under code X, not an off-the-shelf SKU \u2014 factor real lead time into any quote calling for full Alloy 20 wetted parts. Treat tank material and pump/valve material as governed by different mechanisms for this chemical \u2014 do not apply one rule's material choice to the other equipment category. REAL UNRESOLVED CONFLICT, added after cross-checking Poly Processing's own Tank_Specs.pdf: Poly Processing's own compatibility table lists sulfuric acid as XLPE-compatible up to 98% with no stated service-life caveat, directly contradicting ProTank's published claim that XLPE fails within 6 months of service at 98% concentration. Do not spec an XLPE tank for 98% sulfuric acid off either vendor's claim alone \u2014 this is the same category of disagreement as the sodium-hypochlorite HDLPE-vs-XLPE conflict documented in sodium-hypochlorite-epdm-rating; present both positions in comparison content, and verify with a vendor-specific warranty/service-life statement at the exact concentration before a real spec decision. RECONCILIATION ADDED 2026-09-10/11 (mining/hydrometallurgical duty-class research): the ProTank-vs-Poly-Processing conflict above is narrower than it first appears once each vendor's actual named spec is read. ProTank's objection is specifically to XLPE (crosslinked polyethylene) failing at 98%. Three roster vendors each publish a distinct, engineered concentrated-acid tank spec using three different base materials: Poly Processing uses XLPE + OR-1000(TM) antioxidant inner surface, and its own published \"11/15 rule\" states verbatim that any Poly Processing tank under 11,000 gallons and under 15 feet tall is fine for sulfuric acid storage (SAFE-Tank if no secondary containment exists, IMFO if it does). Snyder Industries' sulfuric acid resin #880046 is HDLPE — linear, NOT crosslinked — a genuinely different polymer, so Snyder's spec and ProTank's XLPE warning are not actually in conflict; they describe different materials. Houston PolyTank sidesteps the argument a third way, via extrusion-winding (no molded-in stresses, the actual failure mechanism) plus wall thickness up to 6 inches, engineered to DVS 2205. Practical rule: never quote a generic catalog PE tank at 93-98% H2SO4; quote a vendor's NAMED concentrated-acid product (Snyder #880046, Poly Processing XLPE+OR-1000 within the 11/15 size limit, or Houston PolyTank extrusion-wound) or carbon steel — all four are defensible, a commercial-grade rotomolded tank is not. This does not fully resolve the original conflict (Poly Processing's own Tank_Specs.pdf still shows no service-life caveat at 98% the way ProTank's warning implies), but it narrows it from 'XLPE vs. everything' to 'XLPE specifically, within a stated size ceiling, using the OR-1000 antioxidant system.'",
+      "source": "data/vendor-sources/general-industries-inc.md, data/vendor-sources/protank.md, data/reference/mining-hydrometallurgical-duty-class-fit.md",
       "cross_vendor_confirmation": "Two independent vendors (General Industries Inc., ProTank) confirm the carbon-steel-passivation point at 93-98%; a third (Carver Pump) independently confirms Alloy 20 for the pump side, consistent with the pre-existing sulfuric-acid-98plus-material-selection rule."
     },
     {
@@ -1410,6 +1418,89 @@
       "rationale": "Standard pH-probe glass membranes are attacked and destroyed by fluoride ions \u2014 a distinct failure mode from generic 'acid resistance,' meaning a pump/tank/valve material selection that is otherwise correct for HF service (PP/PVDF/PFA/PTFE wetted parts) does NOT make a standard pH sensor safe to use in that same service. Emerson's Rosemount 372 is literally named 'Hydrofluoric Acid (HF) Resistant pH Sensor' \u2014 special fluoride/acid-resistant glass formulation rated to 1% (10,000 ppm) HF, sealed Ultem body. Hanna Instruments' HI1000 Series HF variant uses a PVDF body and PTFE wetted parts (a closer material match to LibertyCES's general HF wetted-parts pattern than Emerson's Ultem body) with HF-resistant glass rated to 2 g/L fluoride at pH >=2. Neither vendor was previously in the LibertyCES roster \u2014 this closes a real instrumentation gap that existed alongside the already-covered tank (SAFE-Tank, see hydrofluoric-acid-safe-tank-required) and valve (Asahi-America EL-PVDF swing check, explicitly HF-named) equipment categories for this chemical.",
       "source": "data/vendor-sources/hf-resistant-ph-instrumentation.md",
       "cross_vendor_confirmation": "Two independent instrumentation vendors (Emerson, Hanna Instruments) both self-cite HF explicitly in the product name itself \u2014 high-confidence citation, though this is a genuinely new equipment category with no prior LibertyCES-captured baseline to cross-check against."
+    },
+    {
+      "id": "sulfuric-acid-piping-ectfe-above-95pct",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "sulfuric acid piping",
+        "h2so4 piping",
+        "95% sulfuric acid",
+        "concentrated sulfuric acid pipe",
+        "ectfe piping",
+        "halar piping"
+      ],
+      "avoid": {
+        "category": "Piping",
+        "subtype_keywords": [
+          "PVDF pipe above 95%",
+          "Chem Proline PE above 95%",
+          "PVC/FKM pipe for concentrated acid"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Asahi/America",
+        "product_line": "Ultra Proline (ECTFE/Halar) single wall, or DuoPro (Halar x polypropylene double wall) for double containment",
+        "category": "Piping"
+      },
+      "rationale": "Extends the existing sulfuric-acid-98plus-material-selection rule (Griffco source, valve/fitting materials) into piping specifically, from a second independent vendor. Asahi/America's own South Florida RO plant case study (2012) did NOT use its flagship Chem Proline Advanced PE piping for sulfuric acid the way it did for every other chemical on that job \u2014 it specifically stepped up to Ultra Proline (ECTFE/Halar) single wall plus DuoPro (Halar x polypropylene) double wall for containment. This is a real, vendor-self-selected material-tier escalation, not a third-party guess, and it independently converges with Griffco's own H2SO4 98%+ material ceiling (PVDF/Noryl fail above 98.3% from SO3 attack; Halar/ECTFE rated to 100% @ 200F). Asahi's general Advanced PE resistance table caps H2SO4 at 85% with a PVC/FKM valve pairing, with two real field installs documented at 93% \u2014 above the vendor's own stated ceiling, flag honestly when citing those. Directly relevant to hydrometallurgical leach-circuit piping upstream of dilution, where concentrated H2SO4 (93-98%) is handled in bulk storage and the reagent train.",
+      "source": "data/vendor-sources/asahi-america-mining.md, data/vendor-sources/asahi-america-advanced-pe-piping.md",
+      "cross_vendor_confirmation": "Independently confirms and extends the existing sulfuric-acid-98plus-material-selection rule (Griffco Valve technical bulletin TIB2010-001) from a second vendor and a second equipment category (piping, not valves/fittings) \u2014 both sources converge on the same Halar/ECTFE material tier above the PVDF/Noryl 95% ceiling."
+    },
+    {
+      "id": "peristaltic-for-abrasive-leach-streams",
+      "confidence": "confirmed",
+      "trigger_keywords": [
+        "peristaltic pump leach",
+        "hose pump leach solution",
+        "abrasive leach stream",
+        "dulcoflex",
+        "leach solution metering pump",
+        "solids-bearing leach slurry pump"
+      ],
+      "avoid": {
+        "category": "Pump",
+        "subtype_keywords": [
+          "diaphragm metering pump with check valves in abrasive leach service",
+          "centrifugal pump in leach slurry"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "Graco (SoloTech) or ProMinent Fluid Controls (DULCOFLEX DFBr/DFBu/DFCu/DFDu)",
+        "product_line": "peristaltic / hose pump",
+        "category": "Pump",
+        "requires": "CSM/Hypalon hose for acid/caustic leach solution, not generic EPDM"
+      },
+      "rationale": "Peristaltic (hose) pumps wet only the hose \u2014 no check valves, no seals, no glands in the fluid path \u2014 which is the correct architecture for abrasive, solids-bearing leach streams, extending the existing abrasive-slurry-no-centrifugal and crystallizing-slurry-no-valves-seals rules with a second, independent roster vendor confirmation specific to leach-circuit duty. Graco SoloTech is already the roster's confirmed peristaltic line (real lime-slurry case study on file); ProMinent's DULCOFLEX line (captured 2026-09-10, prominent-mining.md) is a second, independent confirmation of the identical hose-only architecture, named by ProMinent specifically on its dedicated mining/heap-leaching and solvent-extraction pages. Specify CSM/Hypalon hose, not generic EPDM, for concentrated acid or caustic leach solution contact.",
+      "source": "data/vendor-sources/prominent-mining.md, data/case-studies/solotech-lime-slurry.md",
+      "cross_vendor_confirmation": "Second independent confirmation (ProMinent DULCOFLEX) of the hose-only peristaltic architecture already established for Graco SoloTech in the existing crystallizing-slurry-no-valves-seals rule \u2014 now with two roster vendors offering the same solution for abrasive/leach-solution duty specifically."
+    },
+    {
+      "id": "knife-gate-for-slurry-isolation",
+      "confidence": "single-vendor",
+      "trigger_keywords": [
+        "knife gate valve",
+        "slurry isolation valve",
+        "abrasive slurry shutoff",
+        "avco 6100",
+        "solids isolation valve",
+        "mining slurry valve"
+      ],
+      "avoid": {
+        "category": "Valve",
+        "subtype_keywords": [
+          "standard gate valve for abrasive slurry isolation",
+          "ball valve for heavy slurry shutoff"
+        ]
+      },
+      "recommend": {
+        "manufacturer": "AVCO Valve",
+        "product_line": "6100 Series Knife Gate Valve",
+        "category": "Valve"
+      },
+      "rationale": "AVCO's 6100 Series (2\"-24\", ANSI Class 150, 304SS/316SS/Hastelloy body/shim) is purpose-engineered for solids-laden/slurry isolation: gates are polished and lapped on both sides with a machined bevel on the bottom edge specifically to cut through solids and seal tighter when closed, and the seat is mechanically locked into the body via a stainless retainer ring rather than a molded-in seal. Meets MSS-SP-81 and TAPPI TIS 405-8. This is the real isolation/shutoff-valve pairing for a slurry line already using AVCO's abrasive-tolerant ball valves or a Schurco Slurry pump \u2014 a mechanical-geometry answer to the same abrasive-solids hazard the existing abrasive-slurry-no-centrifugal rule addresses on the pump side.",
+      "source": "data/vendor-sources/avco-valve-mining.md",
+      "cross_vendor_confirmation": "Single vendor (AVCO) for this specific bevel-gate/retainer-ring geometry \u2014 no second vendor's knife-gate valve has been captured with matching mechanical detail yet. Promote to 'confirmed' if a future capture surfaces a second vendor's knife-gate valve with equivalent solids-handling design detail."
     }
   ]
 }

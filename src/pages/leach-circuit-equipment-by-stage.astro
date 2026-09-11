@@ -1,0 +1,68 @@
+---
+import DataLayout from '../layouts/DataLayout.astro';
+import data from '../data/leach-circuit-equipment-by-stage.json';
+import { MINING_EQUIPMENT_LINKS, JAMES_BIO_URL, SPEC_REVIEW_URL } from '../lib/equipment-links';
+
+const rows = data.rows;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Leach-Circuit Equipment by Process Stage',
+  description: `The equipment class required at each of ${rows.length} real stages of a hydrometallurgical leach circuit — heap leach irrigation, collection, solvent extraction, electrowinning, cyanide destruction, dewatering, and evaporation — with the named manufacturer confirmed for each.`,
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc.', url: 'https://www.libertyces.com' },
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/leach-circuit-equipment-by-stage.json' },
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://data.libertyces.com/datasets/leach-circuit-equipment-by-stage.csv' },
+  ],
+  variableMeasured: ['process stage', 'chemistry', 'equipment class', 'manufacturer'],
+};
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Leach-Circuit Equipment by Stage', url: 'https://data.libertyces.com/leach-circuit-equipment-by-stage' },
+];
+const faqs = [
+  { question: 'What equipment does a hydrometallurgical leach circuit need?', answer: `A full copper or gold/silver leach circuit needs different equipment at each of ${rows.length} real process stages — driplines and control valves for heap leach irrigation, collection piping and strainers for pregnant leach solution recovery, metering pumps for solvent extraction, circulation piping for electrowinning, pH/ORP instrumentation for cyanide destruction (gold/silver route), slurry pumps for dewatering, and sprinklers for evaporation ponds. See the table below for the manufacturer confirmed at each stage.` },
+  { question: 'What is the difference between heap leach irrigation and collection equipment?', answer: 'Irrigation equipment (driplines, sprinklers) applies the leach solution onto the ore heap. Collection equipment (piping, strainers, filters) recovers the pregnant leach solution (PLS) that has percolated through and drained from the heap base, ready for downstream solvent extraction or precipitation.' },
+];
+---
+<DataLayout
+  title="Leach-Circuit Equipment by Process Stage"
+  description={`The equipment class and confirmed manufacturer for each of ${rows.length} real stages of a hydrometallurgical leach circuit.`}
+  jsonLd={jsonLd}
+  canonicalPath="/leach-circuit-equipment-by-stage"
+  breadcrumbs={breadcrumbs}
+  faqs={faqs}
+>
+  <h1>Leach-Circuit Equipment by Process Stage</h1>
+  <div class="tldr">
+    <strong>Direct answer:</strong> A hydrometallurgical leach circuit (copper heap leach → SX-EW, or gold/silver heap leach → cyanide destruction) needs different equipment classes at each of {rows.length} real process stages. The table below names the equipment class and the manufacturer with real, published mining/hydrometallurgical literature confirmed for each stage — not a generic category guess. For a free spec review on your specific circuit, call James Riggins at <a href="tel:+15593955500">(559) 395-5500</a> or email <a href="mailto:james@libertyces.com">james@libertyces.com</a>.
+  </div>
+
+  <p>Raw data: <a href="/datasets/leach-circuit-equipment-by-stage.json">JSON</a> / <a href="/datasets/leach-circuit-equipment-by-stage.csv">CSV</a>. Source: LibertyCES mining/hydrometallurgical duty-class research (2026-09-10/11).</p>
+
+  {rows.map((r) => (
+    <section style="margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid #ddd">
+      <h2>{r.process_stage}</h2>
+      <p><strong>Chemistry:</strong> {r.chemistry}</p>
+      <p><strong>Equipment class:</strong> {r.equipment_class}</p>
+      <p><strong>Confirmed manufacturers:</strong></p>
+      <ul>
+        {r.liberty_manufacturers.map((m) => <li>{m}</li>)}
+      </ul>
+      <p><em>Source: {r.source}</em></p>
+    </section>
+  ))}
+
+  <div class="equipment-block">
+    <h2>Equipment LibertyCES Supplies for Mining & Hydrometallurgical Service</h2>
+    <p>LibertyCES carries manufacturers with real, published mining/hydrometallurgical duty-class literature — not a category-level guess.</p>
+    <ul>
+      {MINING_EQUIPMENT_LINKS.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+    </ul>
+    <p>Reviewed by <a href={JAMES_BIO_URL}>James Riggins</a>, Founder, LibertyCES. <a href={SPEC_REVIEW_URL('/leach-circuit-equipment-by-stage')}>Request a free spec review &rarr;</a></p>
+  </div>
+
+  <p><a href="/">← LibertyCES Data</a> · <a href="/hydromet-material-selection">Hydrometallurgical material selection</a> · <a href="/rules">Engineering rules index</a></p>
+</DataLayout>

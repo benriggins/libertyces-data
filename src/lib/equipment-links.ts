@@ -84,6 +84,14 @@ export const PIPING_EQUIPMENT_LINKS: EquipLink[] = [
   { label: 'Industrial Pipe Fittings & Flanges', href: `${SITE}/guides/industrial-pipe-fittings-flanges-supply` },
   { label: 'Industrial Process Piping Systems', href: `${SITE}/guides/industrial-process-piping-systems` },
 ];
+// Verified live 2026-09-10/11 on www.libertyces.com — only real, already-built pages.
+// Do NOT add /industries/hydrometallurgy, /industries/battery-recycling, or other
+// Phase 3 pages here until they actually exist and 200-check.
+export const MINING_EQUIPMENT_LINKS: EquipLink[] = [
+  { label: 'Mining Pump Solutions (peristaltic, EODD, mag-drive comparison)', href: `${SITE}/mining-pump-solutions` },
+  { label: 'Mining Industry Hub', href: `${SITE}/industries/mining` },
+  { label: 'Mining Pump Technology Selection Guide (39-page field guide)', href: `${SITE}/guides/mining-pump-technology-selection-guide` },
+];
 
 // The 13 chemicals that also have their own dedicated page on the main commercial
 // site (verified 2026-09-10, same slug on both properties) — these get a direct,

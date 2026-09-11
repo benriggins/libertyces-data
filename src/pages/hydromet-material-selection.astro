@@ -1,0 +1,85 @@
+---
+import DataLayout from '../layouts/DataLayout.astro';
+import data from '../data/hydromet-material-selection.json';
+import { MINING_EQUIPMENT_LINKS, JAMES_BIO_URL, SPEC_REVIEW_URL } from '../lib/equipment-links';
+
+const rows = data.rows;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Hydrometallurgical Duty-Class Material Selection',
+  description: `Material selection for hydrometallurgical leach-circuit equipment (heap leach, SX-EW, cyanide leach, battery recycling) across ${rows.length} real, vendor-sourced service contexts — tank, piping, valve, pump, and instrumentation material by chemical, concentration, and temperature.`,
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc.', url: 'https://www.libertyces.com' },
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://data.libertyces.com/datasets/hydromet-material-selection.json' },
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://data.libertyces.com/datasets/hydromet-material-selection.csv' },
+  ],
+  variableMeasured: ['equipment category', 'material', 'chemical', 'concentration', 'max temperature', 'verdict'],
+};
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Hydrometallurgical Material Selection', url: 'https://data.libertyces.com/hydromet-material-selection' },
+];
+const faqs = [
+  { question: 'What material should I use for concentrated sulfuric acid tanks in a heap leach circuit?', answer: 'Never a generic catalog PE tank at 93-98% H2SO4. Carbon steel (which passivates at this concentration band), or a vendor-named concentrated-acid product — Poly Processing XLPE+OR-1000 within the "11/15 rule" size ceiling, Snyder HDLPE resin #880046, or Houston PolyTank extrusion-wound construction — are the defensible choices. See the table below for the full breakdown.' },
+  { question: 'Why does a valve diaphragm fail at a lower temperature than the valve body material?', answer: "A valve's diaphragm elastomer can be the limiting material even when the body/liner handles the chemical fine at higher temperature — for example Netafim's ALD70 diaphragm is rated for sulfuric acid only to 38°C (100°F), well below what the PVDF/PTFE body material would tolerate. Always verify operating temperature against the diaphragm rating specifically." },
+  { question: 'Why does one rule say XLPE fails at 98% sulfuric acid and another says it works?', answer: 'Both are correct for different scopes. ProTank\'s objection is specifically to XLPE (crosslinked polyethylene) above 98% without a named engineered product. Snyder\'s sulfuric acid resin #880046 is HDLPE — a genuinely different, linear (not crosslinked) polymer — so it is not actually the same material being disputed. Poly Processing\'s XLPE+OR-1000 works within a stated 11,000-gallon / 15-foot size ceiling. Never quote a generic, unnamed XLPE or HDPE tank at this concentration; quote a vendor\'s named product.' },
+];
+---
+<DataLayout
+  title="Hydrometallurgical Duty-Class Material Selection"
+  description={`Tank, piping, valve, and pump material selection for heap leach, SX-EW, and cyanide leach service across ${rows.length} real, vendor-sourced contexts.`}
+  jsonLd={jsonLd}
+  canonicalPath="/hydromet-material-selection"
+  breadcrumbs={breadcrumbs}
+  faqs={faqs}
+>
+  <h1>Hydrometallurgical Duty-Class Material Selection</h1>
+  <div class="tldr">
+    <strong>Direct answer:</strong> Material selection for a hydrometallurgical leach circuit (heap leach, SX-EW, cyanide leach, battery recycling/black mass) is concentration- and temperature-dependent, never a flat yes/no per chemical — the table below gives {rows.length} real, vendor-sourced verdicts across storage tanks, piping, valves, pumps, valve diaphragms, and strainers. Every row traces to a named manufacturer's own published data, not a general industry assumption. For a free spec review on your specific duty point, call James Riggins at <a href="tel:+15593955500">(559) 395-5500</a> or email <a href="mailto:james@libertyces.com">james@libertyces.com</a>.
+  </div>
+
+  <p>Raw data: <a href="/datasets/hydromet-material-selection.json">JSON</a> / <a href="/datasets/hydromet-material-selection.csv">CSV</a>. Source: LibertyCES mining/hydrometallurgical duty-class research (2026-09-10/11), derived from named vendor literature and real engineering rules already fired on this duty class — see the "Vendor source" column for the exact citation on every row.</p>
+
+  <div style="overflow-x:auto">
+  <table>
+    <thead>
+      <tr><th>Service context</th><th>Chemical</th><th>Concentration</th><th>Max temp (°F)</th><th>Equipment</th><th>Material</th><th>Verdict</th></tr>
+    </thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          <td>{r.service_context}</td>
+          <td>{r.chemical}</td>
+          <td>{r.concentration ?? '—'}</td>
+          <td>{r.temp_f_max ?? '—'}</td>
+          <td>{r.equipment_category}</td>
+          <td>{r.material}</td>
+          <td>{r.verdict}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Detail per row</h2>
+  <p>Each row above links to the real vendor finding behind it:</p>
+  <ul>
+    {rows.map((r) => (
+      <li><strong>{r.service_context} — {r.material}:</strong> {r.detail} <em>(Source: {r.vendor_source})</em></li>
+    ))}
+  </ul>
+
+  <div class="equipment-block">
+    <h2>Equipment LibertyCES Supplies for Mining & Hydrometallurgical Service</h2>
+    <p>LibertyCES carries manufacturers with real, published mining/hydrometallurgical duty-class literature — not a category-level guess.</p>
+    <ul>
+      {MINING_EQUIPMENT_LINKS.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+    </ul>
+    <p>Reviewed by <a href={JAMES_BIO_URL}>James Riggins</a>, Founder, LibertyCES. <a href={SPEC_REVIEW_URL('/hydromet-material-selection')}>Request a free spec review &rarr;</a></p>
+  </div>
+
+  <p><a href="/">← LibertyCES Data</a> · <a href="/leach-circuit-equipment-by-stage">Leach-circuit equipment by process stage</a> · <a href="/rules">Engineering rules index</a></p>
+</DataLayout>
