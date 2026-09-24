@@ -6067,7 +6067,9 @@
      "pvdf": "E",
      "pfa": "E",
      "ptfe": "E",
-     "ss316": "F"
+     "ss316": "F",
+     "concentration_basis": "total_naocl_percent",
+     "note": "Concentration is total NaOCl% (this vendor's raw basis), not active/available chlorine%. This rating applies to ≤ 13% total NaOCl (e.g. municipal dosing strength) only — it does NOT apply to commercial-strength 12.5% active-chlorine bleach, which fails PVDF and other PP/PVDF/HDPE materials even at 68°F. Always confirm which basis a compatibility rating uses before specifying at commercial strength. See libertyces.com/chemicals/sodium-hypochlorite."
     },
     {
      "media": "Sodium Hypochlorite",
@@ -6079,7 +6081,9 @@
      "pvdf": "E",
      "pfa": "E",
      "ptfe": "E",
-     "ss316": "F"
+     "ss316": "F",
+     "concentration_basis": "total_naocl_percent",
+     "note": "Concentration is total NaOCl% (this vendor's raw basis), not active/available chlorine%. This rating applies to ≤ 13% total NaOCl (e.g. municipal dosing strength) only — it does NOT apply to commercial-strength 12.5% active-chlorine bleach, which fails PVDF and other PP/PVDF/HDPE materials even at 68°F. Always confirm which basis a compatibility rating uses before specifying at commercial strength. See libertyces.com/chemicals/sodium-hypochlorite."
     },
     {
      "media": "Sodium Hypochlorite",
@@ -6091,7 +6095,9 @@
      "pvdf": "E",
      "pfa": "E",
      "ptfe": "E",
-     "ss316": "F"
+     "ss316": "F",
+     "concentration_basis": "total_naocl_percent",
+     "note": "Concentration is total NaOCl% (this vendor's raw basis), not active/available chlorine%. This rating applies to ≤ 13% total NaOCl (e.g. municipal dosing strength) only — it does NOT apply to commercial-strength 12.5% active-chlorine bleach, which fails PVDF and other PP/PVDF/HDPE materials even at 68°F. Always confirm which basis a compatibility rating uses before specifying at commercial strength. See libertyces.com/chemicals/sodium-hypochlorite."
     },
     {
      "media": "Sodium Hypochlorite",
@@ -6103,7 +6109,9 @@
      "pvdf": "E",
      "pfa": "E",
      "ptfe": "E",
-     "ss316": "F"
+     "ss316": "F",
+     "concentration_basis": "total_naocl_percent",
+     "note": "Concentration is total NaOCl% (this vendor's raw basis), not active/available chlorine%. This rating applies to ≤ 13% total NaOCl (e.g. municipal dosing strength) only — it does NOT apply to commercial-strength 12.5% active-chlorine bleach, which fails PVDF and other PP/PVDF/HDPE materials even at 68°F. Always confirm which basis a compatibility rating uses before specifying at commercial strength. See libertyces.com/chemicals/sodium-hypochlorite."
     },
     {
      "media": "Sodium Hypochlorite",
@@ -6115,7 +6123,9 @@
      "pvdf": "E",
      "pfa": "E",
      "ptfe": "E",
-     "ss316": "F"
+     "ss316": "F",
+     "concentration_basis": "total_naocl_percent",
+     "note": "Concentration is total NaOCl% (this vendor's raw basis), not active/available chlorine%. This rating applies to ≤ 13% total NaOCl (e.g. municipal dosing strength) only — it does NOT apply to commercial-strength 12.5% active-chlorine bleach, which fails PVDF and other PP/PVDF/HDPE materials even at 68°F. Always confirm which basis a compatibility rating uses before specifying at commercial strength. See libertyces.com/chemicals/sodium-hypochlorite."
     },
     {
      "media": "Sodium Peroxide",
