@@ -1,6 +1,7 @@
 ---
 import DataLayout from '../../layouts/DataLayout.astro';
 import { getChemicalGroups } from '../../lib/chemicals';
+import { GUIDES } from '../../lib/chemical-guides';
 
 const groups = getChemicalGroups();
 const byFamily = new Map<string, typeof groups>();
@@ -31,6 +32,12 @@ const breadcrumbs = [
 <DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath="/chemicals/" breadcrumbs={breadcrumbs}>
   <h1>Chemical Compatibility Index</h1>
   <div class="tldr"><strong>Direct answer:</strong> {groups.length} real chemicals, {groups.reduce((n, g) => n + g.rows.length, 0)} published material-compatibility ratings across 6 materials (PVC, PP, PVDF, PFA, PTFE, 316 stainless steel), sourced from real published vendor data and reviewed by <a href="https://www.libertyces.com/james-riggins-treatment-water-expert">James Riggins</a>, Founder, LibertyCES.</div>
+
+  <h2>Process-Fluid Equipment Guides ({GUIDES.length})</h2>
+  <p>Equipment material-selection data compiled from the seal, pump, tube, hydrometallurgical, and engineering-rule datasets for fluids that are not a single row in the compatibility chart.</p>
+  <ul>
+    {GUIDES.map((g) => <li><a href={`/chemicals/${g.slug}/`}>{g.name}</a></li>)}
+  </ul>
 
   {Array.from(byFamily.entries()).sort((a, b) => a[0].localeCompare(b[0])).map(([family, items]: any) => (
     <div>

@@ -15,8 +15,9 @@ interface Props {
   canonicalPath: string;
   breadcrumbs?: Crumb[];
   faqs?: Faq[];
+  noindex?: boolean;
 }
-const { title, description, jsonLd, canonicalPath, breadcrumbs, faqs } = Astro.props;
+const { title, description, jsonLd, canonicalPath, breadcrumbs, faqs, noindex } = Astro.props;
 const canonical = new URL(canonicalPath, 'https://data.libertyces.com').toString();
 const jsonLdArray = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
 
@@ -51,9 +52,9 @@ if (faqs && faqs.length > 0) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title} | LibertyCES Data</title>
   <meta name="description" content={description} />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
   <meta name="google-site-verification" content="OZ8SQE_29F7HwJN1xOAP6S9F9bNukAtGzHPqZdGRjo8" />
-  <link rel="canonical" href={canonical} />
+  {!noindex && <link rel="canonical" href={canonical} />}
   {jsonLdArray.map((ld) => (
     <script type="application/ld+json" set:html={JSON.stringify(ld)} />
   ))}

@@ -1835,7 +1835,7 @@
      "ss316": "E"
     },
     {
-     "media": "Fluosilic Acid",
+     "media": "Fluosilicic Acid",
      "concentration": "50%",
      "temp_f": "104",
      "temp_c": "40",
@@ -1847,7 +1847,7 @@
      "ss316": "G"
     },
     {
-     "media": "Fluosilic Acid",
+     "media": "Fluosilicic Acid",
      "concentration": "50%",
      "temp_f": "176",
      "temp_c": "80",
@@ -2171,7 +2171,7 @@
      "ss316": "C"
     },
     {
-     "media": "Hydroflusilic Acid",
+     "media": "Hydrofluosilicic Acid",
      "concentration": "50%",
      "temp_f": "104",
      "temp_c": "40",
@@ -2874,7 +2874,7 @@
      "ss316": "G"
     },
     {
-     "media": "Aluminum Floride",
+     "media": "Aluminum Fluoride",
      "concentration": "Saturated",
      "temp_f": "104",
      "temp_c": "40",
@@ -2886,7 +2886,7 @@
      "ss316": "F"
     },
     {
-     "media": "Ammonium Flouride",
+     "media": "Ammonium Fluoride",
      "concentration": "20%",
      "temp_f": "176",
      "temp_c": "80",
@@ -2898,7 +2898,7 @@
      "ss316": "C"
     },
     {
-     "media": "Ammonium Flouride",
+     "media": "Ammonium Fluoride",
      "concentration": "20%",
      "temp_f": "104",
      "temp_c": "40",
@@ -2934,7 +2934,7 @@
      "ss316": "G"
     },
     {
-     "media": "Aniline Hydrochloide",
+     "media": "Aniline Hydrochloride",
      "concentration": "Pure",
      "temp_f": "104",
      "temp_c": "40",
@@ -2946,7 +2946,7 @@
      "ss316": "C"
     },
     {
-     "media": "Aniline Hydrochloide",
+     "media": "Aniline Hydrochloride",
      "concentration": "Pure",
      "temp_f": "176",
      "temp_c": "80",
@@ -2958,7 +2958,7 @@
      "ss316": "C"
     },
     {
-     "media": "Aque Regia",
+     "media": "Aqua Regia",
      "concentration": null,
      "temp_f": "104",
      "temp_c": "40",
@@ -2970,7 +2970,7 @@
      "ss316": "C"
     },
     {
-     "media": "Aque Regia",
+     "media": "Aqua Regia",
      "concentration": null,
      "temp_f": "176",
      "temp_c": "80",
@@ -2994,7 +2994,7 @@
      "ss316": "G"
     },
     {
-     "media": "Buthyl Acrylate",
+     "media": "Butyl Acrylate",
      "concentration": "Pure",
      "temp_f": "104",
      "temp_c": "40",
@@ -3006,7 +3006,7 @@
      "ss316": "E"
     },
     {
-     "media": "Buthyl Acrylate",
+     "media": "Butyl Acrylate",
      "concentration": "Pure",
      "temp_f": "176",
      "temp_c": "80",
@@ -3150,7 +3150,7 @@
      "ss316": "G"
     },
     {
-     "media": "Ethylene Chlorohydria",
+     "media": "Ethylene Chlorohydrin",
      "concentration": "Pure",
      "temp_f": "104",
      "temp_c": "40",
@@ -3666,7 +3666,7 @@
      "ss316": "G"
     },
     {
-     "media": "Sodium Metalsilicate",
+     "media": "Sodium Metasilicate",
      "concentration": null,
      "temp_f": "176",
      "temp_c": "80",
@@ -3678,7 +3678,7 @@
      "ss316": "E"
     },
     {
-     "media": "Sodium Metalsilicate",
+     "media": "Sodium Metasilicate",
      "concentration": null,
      "temp_f": "104",
      "temp_c": "40",
@@ -4609,7 +4609,7 @@
      "ss316": "E"
     },
     {
-     "media": "Silicon Oil",
+     "media": "Silicone Oil",
      "concentration": null,
      "temp_f": "104",
      "temp_c": "40",
@@ -5264,7 +5264,7 @@
      "ss316": "E"
     },
     {
-     "media": "Methyl Ether Ketone",
+     "media": "Methyl Ethyl Ketone",
      "concentration": null,
      "temp_f": "104",
      "temp_c": "40",
@@ -5276,7 +5276,7 @@
      "ss316": "E"
     },
     {
-     "media": "Methyl Ether Ketone",
+     "media": "Methyl Ethyl Ketone",
      "concentration": null,
      "temp_f": "176",
      "temp_c": "80",
@@ -6219,7 +6219,7 @@
      "ss316": "E"
     },
     {
-     "media": "Plating Solutions (Cadium)",
+     "media": "Plating Solutions (Cadmium)",
      "concentration": null,
      "temp_f": "104",
      "temp_c": "40",
@@ -6521,7 +6521,7 @@
      "ss316": "E"
     },
     {
-     "media": "Flourine Gas (Wet)",
+     "media": "Fluorine Gas (Wet)",
      "concentration": null,
      "temp_f": "176",
      "temp_c": "80",
@@ -6533,7 +6533,7 @@
      "ss316": "C"
     },
     {
-     "media": "Flourine Gas (Wet)",
+     "media": "Fluorine Gas (Wet)",
      "concentration": null,
      "temp_f": "104",
      "temp_c": "40",
@@ -6708,6 +6708,61 @@
      "ss316": "E"
     }
    ]
+  }
+ ],
+ "name_corrections_note": "2026-10-09: display names corrected from the verbatim Flowline source chart spelling (the source chart itself contains these typos). Old slugs 301-redirect to the corrected ones.",
+ "name_corrections": [
+  {
+   "source_chart_name": "Aluminum Floride",
+   "corrected_name": "Aluminum Fluoride"
+  },
+  {
+   "source_chart_name": "Ammonium Flouride",
+   "corrected_name": "Ammonium Fluoride"
+  },
+  {
+   "source_chart_name": "Aque Regia",
+   "corrected_name": "Aqua Regia"
+  },
+  {
+   "source_chart_name": "Aniline Hydrochloide",
+   "corrected_name": "Aniline Hydrochloride"
+  },
+  {
+   "source_chart_name": "Buthyl Acrylate",
+   "corrected_name": "Butyl Acrylate"
+  },
+  {
+   "source_chart_name": "Flourine Gas (Wet)",
+   "corrected_name": "Fluorine Gas (Wet)"
+  },
+  {
+   "source_chart_name": "Hydroflusilic Acid",
+   "corrected_name": "Hydrofluosilicic Acid"
+  },
+  {
+   "source_chart_name": "Ethylene Chlorohydria",
+   "corrected_name": "Ethylene Chlorohydrin"
+  },
+  {
+   "source_chart_name": "Plating Solutions (Cadium)",
+   "corrected_name": "Plating Solutions (Cadmium)"
+  },
+  {
+   "source_chart_name": "Methyl Ether Ketone",
+   "corrected_name": "Methyl Ethyl Ketone"
+  },
+  {
+   "source_chart_name": "Fluosilic Acid",
+   "corrected_name": "Fluosilicic Acid"
+  },
+  {
+   "source_chart_name": "Sodium Metalsilicate",
+   "corrected_name": "Sodium Metasilicate"
+  },
+  {
+   "source_chart_name": "Silicon Oil",
+   "corrected_name": "Silicone Oil"
   }
  ]
 }

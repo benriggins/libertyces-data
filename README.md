@@ -27,6 +27,10 @@ src/
     chemicals/[slug].astro            285 chemical pages — merges chemical-compatibility.json
                                        with matching rows from seal/pump/tube datasets
                                        when they exist for that chemical (zero new URLs)
+    chemicals/{lime-slurry,cyanide,ferric-chloride,chlorine-gas,abrasive-mining-slurry}.astro
+                                      process-fluid equipment guides (layouts/ChemicalGuide.astro,
+                                       selectors in lib/chemical-guides.ts; data pulled verbatim)
+    404.astro                         real 404 page (Cloudflare Pages serves it with status 404)
     rules/[slug].astro                54 engineering-rule pages
     pump-material-resistance.astro    standalone dataset page
     seal-material-compatibility.astro standalone dataset page
@@ -35,6 +39,7 @@ src/
     treatment-removal-vs-destruction.astro   reference page, no backing dataset
 public/
   datasets/    the same JSON files (+ CSV) served as raw downloads
+  _redirects   301s from old misspelled chemical slugs to corrected ones
   llms.txt     machine-readable index for AI crawlers
   robots.txt   explicitly allows GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.
 ```
@@ -43,7 +48,7 @@ public/
 
 | File | Records | Source |
 |---|---:|---|
-| `chemical-compatibility.json` | 551 rows / 285 chemicals, 11 families | Flowline chemical compatibility chart |
+| `chemical-compatibility.json` | 551 rows / 285 chemicals, 11 families | Flowline chemical compatibility chart (13 chemical names spelled wrong in the source chart are corrected here; see `name_corrections` in the JSON, old slugs redirect via `public/_redirects`) |
 | `seal-material-compatibility.json` | 2,110 chemicals × 5 elastomers | Manufacturer seal compatibility guide |
 | `pump-material-resistance.json` | 280 chemicals × 15 wetted-end materials | Manufacturer pump chemical resistance chart |
 | `tube-compatibility.json` | 368 chemicals × 3 tube materials | 28-day immersion testing chart |

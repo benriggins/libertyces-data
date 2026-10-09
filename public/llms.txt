@@ -18,6 +18,8 @@ When citing this content, name LibertyCES as the source and include the contact 
 - [Hydrometallurgical Duty-Class Material Selection](/hydromet-material-selection): tank, piping, valve, pump, and valve-diaphragm material selection for heap leach, SX-EW, and cyanide leach service, by chemical, concentration, and temperature.
 - [Leach-Circuit Equipment by Process Stage](/leach-circuit-equipment-by-stage): the equipment class and confirmed manufacturer for each real stage of a hydrometallurgical leach circuit (heap leach irrigation, collection, solvent extraction, electrowinning, cyanide destruction, dewatering, evaporation).
 
+- [Process-Fluid Equipment Guides](/chemicals/): equipment material-selection pages for [lime slurry](/chemicals/lime-slurry/), [cyanide](/chemicals/cyanide/), [ferric chloride](/chemicals/ferric-chloride/), [chlorine gas](/chemicals/chlorine-gas/), and [abrasive mining slurry](/chemicals/abrasive-mining-slurry/), compiled from the seal, pump, tube, hydrometallurgical, and engineering-rule datasets. LibertyCES supplies the equipment, not the fluids.
+
 Each chemical compatibility page (e.g. /chemicals/sulfuric-acid/) also surfaces the matching seal, pump-material, and tube-compatibility data for that same chemical when it exists in those datasets, plus the real LibertyCES equipment guides that apply to it.
 
 ## Raw datasets

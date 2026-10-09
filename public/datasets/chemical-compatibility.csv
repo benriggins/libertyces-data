@@ -150,8 +150,8 @@ Acids,Chromic Acid,10%,104,40,E,,E,E,E,C
 Acids,Citric Acid,10%,104,40,E,E,E,E,E,E
 Acids,Fatty Acids,,104,40,E,G,E,E,E,E
 Acids,Fatty Acids,,176,80,,F,E,,E,E
-Acids,Fluosilic Acid,50%,104,40,G,E,E,,,G
-Acids,Fluosilic Acid,50%,176,80,,G,E,,,G
+Acids,Fluosilicic Acid,50%,104,40,G,E,E,,,G
+Acids,Fluosilicic Acid,50%,176,80,,G,E,,,G
 Acids,Formic Acid,90%,104,40,G,G,E,E,,F
 Acids,Formic Acid,,176,80,,,E,,,F
 Acids,Gallic Acid,,104,40,,,G,E,E,G
@@ -178,7 +178,7 @@ Acids,Hydrofluoric Acid,30%,176,80,C,G,E,,E,C
 Acids,Hydrofluoric Acid,30%,104,40,G,G,E,,E,C
 Acids,Hydrofluoric Acid,Dilute,176,80,,G,E,,E,C
 Acids,Hydrofluoric Acid,Dilute,104,40,E,G,E,E,E,C
-Acids,Hydroflusilic Acid,50%,104,40,G,E,E,,,E
+Acids,Hydrofluosilicic Acid,50%,104,40,G,E,E,,,E
 Acids,Hypochlorous Acid,10%,104,40,E,G,E,,E,C
 Acids,Hypochlorous Acid,10%,176,80,,,E,,E,C
 Acids,Lactic Acid,25%,104,40,E,E,E,E,E,G
@@ -236,18 +236,18 @@ Specialty & Uncommon Media,Acetophenone,,104,40,,G,F,E,E,E
 Specialty & Uncommon Media,Acetylene,,104,40,,E,E,E,E,E
 Specialty & Uncommon Media,Alum (Potassium Alum),Saturated,176,80,,E,E,,,G
 Specialty & Uncommon Media,Alum (Potassium Alum),Saturated,104,40,E,E,E,E,,G
-Specialty & Uncommon Media,Aluminum Floride,Saturated,104,40,E,E,E,E,E,F
-Specialty & Uncommon Media,Ammonium Flouride,20%,176,80,,,E,,E,C
-Specialty & Uncommon Media,Ammonium Flouride,20%,104,40,G,G,E,E,E,C
+Specialty & Uncommon Media,Aluminum Fluoride,Saturated,104,40,E,E,E,E,E,F
+Specialty & Uncommon Media,Ammonium Fluoride,20%,176,80,,,E,,E,C
+Specialty & Uncommon Media,Ammonium Fluoride,20%,104,40,G,G,E,E,E,C
 Specialty & Uncommon Media,Aniline,Pure,176,80,,C,F,,E,G
 Specialty & Uncommon Media,Aniline,Pure,104,40,C,G,G,E,E,G
-Specialty & Uncommon Media,Aniline Hydrochloide,Pure,104,40,G,,E,E,E,C
-Specialty & Uncommon Media,Aniline Hydrochloide,Pure,176,80,,,C,,E,C
-Specialty & Uncommon Media,Aque Regia,,104,40,F,F,G,E,,C
-Specialty & Uncommon Media,Aque Regia,,176,80,,,E,,,C
+Specialty & Uncommon Media,Aniline Hydrochloride,Pure,104,40,G,,E,E,E,C
+Specialty & Uncommon Media,Aniline Hydrochloride,Pure,176,80,,,C,,E,C
+Specialty & Uncommon Media,Aqua Regia,,104,40,F,F,G,E,,C
+Specialty & Uncommon Media,Aqua Regia,,176,80,,,E,,,C
 Specialty & Uncommon Media,Barium Sulfide,Saturated,104,40,E,E,E,E,E,G
-Specialty & Uncommon Media,Buthyl Acrylate,Pure,104,40,,,G,,E,E
-Specialty & Uncommon Media,Buthyl Acrylate,Pure,176,80,,,C,,E,E
+Specialty & Uncommon Media,Butyl Acrylate,Pure,104,40,,,G,,E,E
+Specialty & Uncommon Media,Butyl Acrylate,Pure,176,80,,,C,,E,E
 Specialty & Uncommon Media,Calcium Bisulfide,Saturated,104,40,E,E,E,E,E,G
 Specialty & Uncommon Media,Calcium Bisulfide,Saturated,176,80,,,E,,E,G
 Specialty & Uncommon Media,Calcium Bisulfite,Saturated,176,80,,E,E,,E,G
@@ -259,7 +259,7 @@ Specialty & Uncommon Media,Cellosolve,,104,40,,E,E,E,E,E
 Specialty & Uncommon Media,Cresol,Pure,104,40,F,,E,E,E,E
 Specialty & Uncommon Media,Cresol,Pure,176,80,C,,G,,E,E
 Specialty & Uncommon Media,Diphenyl Oxide,Saturated,104,40,,,,,,G
-Specialty & Uncommon Media,Ethylene Chlorohydria,Pure,104,40,,,G,,,G
+Specialty & Uncommon Media,Ethylene Chlorohydrin,Pure,104,40,,,G,,,G
 Specialty & Uncommon Media,Furan,,104,40,,,,,E,E
 Specialty & Uncommon Media,Furfural,Pure,104,40,,C,E,,E,G
 Specialty & Uncommon Media,Furfural,Pure,176,80,,,C,,E,G
@@ -302,8 +302,8 @@ Specialty & Uncommon Media,Sodium Borate,Saturated,176,80,,E,E,,E,G
 Specialty & Uncommon Media,Sodium Borate,Saturated,104,40,,E,E,E,E,G
 Specialty & Uncommon Media,Sodium Chlorate,Saturated,176,80,,G,E,,E,F
 Specialty & Uncommon Media,Sodium Chlorate,Saturated,104,40,E,E,E,E,E,G
-Specialty & Uncommon Media,Sodium Metalsilicate,,176,80,,E,E,,E,E
-Specialty & Uncommon Media,Sodium Metalsilicate,,104,40,E,E,E,E,E,E
+Specialty & Uncommon Media,Sodium Metasilicate,,176,80,,E,E,,E,E
+Specialty & Uncommon Media,Sodium Metasilicate,,104,40,E,E,E,E,E,E
 Specialty & Uncommon Media,Sodium Perborate,,104,40,,,E,E,E,F
 Specialty & Uncommon Media,Sodium Sulfide,,104,40,E,E,E,E,E,E
 Specialty & Uncommon Media,Sodium Sulfide,,176,80,,E,E,,E,E
@@ -380,7 +380,7 @@ Specialty & Uncommon Media,White Liquor,,176,80,,,E,,E,C
 "Hydrocarbons, Fuels & Oils",Paraffin,,104,40,,,E,E,E,E
 "Hydrocarbons, Fuels & Oils",Paraffin,,176,80,,,E,,E,E
 "Hydrocarbons, Fuels & Oils",Propane,,104,40,,,E,E,E,E
-"Hydrocarbons, Fuels & Oils",Silicon Oil,,104,40,E,E,E,E,,E
+"Hydrocarbons, Fuels & Oils",Silicone Oil,,104,40,E,E,E,E,,E
 "Hydrocarbons, Fuels & Oils",Soybean Oil,,176,80,,G,E,,E,E
 "Hydrocarbons, Fuels & Oils",Soybean Oil,,104,40,E,E,E,E,E,E
 "Hydrocarbons, Fuels & Oils",Starch,,176,80,,E,E,,E,E
@@ -434,8 +434,8 @@ Solvents & Organics,Methyl Alcohol,,176,80,,G,E,,E,E
 Solvents & Organics,Methyl Alcohol,,104,40,G,E,E,E,E,E
 Solvents & Organics,Methyl Alcohol,,176,80,,,,,E,E
 Solvents & Organics,Methyl Alcohol,,104,40,G,E,E,E,E,E
-Solvents & Organics,Methyl Ether Ketone,,104,40,,F,,E,,E
-Solvents & Organics,Methyl Ether Ketone,,176,80,,,,,,E
+Solvents & Organics,Methyl Ethyl Ketone,,104,40,,F,,E,,E
+Solvents & Organics,Methyl Ethyl Ketone,,176,80,,,,,,E
 Solvents & Organics,Methyl Isobutyl Ketone,,104,40,,C,,E,E,E
 Solvents & Organics,Methyl Isobutyl Ketone,,176,80,,,,,E,E
 Solvents & Organics,Monochloro-Benzene,,104,40,,F,E,E,E,G
@@ -511,7 +511,7 @@ Metal Plating & Photographic Solutions,Copper Cyanide,,104,40,,E,E,E,E,G
 Metal Plating & Photographic Solutions,Mercuric Cyanide,Saturated,104,40,E,E,E,E,E,E
 Metal Plating & Photographic Solutions,Photographic Solutions,,104,40,E,E,E,E,,E
 Metal Plating & Photographic Solutions,Plating Solutions (Brass),,104,40,E,E,E,E,,E
-Metal Plating & Photographic Solutions,Plating Solutions (Cadium),,104,40,E,,E,E,E,E
+Metal Plating & Photographic Solutions,Plating Solutions (Cadmium),,104,40,E,,E,E,E,E
 Metal Plating & Photographic Solutions,Plating Solutions (Copper),,104,40,E,E,E,E,E,E
 Metal Plating & Photographic Solutions,Plating Solutions (Gold),,104,40,E,,E,E,E,E
 Metal Plating & Photographic Solutions,Plating Solutions (Nickel),,104,40,E,E,E,E,E,F
@@ -535,8 +535,8 @@ Metal Plating & Photographic Solutions,Sodium Cyanide (Solution),,176,80,,G,E,,E
 "Food, Beverage & Biological Process Fluids",Wines,,104,40,E,E,E,E,E,E
 "Food, Beverage & Biological Process Fluids",Wines,,176,80,,,E,,E,C
 Gases & Elemental / Inorganic Misc,Carbon Dioxide (Wet-Dry),,104,40,E,E,E,E,E,E
-Gases & Elemental / Inorganic Misc,Flourine Gas (Wet),,176,80,,,E,,E,C
-Gases & Elemental / Inorganic Misc,Flourine Gas (Wet),,104,40,G,G,E,E,E,C
+Gases & Elemental / Inorganic Misc,Fluorine Gas (Wet),,176,80,,,E,,E,C
+Gases & Elemental / Inorganic Misc,Fluorine Gas (Wet),,104,40,G,G,E,E,E,C
 Gases & Elemental / Inorganic Misc,Hydrogen,,104,40,E,E,E,E,E,E
 Gases & Elemental / Inorganic Misc,Hydrogen,,176,80,,E,E,,E,E
 Gases & Elemental / Inorganic Misc,Hydrogen Sulfide (Aqueous),,104,40,E,E,E,E,E,F

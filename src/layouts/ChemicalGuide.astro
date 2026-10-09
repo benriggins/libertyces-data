@@ -1,0 +1,239 @@
+---
+import DataLayout from './DataLayout.astro';
+import { loadGuide } from '../lib/chemical-guides';
+import { MATERIALS, MATERIAL_NAMES, ratingLabel, legend } from '../lib/chemicals';
+import { JAMES_BIO_URL, SPEC_REVIEW_URL } from '../lib/equipment-links';
+
+interface Props { slug: string }
+const { slug } = Astro.props;
+const { spec, compat, seal, pump, tube, hydromet, stages, rules } = loadGuide(slug);
+
+const SEAL_MATERIALS: [string, string][] = [
+  ['ffkm', 'FFKM'], ['fkm_etp', 'FKM-ETP'], ['tfe_p', 'TFE/P'], ['fkm', 'FKM'], ['hnbr', 'HNBR'],
+];
+const SEAL_LABEL: Record<string, string> = { '1': 'Good', '2': 'Fair', '3': 'Poor', '4': 'Not Recommended', '-': 'No data' };
+const PUMP_MATERIALS: [string, string][] = [
+  ['cpvc', 'CPVC'], ['glass_filled_pp', 'Glass-Filled PP'], ['pvdf', 'PVDF'], ['ryton_pps', 'Ryton PPS'],
+  ['etfe', 'ETFE'], ['ptfe', 'PTFE'], ['ss316', '316 SS'], ['hastelloy_c276', 'Hastelloy C-276'],
+  ['titanium', 'Titanium'], ['carbon', 'Carbon'], ['ceramic', 'Ceramic'], ['silicon_carbide', 'Silicon Carbide'],
+  ['epdm', 'EPDM'], ['fkm', 'FKM'], ['fep', 'FEP'],
+];
+const TUBE_LABEL: Record<string, string> = { E: 'Excellent', G: 'Good', F: 'Fair', U: 'Not Recommended', '-': 'No data' };
+
+const ruleTitle = (id: string) => id.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+const lc = spec.name.toLowerCase();
+
+const datasetsUsed: string[] = [];
+if (compat.length) datasetsUsed.push('Flowline chemical compatibility chart');
+if (seal.length) datasetsUsed.push('elastomer seal compatibility');
+if (pump.length) datasetsUsed.push('centrifugal pump material resistance');
+if (tube.length) datasetsUsed.push('peristaltic tube compatibility');
+if (hydromet.length || stages.length) datasetsUsed.push('hydrometallurgical duty-class selection');
+if (rules.length) datasetsUsed.push('engineering rules');
+
+const title = `${spec.name} — Equipment Material Selection Data`;
+const description = `Published equipment-material data for ${lc} service: ${datasetsUsed.join(', ')}. Equipment selection reference only; LibertyCES supplies equipment, not the fluid.`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: `${spec.name} Equipment Material Selection Dataset`,
+  description,
+  creator: { '@type': 'Organization', name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)', url: 'https://www.libertyces.com' },
+  author: { '@type': 'Person', name: 'James Riggins', jobTitle: 'Founder', url: JAMES_BIO_URL, worksFor: { '@type': 'Organization', name: 'LibertyCES' } },
+  keywords: [spec.name, `${spec.name} equipment`, `${spec.name} material compatibility`],
+  isBasedOn: datasetsUsed,
+};
+
+const breadcrumbs = [
+  { name: 'LibertyCES Data', url: 'https://data.libertyces.com/' },
+  { name: 'Chemicals', url: 'https://data.libertyces.com/chemicals/' },
+  { name: spec.name, url: `https://data.libertyces.com/chemicals/${spec.slug}/` },
+];
+
+const faqs = [
+  {
+    question: `Does LibertyCES sell ${lc}?`,
+    answer: `No. LibertyCES supplies the equipment that stores, transfers, meters, and controls fluids like ${lc} (pumps, valves, tanks, piping, instrumentation). It does not supply the fluid itself.`,
+  },
+  {
+    question: `Which engineering rules apply to ${lc} service?`,
+    answer: rules.length > 0
+      ? `Published rules on this page: ${rules.map((r) => ruleTitle(r.id)).join('; ')}. Each links to its full rule page with confidence rating and source.`
+      : `No engineering rule in the LibertyCES ruleset is attached to ${lc} on this page.`,
+  },
+  {
+    question: `Is this data a final material approval for ${lc}?`,
+    answer: 'No. It is a screening reference compiled from published vendor data and LibertyCES field rules. Ratings depend on concentration and temperature; confirm against the manufacturer data sheet and your actual duty point, or request a free spec review.',
+  },
+];
+---
+<DataLayout title={title} description={description} jsonLd={jsonLd} canonicalPath={`/chemicals/${spec.slug}/`} breadcrumbs={breadcrumbs} faqs={faqs}>
+  <h1>{spec.name} — Equipment Material Selection</h1>
+  <div class="tldr">
+    <strong>Direct answer:</strong> This page collects every published row in the LibertyCES datasets that applies to {lc} service: {datasetsUsed.join(', ')}. {spec.scopeNote} LibertyCES supplies the equipment for handling these fluids, never the fluid itself.
+  </div>
+
+  {compat.length > 0 && (
+    <>
+      <h2>Pipe, Tank &amp; Wetted Material Compatibility</h2>
+      {compat.map((g) => (
+        <>
+          <h3><a href={`/chemicals/${g.slug}/`}>{g.media}</a></h3>
+          <table>
+            <thead>
+              <tr><th>Concentration</th><th>Temp (&deg;F)</th><th>Temp (&deg;C)</th>{MATERIALS.map((m) => <th>{MATERIAL_NAMES[m]}</th>)}</tr>
+            </thead>
+            <tbody>
+              {g.rows.map((r: any) => (
+                <tr>
+                  <td>{r.concentration ?? '—'}</td>
+                  <td>{r.temp_f ?? '—'}</td>
+                  <td>{r.temp_c ?? '—'}</td>
+                  {MATERIALS.map((m) => <td>{ratingLabel(r[m])}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      ))}
+      <p><strong>Legend:</strong> {Object.entries(legend).map(([k, v]) => `${k} = ${v}`).join(' · ')}. Blank ratings mean no rating was published. Source: Flowline chemical compatibility chart.</p>
+    </>
+  )}
+
+  {seal.length > 0 && (
+    <>
+      <h2>Elastomer Seal Material Compatibility</h2>
+      <table>
+        <thead><tr><th>Dataset entry</th>{SEAL_MATERIALS.map(([, label]) => <th>{label}</th>)}</tr></thead>
+        <tbody>
+          {seal.map((r) => (
+            <tr>
+              <td>{r.chemical}</td>
+              {SEAL_MATERIALS.map(([key]) => <td>{SEAL_LABEL[(r as any)[key]] ?? (r as any)[key]}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:#666;">Ratings: 1 = Good, 2 = Fair, 3 = Poor, 4 = Not Recommended. Full dataset: <a href="/seal-material-compatibility">Elastomer Seal Material Compatibility</a>.</p>
+    </>
+  )}
+
+  {pump.length > 0 && (
+    <>
+      <h2>Centrifugal Pump Wetted-End Material — Max Temperature (&deg;F)</h2>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Dataset entry</th><th>Sp. Gr.</th>{PUMP_MATERIALS.map(([, label]) => <th>{label}</th>)}</tr></thead>
+        <tbody>
+          {pump.map((r) => (
+            <tr>
+              <td>{r.chemical}</td>
+              <td>{r.specific_gravity ?? '—'}</td>
+              {PUMP_MATERIALS.map(([key]) => <td>{(r as any)[key]}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      </div>
+      <p style="font-size:12px;color:#666;">"NR" = not recommended at any temperature, "ND" = no data published. Full dataset: <a href="/pump-material-resistance">Centrifugal Pump Material Resistance</a>.</p>
+    </>
+  )}
+
+  {tube.length > 0 && (
+    <>
+      <h2>Peristaltic Pump Tube Compatibility</h2>
+      <table>
+        <thead><tr><th>Dataset entry</th><th>Flex-A-Prene&reg;</th><th>Flex-A-Chem&reg;</th><th>Flex-A-Thane&reg;</th></tr></thead>
+        <tbody>
+          {tube.map((r) => (
+            <tr>
+              <td>{r.chemical}</td>
+              <td>{TUBE_LABEL[r.flex_a_prene] ?? r.flex_a_prene}</td>
+              <td>{TUBE_LABEL[r.flex_a_chem] ?? r.flex_a_chem}</td>
+              <td>{TUBE_LABEL[r.flex_a_thane] ?? r.flex_a_thane}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:#666;">Based on 28-day room-temperature (73&deg;F) immersion testing. Full dataset: <a href="/tube-compatibility">Peristaltic Pump Tube Compatibility</a>.</p>
+    </>
+  )}
+
+  {hydromet.length > 0 && (
+    <>
+      <h2>Hydrometallurgical Duty-Class Material Selection</h2>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Service context</th><th>Fluid</th><th>Concentration</th><th>Max temp (&deg;F)</th><th>Equipment</th><th>Material</th><th>Verdict</th></tr></thead>
+        <tbody>
+          {hydromet.map((r) => (
+            <tr>
+              <td>{r.service_context}</td>
+              <td>{r.chemical}</td>
+              <td>{r.concentration ?? '—'}</td>
+              <td>{r.temp_f_max ?? '—'}</td>
+              <td>{r.equipment_category}</td>
+              <td>{r.material}</td>
+              <td>{r.verdict}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      </div>
+      <ul>
+        {hydromet.map((r) => (
+          <li><strong>{r.service_context} — {r.material}:</strong> {r.detail} <em>(Source: {r.vendor_source})</em></li>
+        ))}
+      </ul>
+      <p style="font-size:12px;color:#666;">Full dataset: <a href="/hydromet-material-selection">Hydrometallurgical Duty-Class Material Selection</a>.</p>
+    </>
+  )}
+
+  {stages.length > 0 && (
+    <>
+      <h2>Equipment by Process Stage</h2>
+      {stages.map((s) => (
+        <div>
+          <h3>{s.process_stage}</h3>
+          <p><strong>Process:</strong> {s.chemistry}</p>
+          <p><strong>Equipment class:</strong> {s.equipment_class}</p>
+          <ul>
+            {s.liberty_manufacturers.map((m: string) => <li>{m}</li>)}
+          </ul>
+          <p style="font-size:12px;color:#666;">Source: {s.source}. Full dataset: <a href="/leach-circuit-equipment-by-stage">Leach-Circuit Equipment by Process Stage</a>.</p>
+        </div>
+      ))}
+    </>
+  )}
+
+  {rules.length > 0 && (
+    <>
+      <h2>Engineering Rules That Apply</h2>
+      {rules.map((r) => (
+        <div>
+          <h3><a href={`/rules/${r.id}/`}>{ruleTitle(r.id)}</a></h3>
+          <p>{r.rationale}</p>
+          <p style="font-size:12px;color:#666;">Confidence: {r.confidence}. Source: {r.source}.</p>
+        </div>
+      ))}
+    </>
+  )}
+
+  <div class="equipment-block">
+    <h2>Equipment LibertyCES Supplies</h2>
+    <p>LibertyCES specifies and supplies the pumps, valves, tanks, piping, and instrumentation that store, transfer, meter, and contain fluids like {lc} — never the fluid itself, always the equipment engineered to handle it.</p>
+    <ul>
+      <li><a href={`https://www.libertyces.com/chemicals/${spec.slug}`}>{spec.name} — Equipment Selection Guide on libertyces.com</a></li>
+      {spec.related.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+    </ul>
+    <p>Reviewed by <a href={JAMES_BIO_URL}>James Riggins</a>, Founder, LibertyCES — 30+ years specifying industrial fluid-handling equipment. <a href={SPEC_REVIEW_URL(`/chemicals/${spec.slug}/`)}>Request a free spec review &rarr;</a></p>
+  </div>
+
+  <p style="font-size:12px;color:#666;">This data is a screening reference, not a final engineering approval; confirm with a manufacturer-specific data sheet before specifying equipment. Blank or "No data" entries mean no rating was published — treat as unknown, not safe.</p>
+
+  <p>
+    <a href="/chemicals/">All chemicals &rarr;</a><br />
+    <a href="/rules/">All engineering rules &rarr;</a>
+  </p>
+</DataLayout>

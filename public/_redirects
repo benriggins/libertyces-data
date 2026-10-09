@@ -1,0 +1,28 @@
+# Cloudflare Pages redirects. Old misspelled chemical slugs -> corrected slugs (301).
+# Each is listed with and without trailing slash. Added 2026-10-09.
+/chemicals/aluminum-floride/ /chemicals/aluminum-fluoride/ 301
+/chemicals/aluminum-floride /chemicals/aluminum-fluoride/ 301
+/chemicals/ammonium-flouride/ /chemicals/ammonium-fluoride/ 301
+/chemicals/ammonium-flouride /chemicals/ammonium-fluoride/ 301
+/chemicals/aque-regia/ /chemicals/aqua-regia/ 301
+/chemicals/aque-regia /chemicals/aqua-regia/ 301
+/chemicals/aniline-hydrochloide/ /chemicals/aniline-hydrochloride/ 301
+/chemicals/aniline-hydrochloide /chemicals/aniline-hydrochloride/ 301
+/chemicals/buthyl-acrylate/ /chemicals/butyl-acrylate/ 301
+/chemicals/buthyl-acrylate /chemicals/butyl-acrylate/ 301
+/chemicals/flourine-gas-wet/ /chemicals/fluorine-gas-wet/ 301
+/chemicals/flourine-gas-wet /chemicals/fluorine-gas-wet/ 301
+/chemicals/hydroflusilic-acid/ /chemicals/hydrofluosilicic-acid/ 301
+/chemicals/hydroflusilic-acid /chemicals/hydrofluosilicic-acid/ 301
+/chemicals/ethylene-chlorohydria/ /chemicals/ethylene-chlorohydrin/ 301
+/chemicals/ethylene-chlorohydria /chemicals/ethylene-chlorohydrin/ 301
+/chemicals/plating-solutions-cadium/ /chemicals/plating-solutions-cadmium/ 301
+/chemicals/plating-solutions-cadium /chemicals/plating-solutions-cadmium/ 301
+/chemicals/methyl-ether-ketone/ /chemicals/methyl-ethyl-ketone/ 301
+/chemicals/methyl-ether-ketone /chemicals/methyl-ethyl-ketone/ 301
+/chemicals/fluosilic-acid/ /chemicals/fluosilicic-acid/ 301
+/chemicals/fluosilic-acid /chemicals/fluosilicic-acid/ 301
+/chemicals/sodium-metalsilicate/ /chemicals/sodium-metasilicate/ 301
+/chemicals/sodium-metalsilicate /chemicals/sodium-metasilicate/ 301
+/chemicals/silicon-oil/ /chemicals/silicone-oil/ 301
+/chemicals/silicon-oil /chemicals/silicone-oil/ 301
