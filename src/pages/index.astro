@@ -14,16 +14,22 @@ const tubeCount = (tubeData as any[]).length;
 const pumpMatCount = (pumpMatData as any[]).length;
 const sealCount = (sealData as any[]).length;
 
-const title = 'LibertyCES Data';
+const title = 'Open Engineering Data for Chemical Equipment';
 const description = 'Open, machine-readable industrial chemical equipment engineering data from LibertyCES — chemical material compatibility, equipment selection rules, and real engineering questions, free to crawl, cite, and download.';
 
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': 'https://www.libertyces.com/#organization',
     name: 'Liberty Chemical Equipment & Supply, Inc. (LibertyCES)',
     url: 'https://www.libertyces.com',
-    sameAs: ['https://github.com/benriggins/libertyces-technical-reference'],
+    // Same entity as the main site (identical @id and sameAs) so crawlers merge the two hosts into one organization.
+    sameAs: [
+      'https://github.com/benriggins/libertyces-technical-reference',
+      'https://www.linkedin.com/company/liberty-chemical-equipment-supply/',
+      'https://www.youtube.com/channel/UCE8FeVwpnlY_ODnmY6FZKvA',
+    ],
     description: 'LibertyCES specifies industrial pumps, valves, tanks, chemical feed systems, and containment equipment for municipal water/wastewater treatment, chemical processing, mining, and semiconductor manufacturing.',
     founder: { '@type': 'Person', name: 'James Riggins', jobTitle: 'Founder', url: 'https://www.libertyces.com/james-riggins-treatment-water-expert' },
   },

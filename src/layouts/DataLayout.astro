@@ -19,7 +19,30 @@ interface Props {
 }
 const { title, description, jsonLd, canonicalPath, breadcrumbs, faqs, noindex } = Astro.props;
 const canonical = new URL(canonicalPath, 'https://data.libertyces.com').toString();
-const jsonLdArray = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+const ORG_ID = 'https://www.libertyces.com/#organization';
+// Any inline LibertyCES Organization becomes a reference to the one entity defined on the home page and main site.
+const toOrgRef = (n: any): any => {
+  if (Array.isArray(n)) return n.map(toOrgRef);
+  if (n && typeof n === 'object') {
+    if (n['@type'] === 'Organization' && !n['@id'] && typeof n.url === 'string' && n.url.startsWith('https://www.libertyces.com')) {
+      return { '@id': ORG_ID };
+    }
+    return Object.fromEntries(Object.entries(n).map(([k, v]) => [k, toOrgRef(v)]));
+  }
+  return n;
+};
+const jsonLdArray = (Array.isArray(jsonLd) ? jsonLd : [jsonLd]).map(toOrgRef);
+
+// Meta description: cut at a sentence or word boundary at or under 160 characters (schema keeps the full text).
+const metaDescription = (() => {
+  if (description.length <= 160) return description;
+  const cut = description.slice(0, 160);
+  const sentence = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('; '));
+  if (sentence >= 90) return cut.slice(0, sentence + 1);
+  return cut.slice(0, cut.lastIndexOf(' ')).replace(/(\s+(and|or|with|the|of|a|an|to|in|for|by|is|are|on))+$/i, '').replace(/[,;:\s-]+$/, '') + '.';
+})();
+// Brand suffix only when the whole title stays at or under 60 characters.
+const fullTitle = title.length + 17 <= 60 ? `${title} | LibertyCES Data` : title;
 
 if (breadcrumbs && breadcrumbs.length > 0) {
   jsonLdArray.push({
@@ -50,8 +73,8 @@ if (faqs && faqs.length > 0) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} | LibertyCES Data</title>
-  <meta name="description" content={description} />
+  <title>{fullTitle}</title>
+  <meta name="description" content={metaDescription} />
   <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
   <meta name="google-site-verification" content="OZ8SQE_29F7HwJN1xOAP6S9F9bNukAtGzHPqZdGRjo8" />
   {!noindex && <link rel="canonical" href={canonical} />}
